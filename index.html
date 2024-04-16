@@ -298,6 +298,13 @@
             document.documentElement.scrollTop = 0;
         }
 
+        const pageContentNavigationClick = (targetId) => {
+
+            const element = document.getElementById(targetId);
+        
+            element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+        }
+
     </script>
 
     <script type="text/javascript">
