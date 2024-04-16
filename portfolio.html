@@ -23,19 +23,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="align-items-center flex-grow-1 gap-4 justify-content-center navbar-nav text-center text-md-start text-white">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="HomePage">Home</a>
+                            <a class="nav-link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="Qualifications">Qualifications</a>
-                        </li>
-                        <li class="nav-item d-none d-md-block">
-                            <img class="header-img neon-border" src="./images/garion.jpg" />
+                            <a class="nav-link" href="./qualifications.html">Qualifications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./career.html" >Work Experience</a>
+                            <a class="nav-link" href="./workexperience.html">Work Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="Projects">Portfolio</a>
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -44,12 +41,13 @@
     </header>
     
     <main role="main">
-        <section class="wide-120">
-            <div class="container">
-                <h1>Career Page</h1>
+        <section class="wide-screen bg-5 position-relative" id="particles-js">
+            <div class="content">
+                <h1 class="color-star neon-small">
+                    Work in Progress
+                </h1>
             </div>
         </section>
-        
         
     </main>
 
@@ -73,16 +71,16 @@
                 <div class="order-first">
                     <ul class="flex-md-row gap-0 gap-md-5 justify-content-end navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="HomePage">Home</a>
+                            <a class="nav-link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="Qualifications">Qualifications</a>
+                            <a class="nav-link" href="./qualifications.html" >Qualifications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="Career">Work Experience</a>
+                            <a class="nav-link" href="./workexperience.html">Work Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="HomeEN" asp-action="Projects">Portfolio</a>
+                            <a class="nav-link" href="./portfolio.html" >Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -93,42 +91,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <script type="text/javascript">
-
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('.header-top');
-            
-            header.classList.toggle('py-3', window.scrollY > 120);
-            header.classList.toggle('box-shadow-white', window.scrollY > 120);
-
-            if(window.innerWidth >= 500){
-                header.classList.toggle('bg-transparent', window.scrollY <= 120);
-                header.classList.toggle('bg-dark', window.scrollY > 120);
-            }
-        });
-
-        window.onload = function () {
-            window.onscroll();
-        };
-
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("goToTopBtn").style.display = "block";
-            } else {
-                document.getElementById("goToTopBtn").style.display = "none";
-            }
-        }
-
-        function goToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-    </script>
+    <script src="./js/site.js"></script>
 </body>
 </html>
