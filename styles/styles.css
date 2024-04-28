@@ -567,6 +567,72 @@ footer {
     transition: 0.6s all;
 }
 
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 15px;
+
+    img {
+        width: 240px;
+        height: 240px;
+        object-fit: contain;
+        transition: 0.6s ease;
+    
+    
+        &:hover{
+            transform: scale(2);
+            z-index: 100;
+            border-radius: .5rem;
+            filter: drop-shadow(0px 0px 10px #4f0c71);
+        }
+    }
+}
+
+.owl-carousel .item {
+    text-align: center;
+}
+
+.owl-carousel .item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.owl-carousel .owl-item {
+    flex: 0 0 auto;
+    transition: transform 0.4s ease;
+}
+
+.owl-carousel .owl-item:hover {
+    cursor: pointer;
+}
+
+.owl-centered .owl-stage {
+    display: table !important;
+}
+
+.owl-centered .owl-item {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+.owl-centered .owl-item>div {
+    padding: 0 10px;
+}
+
 .navbar-nav .nav-link {
     color: white;
     transition: 0.5s all;
@@ -626,20 +692,11 @@ footer {
     background-clip: text;
 }
 
-
+/*
 .glow {
     animation: glow 3s ease-in-out infinite alternate;
-}
-
-/*@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
-    }
 }*/
+
 
 @keyframes glow {
     from {
@@ -750,6 +807,22 @@ footer {
     }
 }
 
+/* 577px > */
+@media screen and (min-width:577px){
+    
+    .glow {
+        animation: glow 3s ease-in-out infinite alternate;
+    }
+
+}
+@media screen and (max-width:576px){
+    
+    .glow {
+        filter: drop-shadow(0px 0px 10px white);
+    }
+
+}
+
 
 /* Breakpoint sm - md */
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -763,6 +836,11 @@ footer {
     .custom-navbar {
         font-size: 1.5rem;
         justify-content: center;
+        display: block;
+
+        .nav-tabs{
+            justify-content: space-between;
+        }
     }
 }
 
@@ -808,6 +886,11 @@ footer {
     .custom-navbar {
         font-size: 1.2rem;
         justify-content: center;
+        display: block;
+
+        .nav-tabs{
+            justify-content: space-between;
+        }
     }
 
     .navbar-nav .nav-link {
