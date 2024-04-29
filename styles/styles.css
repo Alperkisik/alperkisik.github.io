@@ -866,6 +866,41 @@ footer {
   }
 }
 
+
+
+/* Typing CSS - start - */
+
+span.typed-text {
+  font-weight: normal;
+}
+
+span.cursor {
+  display: inline-block;
+  background-color: var(--color-fushia-3);
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%  { background-color: var(--color-fushia-3); }
+  49% { background-color: var(--color-fushia-3); }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: var(--color-fushia-3); }
+}
+
+/* Typing CSS - End - */
+
+
+
+
+
+
 @keyframes glow {
   from {
     text-shadow: 0 0 4px #8803bd, 0 0 8px #8803bd, 0 0 16px #fff, 0 0 30px #fff,
