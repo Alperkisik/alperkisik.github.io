@@ -491,13 +491,10 @@ footer {
 }
 
 #logoCarousel{
-  background-color: #ffffff29;
-  border-radius: 1rem;
   margin-top: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   filter: drop-shadow(2px 4px 6px black);
-  box-shadow: 0 0px 10px #4f0c71;
 }
 
 .neon-small {
