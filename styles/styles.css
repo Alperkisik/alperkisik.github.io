@@ -468,14 +468,9 @@ footer {
   padding: 2rem;
   background-color: #ffffff29;
   border-radius: 1rem;
-  color: var(--color-whitesmoke-deep);
-  /*
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;*/
   color: white;
   gap: 1rem;
-  transition: 0.4s all;
+  transition: 0.6s all;
   filter: drop-shadow(2px 4px 6px black);
   box-shadow: 0 0px 10px #4f0c71;
 
@@ -493,6 +488,16 @@ footer {
   p {
     font-size: 1rem;
   }
+}
+
+#logoCarousel{
+  background-color: #ffffff29;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  filter: drop-shadow(2px 4px 6px black);
+  box-shadow: 0 0px 10px #4f0c71;
 }
 
 .neon-small {
