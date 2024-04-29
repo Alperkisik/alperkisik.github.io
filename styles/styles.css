@@ -174,9 +174,9 @@ footer {
 .bio-menu-info {
   background-color: var(--color-gray-1);
   padding: 1rem;
-  border: 2px solid var(--color-purple-1);
   border-radius: 1rem;
   box-shadow: 0px 0px 6px var(--bs-blue);
+  filter: drop-shadow(2px 4px 6px black);
 
   .bio-menu-info-row {
     font-size: 1.25rem;
@@ -539,7 +539,7 @@ footer {
   background-color: var(--color-gray-1);
   border: 2px solid var(--color-purple-1);
   border-radius: 1rem;
-  box-shadow: 0px 0px 5px var(--bs-blue);
+  filter: drop-shadow(2px 4px 6px black);
   margin-bottom: 1rem;
 
   .skill-set {
