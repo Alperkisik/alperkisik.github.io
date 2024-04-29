@@ -13,8 +13,11 @@
     <meta name="google-site-verification" content="zolr0L_lO22_CuMiFikEQDJZ_IehsXxTJYqcAWredH4" />
 
     <link rel="shortcut icon" type="image/x-icon" href="./favico.png">
+    <!--Bootstrap CDN - Start - -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap CDN - END - -->
+
     <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -30,14 +33,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
+    <!--Owl Carousel CDN - Start - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Owl Carousel CDN - End - -->
+
     <link rel="stylesheet" href="./styles/styles.css" asp-append-version="true" />
+
 </head>
 
 <body>
     <header class="header-top">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
             <div class="container">
-                <a class="nav-link" href="./"><img class="home-page-icon" src="./favico.png" /></a>
+                <a class="navbar-brand" href="./"><img class="home-page-icon" src="./favico.png" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars fa-2x color-white"></i>
@@ -59,12 +73,10 @@
     <main role="main">
         <section class="wide-screen bg-5 position-relative" id="particles-js">
             <div class="content">
-                <img class="profile-picture bordered" src="./images/headshots/1.jpg" />
-                <h1 class="color-star neon-small">
-                    Hello, I am Alper Kısık
-                    <br /> <span class="color-purple glow fst-italic">An Enthusiastic Software Engineer</span>
-                    <br /> .Net Developer
-                </h1>
+                <img class="profile-picture bordered drop-shadow-black-md mb-3" src="./images/headshots/1.jpg" />
+                <h1 class="color-star text-shadow-black-md drop-shadow-black-md">Hello, I am Alper Kısık</h1>
+                <h2 class="color-purple glow fst-italic h1">An Enthusiastic Software Engineer</h2>
+                <h2 class="color-star text-shadow-black-md drop-shadow-black-md h1">.Net Developer</h1>
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('about-me')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
@@ -80,8 +92,8 @@
                                 <img class="profile-image" src="./images/headshots/3.jpg" />
                                 <div class="line"></div>
                                 <div class="headers">
-                                    <h1>Alper Kısık</h1>
-                                    <h2 class="mb-0">Full-Stack Developer</h2>
+                                    <h1 class="color-blue drop-shadow-black-md">Alper Kısık</h1>
+                                    <h2 class="color-aqua-1 drop-shadow-black-md">Full-Stack Developer</h2>
                                 </div>
                                 <ul class="Social-media-list">
                                     <li>
@@ -126,7 +138,7 @@
                             <div class="tab-pane fade show active" id="nav-about" role="tabpanel"
                                 aria-labelledby="nav-about-tab">
                                 <p class="fs-5">
-                                    I am Alper Kısık a <span class="color-purple-2 fw-bold fs-4">Software Engineer -
+                                    I am Alper Kısık a <span class="color-fushia-2 fw-bold fs-5 drop-shadow-black-md">Software Engineer -
                                         Full-Stack .Net Develeper</span><br />
                                     having fun coding, like overcoming challenges and developing complex software
                                     structures<br />
@@ -163,7 +175,7 @@
                                     </div>
                                 </div>
                                 <div class="color-dark mt-3 fs-5">
-                                    <h3 class="color-purple-2 neon-small">Background</h3>
+                                    <h3 class="color-fushia-2 drop-shadow-black-md h2">Background</h3>
                                     <p>
                                         Developing software applications since 2010 ( Started developing lessons at
                                         technical highschool that year )<br />
@@ -174,7 +186,7 @@
                                         since then
                                     </p>
 
-                                    <h3 class="color-purple-2 neon-small">As a Professional</h3>
+                                    <h3 class="color-fushia-2 drop-shadow-black-md h2">As a Professional</h3>
                                     <p>
                                         I am <span class="color-light-purple fw-bold">focusing on</span> 3 things in
                                         general;
@@ -268,6 +280,7 @@
                             </div>
                             <div class="tab-pane fade" id="nav-experience" role="tabpanel"
                                 aria-labelledby="nav-experience-tab">
+                                
                                 <div class="accordion accordion-v1" id="accordion_1">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_1">
@@ -277,7 +290,7 @@
                                                 <p>Full-Stack Software Developer</p>
                                                 <p class="color-blue" id="lastJobSpentTime"></p>
                                                 <p class="color-blue">At Veritas Academy</p>
-                                                <p class="color-star">February 2023 to Now</p>
+                                                <p class="color-fushia-2 drop-shadow-black-md">February 2023 to Now</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_1" class="accordion-collapse collapse show"
@@ -323,6 +336,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="accordion accordion-v1" id="accordion_2">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_2">
@@ -332,7 +346,7 @@
                                                 <p>Junior Unity Game Developer</p>
                                                 <p class="color-blue">4 Months</p>
                                                 <p class="color-blue">At Pasatempos Games</p>
-                                                <p class="color-star">September 2021 to December 2021</p>
+                                                <p class="color-fushia-2 drop-shadow-black-md">September 2021 to December 2021</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_2" class="accordion-collapse collapse"
@@ -365,7 +379,7 @@
                                                 <p>Junior Full-Stack Software Developer</p>
                                                 <p class="color-blue">8 Months</p>
                                                 <p class="color-blue">At DIJI.TECH</p>
-                                                <p class="color-star">November 2020 to Jun 2021</p>
+                                                <p class="color-fushia-2 drop-shadow-black-md">November 2020 to Jun 2021</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_3" class="accordion-collapse collapse"
@@ -432,7 +446,7 @@
                                                                 Information
                                                                 Technologies</a>
                                                             <p class="mb-0">Microsoft Gold Partnership</p>
-                                                            <p class="color-star">July to August - 2019</p>
+                                                            <p class="color-fushia-2 drop-shadow-black-md">July to August - 2019</p>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -441,12 +455,12 @@
                                                                 Information
                                                                 Technologies</a>
                                                             <p class="mb-0">Microsoft Gold Partnership</p>
-                                                            <p class="color-star">June to August - 2018</p>
+                                                            <p class="color-fushia-2 drop-shadow-black-md">June to August - 2018</p>
                                                         </div>
                                                     <li>
                                                         <div>
                                                             <a href="https://usishi.com" target="_blank">Usishi</a>
-                                                            <p class="color-star">Jone to September - 2012</p>
+                                                            <p class="color-fushia-2 drop-shadow-black-md">Jone to September - 2012</p>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -525,33 +539,31 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="g-3 align-items-center px-0 px-md-2 mt-5 pt-5 rounded-3 row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center align-items-center">
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/front-end-stack.png" />
+                <div class="owl-carousel owl-theme owl-drag owl-centered mt-5" id="logoCarousel">
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/front-end-stack.png" />
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/asp-net-core.png" />
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/asp-net-core.png" />
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/csharp.png" />
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/csharp.png" />
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/net-core.png" />
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/net-core.png" />
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/sql-server.png" />
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/sql-server.png" />
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/unity.png" />
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/unity.png" />
                     </div>
-                    <div class="col">
-                        <img class="img-fluid" src="./images/logo/python-logo-vector.png" />
+                    <div class="item">
+                        <img class="tech-logo" src="./images/logo/python-logo-vector.png" />
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <button id="goToTopBtn" onclick="goToTop()">
@@ -561,7 +573,7 @@
     <footer class="footer bg-dark color-dark" id="footer">
         <div class="container">
             <div class="text-center">
-                <h3 class="color-purple-2 neon-small fs-1 mb-4">Get in Touch</h3>
+                <h3 class="color-fushia-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
                 <ul class="Social-media-list mb-4">
                     <li>
                         <a href="https://www.linkedin.com/in/alperkisik/" target="_blank">
@@ -599,6 +611,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./js/site.js"></script>
     <script src="./js/homepage.js"></script>
 

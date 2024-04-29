@@ -1,12 +1,12 @@
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".header-top");
 
-  header.classList.toggle("py-3", window.scrollY > 120);
   header.classList.toggle("box-shadow-white", window.scrollY > 120);
 
   if (window.innerWidth >= 500) {
     header.classList.toggle("bg-transparent", window.scrollY <= 120);
     header.classList.toggle("bg-darkgray-2", window.scrollY > 120);
+    header.classList.toggle("py-3", window.scrollY > 120);
   }
 });
 
