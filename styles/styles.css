@@ -2,7 +2,7 @@
     --color-gray-1: #212529;
     --color-white: #ffffff;
     --color-purple-1: #4f0c71;
-    --color-whitesmoke-deep:#bbb;
+    --color-whitesmoke-deep: #bbb;
 }
 
 
@@ -451,6 +451,8 @@ footer {
         transition: 0.6s all;
         font-size: 1.5rem;
         font-weight: 600;
+        background-color: #212529;
+        color: var(--color-whitesmoke-deep);
 
         &:not(.collapsed) {
             color: white;
@@ -627,7 +629,7 @@ footer {
     flex-direction: column;
     gap: 1rem;
 
-    .profile-image{
+    .profile-image {
         border-radius: 2rem;
         box-shadow: 0px 0px 10px var(--color-purple-1);
         max-width: 100%;
@@ -675,6 +677,11 @@ footer {
         object-fit: contain;
     }
 
+}
+
+#nav-experience {
+    overflow-y: auto;
+    max-height: 800px;
 }
 
 @keyframes glow {
@@ -788,8 +795,19 @@ footer {
 
 @media (max-width: 768px) {
 
+    #nav-experience {
+        overflow-y: none;
+        max-height: none;
+        height: auto;
+    }
+
     .about-row {
         height: auto;
+    }
+
+    .wide-150 {
+        padding-top: 60px;
+        padding-bottom: 90px;
     }
 
     .wide-screen-2 {
@@ -815,17 +833,17 @@ footer {
     }
 
     .profile-block {
-        
+
         position: relative;
 
-        .profile-image{
+        .profile-image {
             max-height: 200px;
             max-width: 200px;
             object-fit: contain;
             z-index: 2;
         }
 
-        .line{
+        .line {
             position: absolute;
             z-index: 1;
             border: 1px solid var(--color-whitesmoke-deep);
@@ -854,20 +872,12 @@ footer {
         }
     }
 
-    .wide-150{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+
 }
 
 
 @media (max-width: 575px) {
-
-    .wide-150{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
+    
     .header-top {
         --bs-bg-opacity: 1;
         background-color: #212529;
