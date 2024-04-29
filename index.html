@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./styles/styles.css" asp-append-version="true" />
 </head>
 
-<body class="font-fun">
+<body>
     <header class="header-top">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
             <div class="container">
@@ -43,7 +43,7 @@
                     <i class="fa-solid fa-bars fa-2x color-white"></i>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="gap-5 navbar-nav ps-4 text-center text-white">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="./">Home</a>
                         </li>
@@ -70,15 +70,15 @@
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section class="wide-150 align-content-center bg-dark position-relative box-shadow-purple z-index-2"
+        <section class="wide-150 align-content-center bg-darkgray-2 position-relative box-shadow-purple z-index-2"
             id="about-me">
             <div class="container-fluid container-md">
-                <div class="row about-row">
+                <div class="row">
                     <div class="col-md-3">
                         <div class="d-flex flex-column gap-4">
                             <div class="profile-block">
                                 <img class="profile-image" src="./images/headshots/3.jpg" />
-                                    <div class="line"></div>
+                                <div class="line"></div>
                                 <div class="headers">
                                     <h1>Alper Kısık</h1>
                                     <h2 class="mb-0">Full-Stack Developer</h2>
@@ -122,7 +122,7 @@
                                     aria-controls="nav-experience" aria-selected="false">Experience</button>
                             </div>
                         </nav>
-                        <div class="tab-content py-5" id="nav-tabContent">
+                        <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-about" role="tabpanel"
                                 aria-labelledby="nav-about-tab">
                                 <p class="fs-5">
@@ -132,7 +132,7 @@
                                     structures<br />
                                     Eager to learn new things and an open minded person
                                 </p>
-                                <div class="p-3 border border-3 border-purple rounded-3">
+                                <div class="bio-menu-info">
                                     <div class="row row-cols-1 row-cols-md-2 g-3 bio-menu-info-row">
                                         <div class="col"><span><i class="fa-solid fa-location-dot text-danger"></i>
                                                 Location: </span> <a href="https://maps.app.goo.gl/M5jyjRiKsZ4NcZ9h6"
@@ -196,83 +196,105 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
-                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                                    <div class="col">
-                                        <div class="p-3 h-100">
-                                            <h2 class="color-purple-2">Coding Languages</h2>
-                                            <ul class="fs-5">
-                                                <li>C Sharp</li>
-                                                <li>C++</li>
-                                                <li>Python</li>
-                                                <li>Java</li>
-                                                <li>HTML, CSS, Javascript</li>
-                                            </ul>
-                                        </div>
+                                <div class="skill-set-block">
+                                    <div class="skill-set">
+                                        <p class="skill-set-title">Coding Languages</p>
+                                        <ul class="keywords">
+                                            <li>C Sharp</li>
+                                            <li>C++</li>
+                                            <li>Python</li>
+                                            <li>Java</li>
+                                            <li>HTML5</li>
+                                            <li>CSS</li>
+                                            <li>Javascript</li>
+                                            <li>JQuery</li>
+                                        </ul>
                                     </div>
-                                    <div class="col">
-                                        <div class="p-3 h-100">
-                                            <h2 class="color-purple-2">.Net Frameworks</h2>
-                                            <ul class="fs-5">
-                                                <li>Asp.Net Core</li>
-                                                <li>Asp.Net MVC 5</li>
-                                                <li>Asp.Net Web Forms</li>
-                                                <li>.NET Windows Presentation Foundation (WPF)</li>
-                                                <li>.NET Windows Form Applications</li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="skill-set-block">
+                                    <div class="skill-set">
+                                        <p class="skill-set-title">.Net Frameworks</p>
+                                        <ul class="keywords">
+                                            <li>Asp.Net Core</li>
+                                            <li>Asp.Net MVC 5</li>
+                                            <li>Asp.Net Web Forms</li>
+                                            <li>.NET Windows Presentation Foundation (WPF)</li>
+                                            <li>.NET Windows Form Applications</li>
+                                        </ul>
                                     </div>
-                                    <div class="col">
-                                        <div class="p-3 h-100">
-                                            <h2 class="color-purple-2">Database - Orm</h2>
-                                            <ul class="fs-5">
-                                                <li>MS SQL</li>
-                                                <li>Entity Framework Core</li>
-                                                <li>Dapper</li>
-                                                <li>Ado.Net</li>
-                                                <li>Linq</li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="skill-set-block">
+                                    <div class="skill-set">
+                                        <p class="skill-set-title">Database - ORM</p>
+                                        <ul class="keywords">
+                                            <li>MS SQL</li>
+                                            <li>Entity Framework Core</li>
+                                            <li>Dapper</li>
+                                            <li>Ado.Net</li>
+                                            <li>Linq</li>
+                                        </ul>
                                     </div>
-                                    <div class="col">
-                                        <div class="p-3 h-100">
-                                            <h2 class="color-purple-2">Front-End</h2>
-                                            <ul class="fs-5">
-                                                <li>Bootstrap 4, 5</li>
-                                                <li>HTML, CSS, Javascript</li>
-                                                <li>JQuery</li>
-                                                <li>Typescript - Familiar</li>
-                                                <li>React.js - Familiar</li>
-                                                <li>React Native - Familiar</li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="skill-set-block">
+                                    <div class="skill-set">
+                                        <p class="skill-set-title">Front-End</p>
+                                        <ul class="keywords">
+                                            <li>Bootstrap</li>
+                                            <li>HTML5</li>
+                                            <li>CSS</li>
+                                            <li>Javascript</li>
+                                            <li>JQuery</li>
+                                        </ul>
+                                        <p class="skill-set-subtitle">Familiar With</p>
+                                        <ul class="keywords">
+                                            <li>Typescript</li>
+                                            <li>React Native</li>
+                                            <li>React JS</li>
+                                        </ul>
                                     </div>
-                                    <div class="col">
-                                        <div class="p-3 h-100">
-                                            <h2 class="color-purple-2">Other</h2>
-                                            <ul class="fs-5">
-                                                <li>Unity Game Engine</li>
-                                                <li>Django Web App Framework</li>
-                                                <li>RESTFUL Api</li>
-                                                <li>Framework7</li>
-                                                <li>Web RTC</li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="skill-set-block">
+                                    <div class="skill-set">
+                                        <p class="skill-set-title">Other</p>
+                                        <ul class="keywords">
+                                            <li>Unity Game Engine</li>
+                                            <li>Django Web App Framework</li>
+                                            <li>RESTFUL Api</li>
+                                            <li>Framework7</li>
+                                            <li>Web RTC</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab">
+                            <div class="tab-pane fade" id="nav-experience" role="tabpanel"
+                                aria-labelledby="nav-experience-tab">
                                 <div class="accordion accordion-v1" id="accordion_1">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_1">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapse_1" aria-expanded="true"
                                                 aria-controls="collapse_1">
-                                                Full-Stack Software Developer <br>At Veritas Academy | Feb 2023 to Now
+                                                <p>Full-Stack Software Developer</p>
+                                                <p class="color-blue" id="lastJobSpentTime"></p>
+                                                <p class="color-blue">At Veritas Academy</p>
+                                                <p class="color-star">February 2023 to Now</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_1" class="accordion-collapse collapse show"
                                             aria-labelledby="heading_1" data-bs-parent="#accordion_1">
                                             <div class="accordion-body">
+                                                <ul class="keywords">
+                                                    <li>.Net Core</li>
+                                                    <li>Asp.Net Core</li>
+                                                    <li>Asp.Net MVC 5</li>
+                                                    <li>.Net Windows Forms</li>
+                                                    <li>Web</li>
+                                                    <li>Web API</li>
+                                                    <li>React JS</li>
+                                                    <li>HTML5, CSS, JS</li>
+                                                    <li>JQuery</li>
+                                                    <li>MS SQL</li>
+                                                </ul>
                                                 <ul>
                                                     <li>Creating software solutions for Veritas Academy bussiness needs
                                                         with .Net Core,
@@ -307,13 +329,20 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_2"
                                                 aria-expanded="true" aria-controls="collapse_2">
-                                                Junior Unity Game Developer (4 mo) <br> At Pasatempos Games | Sept 2021
-                                                to Dec 2021
+                                                <p>Junior Unity Game Developer</p>
+                                                <p class="color-blue">4 Months</p>
+                                                <p class="color-blue">At Pasatempos Games</p>
+                                                <p class="color-star">September 2021 to December 2021</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_2" class="accordion-collapse collapse"
                                             aria-labelledby="heading_2" data-bs-parent="#accordion_2">
                                             <div class="accordion-body">
+                                                <ul class="keywords">
+                                                    <li>.Net Core</li>
+                                                    <li>Unity Game Engine</li>
+                                                    <li>MS SQL</li>
+                                                </ul>
                                                 <ul>
                                                     <li>Creating hypercasual game prototypes using Unity Game Engine
                                                     </li>
@@ -333,13 +362,26 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_3"
                                                 aria-expanded="true" aria-controls="collapse_3">
-                                                Junior Full-Stack Software Developer (8 mo) <br>At DIJI.TECH | Nov 2020
-                                                to Jun 2021
+                                                <p>Junior Full-Stack Software Developer</p>
+                                                <p class="color-blue">8 Months</p>
+                                                <p class="color-blue">At DIJI.TECH</p>
+                                                <p class="color-star">November 2020 to Jun 2021</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_3" class="accordion-collapse collapse"
                                             aria-labelledby="heading_3" data-bs-parent="#accordion_3">
                                             <div class="accordion-body">
+                                                <ul class="keywords">
+                                                    <li>Python</li>
+                                                    <li>Django</li>
+                                                    <li>Web API</li>
+                                                    <li>Framework 7</li>
+                                                    <li>Web</li>
+                                                    <li>Mobile</li>
+                                                    <li>HTML5, CSS, JS</li>
+                                                    <li>JQuery</li>
+                                                    <li>MS SQL</li>
+                                                </ul>
                                                 <ul>
                                                     <li>Designs and creates software solutions to solve pain points for
                                                         various clients
@@ -375,17 +417,37 @@
                                         <div id="collapse_4" class="accordion-collapse collapse"
                                             aria-labelledby="heading_4" data-bs-parent="#accordion_4">
                                             <div class="accordion-body">
+                                                <ul class="keywords">
+                                                    <li>Asp.Net Core</li>
+                                                    <li>.Net Core</li>
+                                                    <li>.Net Windows Forms</li>
+                                                    <li>HTML5, CSS, JS</li>
+                                                    <li>JQuery</li>
+                                                    <li>MS SQL</li>
+                                                </ul>
                                                 <ul>
-                                                    <li><a href="https://www.makronet.com" target="_blank">Makronet
-                                                            Information
-                                                            Technologies</a> (Gold Partnership Microsoft) | July 2019 -
-                                                        Aug</li>
-                                                    <li><a href="https://www.makronet.com" target="_blank">Makronet
-                                                            Information
-                                                            Technologies</a> (Gold Partnership Microsoft) | June 2018 -
-                                                        July</li>
-                                                    <li><a href="https://usishi.com" target="_blank">Usishi</a> | June
-                                                        2012 - Spt 2012
+                                                    <li>
+                                                        <div class="border-bottom border-white">
+                                                            <a href="https://www.makronet.com" target="_blank">Makronet
+                                                                Information
+                                                                Technologies</a>
+                                                            <p class="mb-0">Microsoft Gold Partnership</p>
+                                                            <p class="color-star">July to August - 2019</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="border-bottom border-white">
+                                                            <a href="https://www.makronet.com" target="_blank">Makronet
+                                                                Information
+                                                                Technologies</a>
+                                                            <p class="mb-0">Microsoft Gold Partnership</p>
+                                                            <p class="color-star">June to August - 2018</p>
+                                                        </div>
+                                                    <li>
+                                                        <div>
+                                                            <a href="https://usishi.com" target="_blank">Usishi</a>
+                                                            <p class="color-star">Jone to September - 2012</p>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>

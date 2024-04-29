@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
 
   if (window.innerWidth >= 500) {
     header.classList.toggle("bg-transparent", window.scrollY <= 120);
-    header.classList.toggle("bg-dark", window.scrollY > 120);
+    header.classList.toggle("bg-darkgray-2", window.scrollY > 120);
   }
 });
 
