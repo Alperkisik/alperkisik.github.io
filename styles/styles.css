@@ -577,6 +577,7 @@ footer {
       font-weight: 700;
       font-size: 1.25rem;
       color: var(--color-fushia-3);
+      filter: drop-shadow(2px 4px 6px black);
     }
 
     .keywords {
