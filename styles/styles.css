@@ -505,6 +505,7 @@ footer {
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
     transition: 0.6s all;
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   .nav-link.active {
