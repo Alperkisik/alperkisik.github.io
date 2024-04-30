@@ -935,9 +935,6 @@ footer {
   }
 }
 
-.bounce {
-  animation: bounce 2s infinite;
-}
 
 .herobgcolor {
   background: linear-gradient(to right, #729efd, #5c3a92);
@@ -1098,15 +1095,6 @@ footer {
       font-weight: 700;
     }
   }
-
-  /*
-  > :not(:last-child) {
-    margin-bottom: 1rem;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }*/
 }
 
 /* 3 Grid System - End - */
@@ -1511,7 +1499,9 @@ span.cursor.typing {
     }
   }
 
-
+  .arrow-bottom {
+    margin: 0;
+  }
 
 
 }
@@ -1519,6 +1509,10 @@ span.cursor.typing {
 @media screen and (min-width: 577px) {
   .glow {
     animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  .bounce {
+    animation: bounce 2s infinite;
   }
 
   .arrow-bottom {
