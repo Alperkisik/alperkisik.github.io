@@ -673,6 +673,91 @@
                 </div>
             </div>
         </section>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+            }
+        
+            .grid-item {
+                position: relative;
+                overflow: hidden;
+                max-width: 100%; /* Öğe genişliğini %100 yapar */
+            }
+        
+            .grid-item img {
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* Resmi öğenin içine tamamen sığdırmak için */
+                transition: filter 0.3s ease;
+            }
+        
+            .grid-item:hover img {
+                filter: blur(5px);
+            }
+        
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 10px;
+                box-sizing: border-box;
+                transition: transform 0.3s ease;
+                transform: translateY(100%);
+            }
+        
+            .grid-item:hover .overlay {
+                transform: translateY(0);
+            }
+        
+            .overlay h3 {
+                margin: 5px 0;
+            }
+        
+            .overlay button {
+                background-color: white;
+                color: black;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        </style>
+        <section class="wide-120">
+            <div class="container">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="./images/projects/dijitech/belediyesikayet/anasayfa.png" alt="Image 1">
+                        <div class="overlay">
+                            <h3>Title 1</h3>
+                            <p>Description 1</p>
+                            <button>Button 1</button>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/projects/veritas-academy/veritasedu/anasayfa-1.jpg" alt="Image 2">
+                        <div class="overlay">
+                            <h3>Title 2</h3>
+                            <p>Description 2</p>
+                            <button>Button 2</button>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./images/projects/dijitech/belediyesikayet/anasayfa.png"  alt="Image 3">
+                        <div class="overlay">
+                            <h3>Title 3</h3>
+                            <p>Description 3</p>
+                            <button>Button 3</button>
+                        </div>
+                    </div>
+                    <!-- Diğer öğeleri buraya ekleyin -->
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <button id="goToTopBtn" onclick="goToTop()">
