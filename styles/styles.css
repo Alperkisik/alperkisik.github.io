@@ -1484,7 +1484,7 @@ span.cursor.typing {
       font-size: .8rem;
 
       p {
-        font-size: .8rem;
+        font-size: 1rem;
       }
 
       h3 {
@@ -1507,23 +1507,15 @@ span.cursor.typing {
     }
   }
 
-  /*
-  .arrow-bottom {
-    margin: 0;
-  }*/
-
-
+  .grid-item img {
+    height: 320px;
+  }
 }
 
 @media screen and (min-width: 577px) {
   .glow {
     animation: glow 3s ease-in-out infinite alternate;
   }
-
-  /*
-  .bounce {
-    animation: bounce 2s infinite;
-  }*/
 
   .arrow-bottom {
     bottom: 60px;
