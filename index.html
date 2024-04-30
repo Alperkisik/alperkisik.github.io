@@ -13,12 +13,22 @@
     <meta name="google-site-verification" content="zolr0L_lO22_CuMiFikEQDJZ_IehsXxTJYqcAWredH4" />
 
     <link rel="shortcut icon" type="image/x-icon" href="./favico.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!--Bootstrap CDN - Start - -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Bootstrap CDN - END - -->
+    <!--Bootstrap CDN - End - -->
 
+    <!-- Google Api - Start - -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Google Api - End - -->
+
+    <!-- Font Awesome - Start - -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,10 +38,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css"
         integrity="sha512-KYEnM30Gjf5tMbgsrQJsR0FSpufP9S4EiAYi168MvTjK6E83x3r6PTvLPlXYX350/doBXmTFUEnJr/nCsDovuw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <!-- Font Awesome - End - -->
 
     <!--Owl Carousel CDN - Start - -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -44,7 +51,6 @@
     <!--Owl Carousel CDN - End - -->
 
     <link rel="stylesheet" href="./styles/styles.css" asp-append-version="true" />
-
 </head>
 
 <body>
@@ -69,14 +75,16 @@
             </div>
         </nav>
     </header>
-
-    <main role="main">
+    <main>
         <section class="wide-screen bg-5 position-relative" id="particles-js">
             <div class="content">
                 <img class="profile-picture bordered drop-shadow-black-md mb-3" src="./images/headshots/1.jpg" />
-                <h1 class="color-star text-shadow-black-md drop-shadow-black-md">Hello, I am Alper Kısık</h1>
-                <h2 class="color-purple glow fst-italic h1">An Enthusiastic Software Engineer</h2>
-                <h2 class="color-star text-shadow-black-md drop-shadow-black-md h1">.Net Developer</h1>
+                <h1 class="color-blue drop-shadow-black-md">Hello, I am Alper Kısık</h1>
+                <h2 class="color-fushia-2 drop-shadow-black-md fst-italic h1">An Enthusiastic Software Engineer</h2>
+                <!--
+                <h2 class="color-blue text-shadow-black-md drop-shadow-black-md h1">.Net Developer</h1>
+                -->
+
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('about-me')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
@@ -91,10 +99,12 @@
                             <div class="profile-block">
                                 <img class="profile-image" src="./images/headshots/3.jpg" />
                                 <div class="line"></div>
+                                <!--
                                 <div class="headers">
                                     <h1 class="color-blue drop-shadow-black-md">Alper Kısık</h1>
                                     <h2 class="color-aqua-1 drop-shadow-black-md">Full-Stack Developer</h2>
                                 </div>
+                                -->
                                 <ul class="Social-media-list">
                                     <li>
                                         <a href="https://www.linkedin.com/in/alperkisik/" target="_blank">
@@ -112,8 +122,14 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <a class="align-items-center btn btn-purple d-flex fs-5 justify-content-center"
+                                <!--
+                                    <a class="align-items-center btn btn-purple d-flex drop-shadow-black-md fs-5 justify-content-center"
                                     href="./documents/resume.pdf" download="resume.pdf">
+                                    <i class="fa-solid fa-download color-white me-2"></i>
+                                    Download Resume
+                                </a>
+                                -->
+                                <a class="cstm-btn-purple" href="./documents/resume.pdf" download="resume.pdf">
                                     <i class="fa-solid fa-download color-white me-2"></i>
                                     Download Resume
                                 </a>
@@ -137,43 +153,84 @@
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-about" role="tabpanel"
                                 aria-labelledby="nav-about-tab">
-                                <p class="color-blue drop-shadow-black-md fs-3 mb-0 fw-bold">I am Alper Kısık <span class="typed-text color-fushia-2 fw-bold"></span><span class="cursor">&nbsp;</span></p>
-                                <p class="fs-4">
-                                    having fun coding, like overcoming challenges and developing complex software
-                                    structures<br />
-                                    Eager to learn new things and an open minded person
-                                </p>
-                                <div class="bio-menu-info my-4">
-                                    <div class="row row-cols-1 row-cols-md-2 g-3 bio-menu-info-row">
-                                        <div class="col"><span><i class="fa-solid fa-location-dot text-danger"></i>
-                                                Location: </span> <a href="https://maps.app.goo.gl/M5jyjRiKsZ4NcZ9h6"
-                                                target="_blank">Istanbul Atasehir, Turkey</a></div>
-                                        <div class="col"><span><i class="fa-solid fa-earth-europe text-danger"></i>
-                                                Languages: </span> Türkçe, English</div>
-                                        <div class="col"><span><i class="fa-solid fa-cake-candles text-danger"></i> Date
-                                                of
-                                                Birth: </span> 22.07.1994</div>
-                                        <div class="col"><span><i class="fa-solid fa-graduation-cap text-danger"></i>
-                                                Degree: </span> Bachelor</div>
-                                        <div class="col"><span><i class="fa-solid fa-envelope text-danger"></i> Mail:
-                                            </span><a href="mailto:alperksk_07@hotmail.com"
-                                                target="_blank">alperksk_07@hotmail.com</a></div>
-                                        <div class="col"><span><i class="fa-solid fa-phone text-danger"></i> Phone:
-                                            </span><a href="tel:+905393810519">+90 539-381-0519</a></div>
-                                    </div>
-                                    <div class="row mt-3 bio-menu-info-row fs-5">
+                                <div>
+                                    <p class="color-blue drop-shadow-black-md h1 mb-0 fw-bold">
+                                        I am Alper Kısık
+                                        <span class="typed-text color-fushia-2 fw-bold"></span>
+                                        <span class="cursor">&nbsp;</span>
+                                    </p>
+                                    <p class="fs-4">
+                                        having fun coding, like overcoming challenges and developing complex software
+                                        structures<br />
+                                        Eager to learn new things and an open minded person
+                                    </p>
+                                </div>
+                                <div class="bio-menu-info mb-5">
+                                    <div class="row row-cols-1 row-cols-md-2 g-0 g-md-2">
                                         <div class="col">
-                                            <span><i class="fa-solid fa-user-graduate text-danger"></i> Study:
-                                            </span><br />
-                                            Software Engineering at <a
-                                                href="https://www.aydin.edu.tr/tr-tr/Pages/default.aspx"
-                                                target="_blank">Istanbul Aydın University</a><br />
-                                            Computer Programming at <a href="https://www.istanbul.edu.tr/tr/_"
-                                                target="_blank">Istanbul University</a>
+                                            <div class="bio-menu-info-content">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <span>Location :</span>
+                                                <a href="https://maps.app.goo.gl/M5jyjRiKsZ4NcZ9h6"
+                                                    target="_blank">Istanbul Atasehir, Turkey</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bio-menu-info-content">
+                                                <i class="fa-solid fa-earth-europe"></i>
+                                                <span>Languages :</span> Türkçe, English
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bio-menu-info-content">
+                                                <i class="fa-solid fa-cake-candles"></i>
+                                                <span>Date of Birth :</span> 22.07.1994
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bio-menu-info-content">
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                <span>Degree :</span> Bachelor
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bio-menu-info-content">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                <span>E-Mail :</span>
+                                                <a href="mailto:alperksk_07@hotmail.com"
+                                                    target="_blank">alperksk_07@hotmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bio-menu-info-content">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <span>Phone :</span>
+                                                <a href="tel:+905393810519" target="_blank">+90 539-381-0519</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <div class="bio-menu-info-content">
+                                                <div>
+                                                    <i class="fa-solid fa-user-graduate"></i>
+                                                    <span>Study :</span>
+                                                </div>
+                                                <div>
+                                                    Software Engineering at <a
+                                                        href="https://www.aydin.edu.tr/tr-tr/Pages/default.aspx"
+                                                        target="_blank">Istanbul Aydın University</a>
+                                                </div>
+                                                <div>
+                                                    Computer Programming at <a href="https://www.istanbul.edu.tr/tr/_"
+                                                        target="_blank">Istanbul University</a>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="fs-4">
+                                <div class="fs-4 mb-5">
                                     <h3 class="color-fushia-2 drop-shadow-black-md h2 fw-bold">Background</h3>
                                     <p>
                                         Developing software applications since 2010 ( Started developing lessons at
@@ -184,22 +241,27 @@
                                         professionally
                                         since then
                                     </p>
-
+                                </div>
+                                <div class="fs-4">
                                     <h3 class="color-fushia-2 drop-shadow-black-md h2 fw-bold">As a Professional</h3>
                                     <p>
-                                        I am <span class="color-blue fw-bold drop-shadow-black-md">focusing on</span> 3 things in
+                                        I am <span class="color-blue fw-bold drop-shadow-black-md">focusing on</span> 3
+                                        things in
                                         general;
                                     </p>
                                     <ul class="list-unstyled">
-                                        <li><span class="color-blue fw-bold drop-shadow-black-md">Gaining Time.</span> Making future
+                                        <li><span class="color-blue fw-bold drop-shadow-black-md">Gaining Time.</span>
+                                            Making future
                                             developments 'took less time' by automating repetitive tasks and developing
                                             software structures</li>
-                                        <li><span class="color-blue fw-bold drop-shadow-black-md">Efficiency.</span> Making project
+                                        <li><span class="color-blue fw-bold drop-shadow-black-md">Efficiency.</span>
+                                            Making project
                                             run
                                             more smooth and more user friendly by investigating what issues are and
                                             solving
                                             them</li>
-                                        <li><span class="color-blue fw-bold drop-shadow-black-md">Learning.</span> Coding can become
+                                        <li><span class="color-blue fw-bold drop-shadow-black-md">Learning.</span>
+                                            Coding can become
                                             a
                                             really hard chalenge so i overcome challenges with learning new solutions,
                                             techniques, technologies</li>
@@ -292,7 +354,7 @@
                             </div>
                             <div class="tab-pane fade" id="nav-experience" role="tabpanel"
                                 aria-labelledby="nav-experience-tab">
-                                
+
                                 <div class="accordion accordion-v1" id="accordion_1">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_1">
@@ -302,7 +364,8 @@
                                                 <p>Full-Stack Software Developer</p>
                                                 <p class="color-blue" id="lastJobSpentTime"></p>
                                                 <p class="color-blue">At Veritas Academy</p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">February 2023 to Now</p>
+                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">February 2023 to
+                                                    Now</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_1" class="accordion-collapse collapse show"
@@ -358,7 +421,8 @@
                                                 <p>Junior Unity Game Developer</p>
                                                 <p class="color-blue">4 Months</p>
                                                 <p class="color-blue">At Pasatempos Games</p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">September 2021 to December 2021</p>
+                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">September 2021 to
+                                                    December 2021</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_2" class="accordion-collapse collapse"
@@ -391,7 +455,8 @@
                                                 <p>Junior Full-Stack Software Developer</p>
                                                 <p class="color-blue">8 Months</p>
                                                 <p class="color-blue">At DIJI.TECH</p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">November 2020 to Jun 2021</p>
+                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">November 2020 to
+                                                    Jun 2021</p>
                                             </button>
                                         </h2>
                                         <div id="collapse_3" class="accordion-collapse collapse"
@@ -458,7 +523,8 @@
                                                                 Information
                                                                 Technologies</a>
                                                             <p class="mb-0">Microsoft Gold Partnership</p>
-                                                            <p class="color-fushia-2 drop-shadow-black-md fw-bold">July to August - 2019</p>
+                                                            <p class="color-fushia-2 drop-shadow-black-md fw-bold">July
+                                                                to August - 2019</p>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -467,12 +533,14 @@
                                                                 Information
                                                                 Technologies</a>
                                                             <p class="mb-0">Microsoft Gold Partnership</p>
-                                                            <p class="color-fushia-2 drop-shadow-black-md fw-bold">June to August - 2018</p>
+                                                            <p class="color-fushia-2 drop-shadow-black-md fw-bold">June
+                                                                to August - 2018</p>
                                                         </div>
                                                     <li>
                                                         <div>
                                                             <a href="https://usishi.com" target="_blank">Usishi</a>
-                                                            <p class="color-fushia-2 drop-shadow-black-md fw-bold">Jone to September - 2012</p>
+                                                            <p class="color-fushia-2 drop-shadow-black-md fw-bold">Jone
+                                                                to September - 2012</p>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -496,7 +564,8 @@
                 <div class="text-center mb-5">
                     <h2 class="color-fushia-3 drop-shadow-black-md fs-3rem h1">My Services</h2>
                 </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 gap-md-0 g-md-3 text-center justify-content-center">
+                <div
+                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 gap-md-0 g-md-3 text-center justify-content-center">
                     <div class="col">
                         <div class="card-layout-1 ">
                             <i class="fa-solid fa-laptop-code fa-3x"></i>
@@ -582,7 +651,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <footer class="footer bg-dark color-dark" id="footer">
+    <footer class="footer bg-dark color-dark bg-gradient" id="footer">
         <div class="container">
             <div class="text-center">
                 <h3 class="color-fushia-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
