@@ -180,13 +180,13 @@ window.onload = function () {
 
   if (window.innerWidth < 576) {
     document.querySelector(".header-top").classList.remove("bg-transparent");
-
+    /*
     var elements = document.getElementsByClassName("arrow-bottom");
 
     for (var i = 0; i < elements.length; i++) {
       // Elemandan bounce sınıfını sil
       elements[i].classList.remove("bounce");
-    }
+    }*/
   }
 
   var carousel = $("#logoCarousel");
