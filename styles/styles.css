@@ -1514,10 +1514,11 @@ span.cursor.typing {
   .glow {
     animation: glow 3s ease-in-out infinite alternate;
   }
-
+  
+  /*
   .bounce {
     animation: bounce 2s infinite;
-  }
+  }*/
 
   .arrow-bottom {
     bottom: 60px;

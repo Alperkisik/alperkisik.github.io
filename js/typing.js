@@ -45,12 +45,13 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function () {
   // On DOM Load initiate the effect
-
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+  /*
   if (window.innerWidth < 576) {
     document.querySelector(".cursor").remove();
     document.querySelector(".typed-text").innerHTML = 'Full-Stack Developer | .Net Developer'
     document.querySelector(".typed-text").parentElement.classList.add('mb-3');
   } else {
     if (textArray.length) setTimeout(type, newTextDelay + 250);
-  }
+  }*/
 });
