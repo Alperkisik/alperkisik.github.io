@@ -954,6 +954,10 @@ footer {
   }
 }
 
+.bounce {
+  animation: bounce 2s infinite;
+}
+
 /* 3 Grid System - Start - */
 .grid-container {
   display: flex;
@@ -1514,7 +1518,7 @@ span.cursor.typing {
   .glow {
     animation: glow 3s ease-in-out infinite alternate;
   }
-  
+
   /*
   .bounce {
     animation: bounce 2s infinite;
