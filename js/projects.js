@@ -1,6 +1,7 @@
 const projects = [
   {
     id: 0,
+    show: true,
     name: "veritasedu.net",
     type: "Web Application",
     typeof: "w",
@@ -65,6 +66,7 @@ const projects = [
   },
   {
     id: 1,
+    show: true,
     name: "consultancy.veritasedu.net",
     type: "Web App",
     typeof: "w",
@@ -101,6 +103,7 @@ const projects = [
   },
   {
     id: 2,
+    show: true,
     name: "belediye-sikayet.org",
     type: "Web App",
     typeof: "w",
@@ -115,7 +118,7 @@ const projects = [
     },
     summary: `This website was developed as a prototype upon customer demands, but was not published.`,
     websiteLink: "",
-    detailsLink: "./belediyesikayet.html",
+    detailsLink: "./belediye-sikayet.html",
     githubLink: "",
     imageSource: "./images/projects/dijitech/belediyesikayet/anasayfa.png",
     keywords: [
@@ -162,6 +165,7 @@ const projects = [
   },
   {
     id: 3,
+    show: true,
     name: "Veritas Questions",
     type: "Desktop App",
     typeof: "d",
@@ -191,6 +195,7 @@ const projects = [
   },
   {
     id: 4,
+    show: true,
     name: "Warhammer Fantasy Card Battles",
     type: "Desktop App",
     typeof: "d",
@@ -205,15 +210,17 @@ const projects = [
     },
     summary: `This is a desktop application turn based card game includes warhammer fantasy universe.
     I created this game just for fun. Game currently available on my github.`,
-    websiteLink:"",
+    websiteLink: "",
     detailsLink: "./warhammer-fantasy-card-battles.html",
-    githubLink: "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
+    githubLink:
+      "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
     imageSource: "./images/projects/my-projects/warhammer/warhammer-1.png",
     keywords: [".Net Core", "C Sharp", "Windows Form Application"],
     imageGallery: ["./images/projects/my-projects/warhammer/warhammer-1.png"],
   },
   {
     id: 4,
+    show: true,
     name: "Crew Party",
     type: "Mobile App",
     typeof: "m",
@@ -236,6 +243,7 @@ const projects = [
   },
   {
     id: 5,
+    show: true,
     name: "Titions",
     type: "Mobile App",
     typeof: "m",
@@ -258,6 +266,7 @@ const projects = [
   },
   {
     id: 6,
+    show: true,
     name: "Yolcu.com",
     type: "Web App",
     typeof: "w",
@@ -290,6 +299,7 @@ const projects = [
   },
   {
     id: 7,
+    show: true,
     name: "Go Game",
     type: "Desktop App",
     typeof: "d",
@@ -365,17 +375,23 @@ const createProjects = () => {
     if (project.detailsLink.length > 0) {
       buttonContainer += `<a class="cstm-btn-purple" href="${project.detailsLink}">More Info</a>`;
     }
-    
+
     if (project.websiteLink.length > 0) {
       buttonContainer += `<a class="cstm-btn-blue" href="${project.websiteLink}" target="_blank">Go to website</a>`;
-    }
-    else if(project.websiteLink.length === 0 & project.githubLink.length > 0){
-        buttonContainer += `<a class="cstm-btn-blue" href="${project.githubLink}" target="_blank">Download From</a>`;
+    } else if (
+      (project.websiteLink.length === 0) &
+      (project.githubLink.length > 0)
+    ) {
+      buttonContainer += `<a class="cstm-btn-blue" href="${project.githubLink}" target="_blank">Download From</a>`;
     }
 
     buttonContainer += "</div>";
 
-    if ((project.detailsLink.length === 0) & (project.websiteLink.length === 0) & (project.githubLink.length === 0))
+    if (
+      (project.detailsLink.length === 0) &
+      (project.websiteLink.length === 0) &
+      (project.githubLink.length === 0)
+    )
       buttonContainer = "";
 
     let projectHtml = `
@@ -388,7 +404,9 @@ const createProjects = () => {
                   </div>
                   <div class="d-flex flex-row flex-wrap gap-2">
                       <div class="status-badge">
-                          Status: <span class="status-${project.status}">${project.status}</span>
+                          Status: <span class="status-${project.status}">${
+      project.status
+    }</span>
                       </div>
                       <div class="status-badge">
                           ${date}
