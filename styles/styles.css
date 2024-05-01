@@ -716,6 +716,12 @@ footer {
   padding-bottom: 2rem;
 }
 
+#imageModal .modal-body {
+  max-height: 700px;
+  max-width: 100%;
+  overflow-y: auto;
+}
+
 .skill-set-block {
   display: block;
   padding: 1rem;
