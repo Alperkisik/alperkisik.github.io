@@ -177,7 +177,6 @@ const createProjects = () => {
         `;
 
     projectsGrid.innerHTML += projectHtml;
-    
   });
 };
 
@@ -244,6 +243,16 @@ const setupClickEvent = () => {
 };
 
 window.onload = function () {
+  const currentPageUrl = window.location.href;
+  const urlParts = currentPageUrl.split("/");
+  if (urlParts.length > 0) {
+    const lastPart = urlParts[urlParts.length - 1];
+    console.log(lastPart);
+  } else {
+    console.log("main page");
+  }
+
   setupClickEvent();
+
   createProjects();
 };
