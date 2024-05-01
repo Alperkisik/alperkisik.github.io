@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Game</title>
+
+    <meta name="title" content="Alper Kısık Portfolio | Project Go Game">
+    <meta name="description" content="Alper Kısık Sofware Engineer Portfolio Website">
+    <meta name="keywords" content="Alper Kısık, software developer portfolio">
+    <meta name="author" content="Alper Kısık">
+    <meta name="google-site-verification" content="zolr0L_lO22_CuMiFikEQDJZ_IehsXxTJYqcAWredH4" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favico.png">
+
+    <!--Bootstrap CDN - Start - -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap CDN - End - -->
+
+    <!-- Google Api - Start - -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Google Api - End - -->
+
+    <!-- Font Awesome - Start - -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css"
+        integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css"
+        integrity="sha512-KYEnM30Gjf5tMbgsrQJsR0FSpufP9S4EiAYi168MvTjK6E83x3r6PTvLPlXYX350/doBXmTFUEnJr/nCsDovuw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome - End - -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./styles/styles.css" asp-append-version="true" />
+
+</head>
+
+<body>
+    <header class="header-top">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
+            <div class="container">
+                <a class="navbar-brand" href="./"><img class="home-page-icon" src="./favico.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fa-2x color-white"></i>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="wide-150 section-dark-gray project-section">
+            <div class="container">
+                <div class="title-image">
+                    <img class="img-fluid" src="#" id="projectMainImage" />
+                </div>
+                <div class="top-content">
+                    <div class="top-block">
+                        <div class="headers" id="headers"></div>
+                        <div class="button-container">
+                            <div class="status-badge">Status: <span class="status-online"
+                                    id="status-badge">online</span></div>
+                            <div class="status-badge" id="date-badge"></div>
+                            <a class="cstm-btn-purple" href="#" target="_blank" id="gotogithubBtn">Go to Github</a>
+                            <a class="cstm-btn-blue" href="#" target="_blank" id="gotowebsiteBtn">Go to website</a>
+                        </div>
+                    </div>
+                    <div class="keywords-block">
+                        <ul class="keywords" id="project-keywords"></ul>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <p class="summary" id="summary"></p>
+                </div>
+                <div class="img-galery-content" id="project-img-gallery">
+                    <h2 class="theme-title-1 color-fushia-2 mb-5">Image Gallery</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="goToTopBtn" onclick="goToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-2 align-self-center">
+                    <button type="button" class="btn color-fushia-3 end-0 m-2 position-absolute top-0"
+                        data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-3x fa-times fas"></i>
+                    </button>
+                    <img src="#" class="img-fluid" id="modalImage" alt="Resim">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark color-dark" id="footer">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="color-fushia-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
+                <ul class="Social-media-list mb-4">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alperkisik/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-3x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Alperkisik" target="_blank">
+                            <i class="fa-brands fa-square-github fa-3x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discordapp.com/users/970226378530226187/" target="_blank">
+                            <i class="fa-brands fa-discord fa-3x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-md-row gap-0 gap-md-5 justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="./#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="./#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="./#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+                <p class="mb-0 mt-5">©Copyright 2024 All rights are reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery JS CDN - Start - -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JQuery JS CDN - End - -->
+
+    <!-- Bootstrap 5 JS CDN - Start - -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 JS CDN - End - -->
+
+    <script src="./js/site.js"></script>
+    <script src="./js/projects.js"></script>
+
+</body>
+
+</html>
