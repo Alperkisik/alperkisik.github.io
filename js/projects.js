@@ -205,10 +205,9 @@ const projects = [
     },
     summary: `This is a desktop application turn based card game includes warhammer fantasy universe.
     I created this game just for fun. Game currently available on my github.`,
-    websiteLink:
-      "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
+    websiteLink:"",
     detailsLink: "./warhammer-fantasy-card-battles.html",
-    githubLink: "",
+    githubLink: "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
     imageSource: "./images/projects/my-projects/warhammer/warhammer-1.png",
     keywords: [".Net Core", "C Sharp", "Windows Form Application"],
     imageGallery: ["./images/projects/my-projects/warhammer/warhammer-1.png"],
@@ -366,12 +365,17 @@ const createProjects = () => {
     if (project.detailsLink.length > 0) {
       buttonContainer += `<a class="cstm-btn-purple" href="${project.detailsLink}">More Info</a>`;
     }
+    
     if (project.websiteLink.length > 0) {
       buttonContainer += `<a class="cstm-btn-blue" href="${project.websiteLink}" target="_blank">Go to website</a>`;
     }
+    else if(project.websiteLink.length === 0 & project.githubLink.length > 0){
+        buttonContainer += `<a class="cstm-btn-blue" href="${project.githubLink}" target="_blank">Download From</a>`;
+    }
+
     buttonContainer += "</div>";
 
-    if ((project.detailsLink.length === 0) & (project.websiteLink.length === 0))
+    if ((project.detailsLink.length === 0) & (project.websiteLink.length === 0) & (project.githubLink.length === 0))
       buttonContainer = "";
 
     let projectHtml = `
@@ -384,9 +388,7 @@ const createProjects = () => {
                   </div>
                   <div class="d-flex flex-row flex-wrap gap-2">
                       <div class="status-badge">
-                          Status: <span class="status-${project.status}">${
-      project.status
-    }</span>
+                          Status: <span class="status-${project.status}">${project.status}</span>
                       </div>
                       <div class="status-badge">
                           ${date}
@@ -558,7 +560,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParts = currentPageUrl.split("/");
 
   let urlLastPart = urlParts[urlParts.length - 1];
-  if(urlLastPart.includes('#')) urlLastPart = urlLastPart.split('#')[0];
+  if (urlLastPart.includes("#")) urlLastPart = urlLastPart.split("#")[0];
 
   if (urlLastPart.length === 0 || urlLastPart.includes("index.html")) {
     setupClickEvent();
