@@ -648,6 +648,7 @@ footer {
   p {
     font-size: 1rem;
     font-family: MontSerrat, Tahoma, Arial, sans-serif;
+    margin-bottom: 0;
   }
 }
 
