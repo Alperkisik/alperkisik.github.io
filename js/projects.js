@@ -557,9 +557,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPageUrl = window.location.href;
   const urlParts = currentPageUrl.split("/");
 
-  const urlLastPart = urlParts[urlParts.length - 1];
+  let urlLastPart = urlParts[urlParts.length - 1];
   if(urlLastPart.includes('#')) urlLastPart = urlLastPart.split('#')[0];
-  
+
   if (urlLastPart.length === 0 || urlLastPart.includes("index.html")) {
     setupClickEvent();
     createProjects();
