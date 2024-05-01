@@ -13,7 +13,7 @@
     <meta name="google-site-verification" content="zolr0L_lO22_CuMiFikEQDJZ_IehsXxTJYqcAWredH4" />
 
     <link rel="shortcut icon" type="image/x-icon" href="./favico.png">
-    
+
     <!--Bootstrap CDN - Start - -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -84,16 +84,12 @@
                 <img class="profile-picture bordered drop-shadow-black-md mb-3" src="./images/headshots/1.jpg" />
                 <h1 class="color-blue drop-shadow-black-md">Hello, I am Alper Kısık</h1>
                 <h2 class="color-fushia-2 drop-shadow-black-md fst-italic h1">An Enthusiastic Software Engineer</h2>
-                <!--
-                <h2 class="color-blue text-shadow-black-md drop-shadow-black-md h1">.Net Developer</h1>
-                -->
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('about-me')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section class="wide-150 align-content-center bg-darkgray-2 position-relative box-shadow-white z-index-2"
-            id="about-me">
+        <section class="wide-150 section-dark-gray" id="about-me">
             <div class="container-fluid container-md">
                 <div class="row">
                     <div class="col-md-3">
@@ -101,12 +97,6 @@
                             <div class="profile-block">
                                 <img class="profile-image" src="./images/headshots/3.jpg" />
                                 <div class="line"></div>
-                                <!--
-                                <div class="headers">
-                                    <h1 class="color-blue drop-shadow-black-md">Alper Kısık</h1>
-                                    <h2 class="color-aqua-1 drop-shadow-black-md">Full-Stack Developer</h2>
-                                </div>
-                                -->
                                 <ul class="Social-media-list">
                                     <li>
                                         <a href="https://www.linkedin.com/in/alperkisik/" target="_blank">
@@ -581,9 +571,7 @@
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section
-            class="wide-150 position-relative box-shadow-purple color-white bg-5 box-shadow-purple-sm align-content-center"
-            id="services">
+        <section class="wide-150 section-gradient" id="services">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="color-fushia-3 drop-shadow-black-md fs-3rem h1">My Services</h2>
@@ -672,7 +660,7 @@
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section class="align-content-center box-shadow-white position-relative wide-150" id="portfolio">
+        <section class="wide-150 section-dark" id="portfolio">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="color-fushia-3 drop-shadow-black-md fs-3rem">Portfolio</h2>
@@ -687,215 +675,7 @@
                         <li data-p="m">Mobile</li>
                     </ul>
                 </div>
-                <div class="grid-container" id="projectsGrid">
-                    <!--
-                    <div class="grid-item" name="project" p-typeof="w">
-                        <img src="./images/projects/veritas-academy/veritasedu/anasayfa-1.jpg" alt="Image 2">
-                        <div class="overlay">
-                            <div>
-                                <h3>veritasedu.net</h3>
-                                <h4>Web App</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-online">Online</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q3 2023 to Q1 2024
-                                </div>
-                            </div>
-                            <p>
-                                This is the corporate website of Veritas Academy.
-                                It is commonly used by veritas academy's employees, teachers and students and it has
-                                many features for them.
-                                Mostly developed by me.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                                <a class="cstm-btn-blue" href="https://www.veritasedu.net" target="_blank">Go to
-                                    website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="w">
-                        <img src="./images/projects/veritas-academy/consultancy/c-1.png" alt="Image 2">
-                        <div class="overlay">
-                            <div>
-                                <h3>consultancy.veritasedu.net</h3>
-                                <h4>Web App</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-online">Online</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q1 2023 to Q3 2023
-                                </div>
-                            </div>
-                            <p>
-                                This website was created to meet the needs of Veritas Academy's consultants and
-                                streamline their workflow.
-                                Login required in order to use this web application.
-                                Contributed project. Worked in a team.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                                <a class="cstm-btn-blue" href="http://www.consultancy.veritasedu.net" target="_blank">Go
-                                    to website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="w">
-                        <img src="./images/projects/dijitech/belediyesikayet/anasayfa.png" alt="Image 1">
-                        <div class="overlay">
-                            <div>
-                                <h3>belediye-sikayet.org</h3>
-                                <h4>Web App</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-offline">Offline</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q4 2019 to Q1 2020
-                                </div>
-                            </div>
-                            <p>
-                                This website was developed as a prototype upon customer demands, but was not published.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="d">
-                        <img src="./images/projects/veritas-academy/veritas-questions/ib-1.jpg" alt="Image 1">
-                        <div class="overlay">
-                            <div>
-                                <h3>Veritas Questions</h3>
-                                <h4>Desktop App</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-Online">Online</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q1 2023 to Q3 2023
-                                </div>
-                            </div>
-                            <p>
-                                This is a desktop automation application created for building and editing Veritas
-                                Academy Digital Questionbank Archive.
-                                Contributed Project.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="d">
-                        <img src="./images/projects/my-projects/warhammer/warhammer-1.png" alt="Image 1">
-                        <div class="overlay">
-                            <div>
-                                <h3>Warhammer Fantasy Card Battles</h3>
-                                <h4>Desktop App</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-online">Online</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q3 2018
-                                </div>
-                            </div>
-                            <p>
-                                This is a desktop application turn based card game includes warhammer fantasy universe.
-                                I created this game just for fun. Game currently available on my github.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                                <a class="cstm-btn-blue"
-                                    href="https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game"
-                                    target="_blank">Download From</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="m">
-                        <img src="./images/projects/pasatempos/crew-party-1.png" alt="Image 1">
-                        <div class="overlay">
-                            <div>
-                                <h3>Crew Party</h3>
-                                <h4>Mobile Game</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-offline">Offline</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q4 2021
-                                </div>
-                            </div>
-                            <p>
-                                This is a hyper casual game prototype. Almost published by Rolic Games.
-                                Created by me.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="m">
-                        <img src="./images/projects/pasatempos/titions-1.png" alt="Image 1">
-                        <div class="overlay">
-                            <div>
-                                <h3>Titions</h3>
-                                <h4>Mobile Game</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-offline">Offline</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q4 2021
-                                </div>
-                            </div>
-                            <p>
-                                This is a hyper casual game prototype. Almost published by Rolic Games.
-                                Created by me.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" name="project" p-typeof="w">
-                        <img src="./images/projects/dijitech/yolcu/y-1.png" alt="Image 1">
-                        <div class="overlay">
-                            <div>
-                                <h3>Yolcu.com</h3>
-                                <h4>Web App</h4>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap gap-2">
-                                <div class="status-badge">
-                                    Status: <span class="status-online">Online</span>
-                                </div>
-                                <div class="status-badge">
-                                    Q1 2020 - Q3 2020
-                                </div>
-                            </div>
-                            <p>
-                                This is a web application created by diji.tech developers.
-                                I am just contributed on front-end part.
-                            </p>
-                            <div class="button-container">
-                                <a class="cstm-btn-purple" href="#">More Info</a>
-                                <a class="cstm-btn-blue" href="https://www.yolcu.com" target="_blank">Go to Website</a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-
-                </div>
+                <div class="grid-container" id="projectsGrid"></div>
             </div>
         </section>
 
@@ -905,7 +685,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <footer class="footer bg-dark color-dark bg-gradient" id="footer">
+    <footer class="footer bg-gradient" id="footer">
         <div class="container">
             <div class="text-center">
                 <h3 class="color-fushia-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
@@ -966,8 +746,8 @@
 
     <script src="./js/site.js"></script>
     <script src="./js/typing.js"></script>
-    <script src="./js/homepage.js"></script>
     <script src="./js/projects.js"></script>
+    <script src="./js/homepage.js"></script>
 
 </body>
 
