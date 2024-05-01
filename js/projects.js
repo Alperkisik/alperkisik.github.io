@@ -245,6 +245,7 @@ const setupClickEvent = () => {
 window.onload = function () {
   const currentPageUrl = window.location.href;
   const urlParts = currentPageUrl.split("/");
+  console.log(urlParts);
   if (urlParts.length > 0) {
     const lastPart = urlParts[urlParts.length - 1];
     console.log(lastPart);
