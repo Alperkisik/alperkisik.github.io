@@ -958,6 +958,50 @@ footer {
   animation: bounce 2s infinite;
 }
 
+
+.sorting-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white;
+
+  h2 {
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 1.5rem;
+  }
+
+  .sorting-list {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin-bottom: 0;
+      padding-left: 0;
+      font-size: 1.25rem;
+
+      li {
+          transition: 0.5s all;
+
+          &:not(.active):hover {
+              cursor: pointer;
+              color: var(--color-blue-1);
+              transform: scale(1.2);
+              filter: drop-shadow(2px 4px 6px black);
+              text-decoration: underline;
+          }
+      }
+
+      li.active {
+          color: var(--color-blue-1);
+          filter: drop-shadow(2px 4px 6px black);
+          transform: scale(1.2);
+          text-decoration: underline;
+      }
+  }
+}
+
 /* 3 Grid System - Start - */
 .grid-container {
   display: flex;
@@ -972,14 +1016,21 @@ footer {
   max-width: 100%;
   flex-basis: 100%;
 
-  border-color: var(--color-fushia-1);
-  border-width: 2px;
+  border-color: var(--color-purple-1);
+  border-width: 1px;
   border-style: solid;
   border-radius: 1rem;
 
   filter: drop-shadow(2px 4px 6px black);
   text-shadow: 2px 2px 10px black;
-  box-shadow: 0 0 10px var(--color-fushia-2);
+  box-shadow: 0 0 1px var(--color-purple-2);
+
+  transition: 0.7s all;
+
+  &:hover{
+    border-color: var(--color-fushia-1);
+    box-shadow: 0 0 8px var(--color-fushia-3), 0 0 14px var(--color-fushia-2), 0 0 18px var(--color-fushia-1);
+  }
 }
 
 .grid-item:last-child {
