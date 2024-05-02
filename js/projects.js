@@ -328,7 +328,7 @@ const projects = [
     websiteLink: "",
     detailsLink: "./go-game.html",
     githubLink: "https://github.com/Alperkisik/The-Go-Game",
-    imageSource: "./images/projects/my-projects/go/go-1.png",
+    imageSource: "./images/projects/my-projects/go/go-1.webp",
     keywords: [
       ".Net",
       "MS SqlCe",
@@ -338,11 +338,11 @@ const projects = [
       "Ado.Net",
     ],
     imageGallery: [
-      "./images/projects/my-projects/go/go-1.png",
-      "./images/projects/my-projects/go/go-2.png",
-      "./images/projects/my-projects/go/go-3.png",
-      "./images/projects/my-projects/go/go-4.png",
-      "./images/projects/my-projects/go/go-5.png",
+      "./images/projects/my-projects/go/go-1.webp",
+      "./images/projects/my-projects/go/go-2.webp",
+      "./images/projects/my-projects/go/go-3.webp",
+      "./images/projects/my-projects/go/go-4.webp",
+      "./images/projects/my-projects/go/go-5.webp",
     ],
   },
 ];
