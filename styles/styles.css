@@ -1684,6 +1684,14 @@ span.cursor.typing {
       padding: 1rem;
     }
   }
+
+  .gallery img {
+    flex: 1 1 auto;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -1721,6 +1729,14 @@ span.cursor.typing {
         padding-left: 0;
         list-style: none;
       }
+    }
+  }
+
+  .gallery img {
+    flex: 1 1 auto;
+
+    &:hover {
+      transform: scale(1);
     }
   }
 
@@ -1780,6 +1796,10 @@ span.cursor.typing {
       .status-badge {
         font-size: .8rem;
       }
+    }
+
+    &:hover {
+      transform: scale(1);
     }
   }
 
