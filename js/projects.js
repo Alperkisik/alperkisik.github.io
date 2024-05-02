@@ -214,9 +214,18 @@ const projects = [
     detailsLink: "./warhammer-fantasy-card-battles.html",
     githubLink:
       "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
-    imageSource: "./images/projects/my-projects/warhammer/warhammer-1.png",
+    imageSource: "./images/projects/my-projects/warhammer/warhammer.webp",
     keywords: [".Net Core", "C Sharp", "Windows Form Application"],
-    imageGallery: ["./images/projects/my-projects/warhammer/warhammer-1.png"],
+    imageGallery: [
+      "./images/projects/my-projects/warhammer/warhammer.webp",
+      "./images/projects/my-projects/warhammer/w-1.webp",
+      "./images/projects/my-projects/warhammer/w-1-1.webp",
+      "./images/projects/my-projects/warhammer/w-1-2.webp",
+      "./images/projects/my-projects/warhammer/w-1.webp",
+      "./images/projects/my-projects/warhammer/w-2.webp",
+      "./images/projects/my-projects/warhammer/w-3.webp",
+      "./images/projects/my-projects/warhammer/w-4.webp",
+    ],
   },
   {
     id: 4,
