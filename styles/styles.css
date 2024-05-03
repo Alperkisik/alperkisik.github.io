@@ -73,9 +73,8 @@ footer {
   padding-bottom: 5rem;
 }
 
-
 .section-dark-gray {
-  background-color: var(--color-gray-2);
+  background-color: var(--color-gray-1);
   box-shadow: 0px 0px 8px white;
   z-index: 2;
   position: relative;
@@ -206,7 +205,6 @@ footer {
   width: 100%;
 }
 
-
 .theme-title-1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -227,7 +225,6 @@ footer {
   filter: drop-shadow(2px 4px 6px black);
   text-shadow: 2px 2px 10px black;
 }
-
 
 .btn-purple {
   color: #fff;
@@ -323,7 +320,7 @@ footer {
   }
 
   .bio-menu-info-content {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 
     i {
       width: 25px;
@@ -450,12 +447,14 @@ footer {
 
 .bg-1 {
   height: 100vh;
-  background: linear-gradient(to right,
-      #ab00ff,
-      #8300c4 40%,
-      #4c00a4 45%,
-      #33007b 55%,
-      #31004a 60%);
+  background: linear-gradient(
+    to right,
+    #ab00ff,
+    #8300c4 40%,
+    #4c00a4 45%,
+    #33007b 55%,
+    #31004a 60%
+  );
 }
 
 .bg-2 {
@@ -882,8 +881,20 @@ footer {
 
 .project-section {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Acme, sans-serif;
+  }
 
   .title-image {
     margin-top: 3rem;
@@ -926,7 +937,6 @@ footer {
         }
       }
     }
-
   }
 
   .keywords-block {
@@ -961,12 +971,11 @@ footer {
     }
   }
 
-
   .status-badge {
     filter: drop-shadow(2px 4px 6px black);
     text-shadow: 2px 2px 10px black;
     display: inline-block;
-    padding: .35em .65em;
+    padding: 0.35em 0.65em;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1;
@@ -1008,7 +1017,6 @@ footer {
       font-weight: 700;
     }
   }
-
 }
 
 #goToTopBtn {
@@ -1075,7 +1083,7 @@ footer {
   vertical-align: middle;
 }
 
-.owl-centered .owl-item>div {
+.owl-centered .owl-item > div {
   padding: 0 10px;
 }
 
@@ -1152,7 +1160,6 @@ footer {
   }
 }
 
-
 .herobgcolor {
   background: linear-gradient(to right, #729efd, #5c3a92);
   -webkit-animation: nebulahero 20s infinite linear;
@@ -1174,7 +1181,6 @@ footer {
 .bounce {
   animation: bounce 2s infinite;
 }
-
 
 .sorting-container {
   display: flex;
@@ -1246,7 +1252,8 @@ footer {
 
   &:hover {
     border-color: var(--color-fushia-1);
-    box-shadow: 0 0 8px var(--color-fushia-3), 0 0 14px var(--color-fushia-2), 0 0 18px var(--color-fushia-1);
+    box-shadow: 0 0 8px var(--color-fushia-3), 0 0 14px var(--color-fushia-2),
+      0 0 18px var(--color-fushia-1);
     transform: scale(1.08);
   }
 }
@@ -1271,7 +1278,6 @@ footer {
 .grid-item:hover .overlay {
   transform: translateY(0);
 }
-
 
 .overlay {
   position: absolute;
@@ -1324,7 +1330,7 @@ footer {
     text-shadow: 2px 2px 10px black;
 
     display: inline-block;
-    padding: .35em .65em;
+    padding: 0.35em 0.65em;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1;
@@ -1489,7 +1495,6 @@ span.cursor.typing {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -1511,7 +1516,6 @@ span.cursor.typing {
 
 /* Media Queries - Start - */
 
-
 @media only screen and (min-width: 1200px) {
   .grid-item {
     max-width: calc(33.33% - 20px);
@@ -1529,7 +1533,6 @@ span.cursor.typing {
 
 /* Breakpoint lg - xl */
 @media (min-width: 993px) and (max-width: 1200px) {
-
   .grid-item {
     max-width: calc(50% - 20px);
     flex-basis: calc(50% - 20px);
@@ -1537,7 +1540,8 @@ span.cursor.typing {
 }
 
 /* Breakpoint sm - lg */
-@media screen and (min-width: 577px) and (max-width: 992px) {}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+}
 
 /* Breakpoint md - lg */
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -1548,7 +1552,6 @@ span.cursor.typing {
     position: relative;
   }
 }
-
 
 @media (max-width: 768px) {
   #nav-experience {
@@ -1770,10 +1773,10 @@ span.cursor.typing {
   }
 
   .grid-item {
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     .overlay {
-      font-size: .8rem;
+      font-size: 0.8rem;
 
       p {
         font-size: 1rem;
@@ -1794,7 +1797,7 @@ span.cursor.typing {
       }
 
       .status-badge {
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
     }
 

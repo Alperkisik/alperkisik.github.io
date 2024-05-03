@@ -33,6 +33,7 @@ const projects = [
       "JQuery",
       "MS SQL",
       "REST API",
+      "Full-Stack"
     ],
     imageGallery: [
       "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
@@ -555,7 +556,8 @@ const setupKeywords = (project) => {
 };
 
 const setupMainImage = (imageSource) => {
-  document.getElementById("projectMainImage").setAttribute("src", imageSource);
+  //document.getElementById("projectMainImage").setAttribute("src", imageSource);
+  document.querySelector('.title-image').remove();
 };
 
 const setupTitle = (project) => {
