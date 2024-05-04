@@ -837,6 +837,13 @@ footer {
       border-color: var(--color-blue-2);
       box-shadow: 0 0 0 0.25rem var(--color-blue-3);
     }
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-darkpurple-1);
+      color: white;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    }
   }
 
   .accordion-item {
@@ -847,8 +854,8 @@ footer {
   }
 
   .accordion-header {
-    
-    .title{
+
+    .title {
       font-family: var(--font-Acme);
       font-weight: 700;
       color: var(--color-fushia-2);
@@ -857,7 +864,7 @@ footer {
       margin-bottom: .5rem;
     }
 
-    .subtitle{
+    .subtitle {
       font-family: var(--font-MontSerrat);
       font-weight: 400;
       margin-bottom: 0;
