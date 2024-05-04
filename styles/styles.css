@@ -847,7 +847,21 @@ footer {
   }
 
   .accordion-header {
-    font-family: var(--font-Acme);
+    
+    .title{
+      font-family: var(--font-Acme);
+      font-weight: 700;
+      color: var(--color-fushia-2);
+      filter: drop-shadow(2px 4px 6px black);
+      text-shadow: 2px 2px 10px black;
+      margin-bottom: .5rem;
+    }
+
+    .subtitle{
+      font-family: var(--font-MontSerrat);
+      font-weight: 400;
+      margin-bottom: 0;
+    }
   }
 
   .accordion-body {
