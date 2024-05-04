@@ -270,7 +270,7 @@ const projects = [
     Developed by me.`,
     websiteLink: "",
     detailsLink: "./crew-party.html",
-    githubLink: "",
+    githubLink: "https://github.com/Alperkisik/Crew-Party",
     imageSource: "./images/projects/pasatempos/crew-party-1.webp",
     keywords: ["Unity Game Engine", "C Sharp", ".Net"],
   },
@@ -341,7 +341,7 @@ const projects = [
     startdate: "Q2 2012",
     enddate: "Q2 2012",
     development: "Contributed Project. Team Work.",
-    case: "professional",
+    case: "case study",
     company: {
       name: "self",
       websiteLink: "",
@@ -370,10 +370,97 @@ const projects = [
       "./images/projects/my-projects/go/go-5.webp",
     ],
   },
+  {
+    id:8,
+    show: false,
+    name: "Simple NBA Simulator",
+    type: "Desktop App",
+    typeof: "d",
+    status: "online",
+    startdate: "Q1 2012",
+    enddate: "Q1 2012",
+    development: "developed by me.",
+    case: "case study",
+    company: {
+      name: "self",
+      websiteLink: "",
+    },
+    summary: `This is a Windows Form Application game based on NBA Basketball league. Each team has stats and every match simulated by 4 period every offensive and defensive states of the teams.
+    Teams has offensive and defensive stats, there is a change range to making score for offensive team and blocking score change range for defending team on each offensive. At the end, high scored team wins.`,
+    websiteLink: "",
+    detailsLink: "",
+    githubLink: "https://github.com/Alperkisik/Simple-NBA-Simulator",
+    imageSource: "",
+    keywords: [
+      ".Net",
+      "C Sharp",
+      "Windows Form Application",
+      "Ado.Net",
+    ],
+    imageGallery: [],
+  }
+  ,
+  {
+    id:9,
+    show: false,
+    name: "Simple Equation Solver",
+    type: "Desktop App",
+    typeof: "d",
+    status: "online",
+    startdate: "Q3 2018",
+    enddate: "Q3 2018",
+    development: "developed by me.",
+    case: "case study",
+    company: {
+      name: "self",
+      websiteLink: "",
+    },
+    summary: `This is a Windows Form Application which has an equation solving logic which is solving 1st degree equation with 1 unknown.`,
+    websiteLink: "",
+    detailsLink: "",
+    githubLink: "https://github.com/Alperkisik/Equation-Solver",
+    imageSource: "",
+    keywords: [
+      ".Net",
+      "C Sharp",
+      "Windows Form Application",
+      "Ado.Net",
+    ],
+    imageGallery: [],
+  }
+  ,
+  {
+    id:10,
+    show: false,
+    name: "Simple Population Simulator",
+    type: "Console App",
+    typeof: "d",
+    status: "online",
+    startdate: "Q3 2018",
+    enddate: "Q3 2018",
+    development: "developed by me.",
+    case: "case study",
+    company: {
+      name: "self",
+      websiteLink: "",
+    },
+    summary: `This is a Console Application which is calculation population growth each day according to random event encounters.`,
+    websiteLink: "",
+    detailsLink: "",
+    githubLink: "https://github.com/Alperkisik/Simple-Population-Simulator",
+    imageSource: "",
+    keywords: [
+      ".Net",
+      "C Sharp",
+      "Windows Form Application",
+      "Ado.Net",
+    ],
+    imageGallery: [],
+  }
 ];
 
-const sortDataByQuarterYear = () => {
-  return projects.sort(function (a, b) {
+const sortDataByQuarterYear = (_projects) => {
+  return _projects.sort(function (a, b) {
     // endDate değerlerini al ve tersine çevir
     var endDateA =
       a.enddate.split(" ")[1] + a.enddate.split(" ")[0].replace("Q", "");
@@ -430,7 +517,8 @@ const createHeader = () => {
 const createProjects = () => {
   const projectsGrid = document.getElementById("projectsGrid");
 
-  const sortedProjects = sortDataByQuarterYear();
+  let showableProjects = projects.filter((item)=> item.show === true);
+  const sortedProjects = sortDataByQuarterYear(showableProjects);
 
   projectsGrid.innerHTML = "";
   sortedProjects.forEach((project) => {
@@ -439,7 +527,7 @@ const createProjects = () => {
 
     let buttonContainer = `<div class="button-container">`;
     if (project.detailsLink.length > 0) {
-      buttonContainer += `<a class="cstm-btn-purple" href="${project.detailsLink}">More Info</a>`;
+      buttonContainer += `<a class="cstm-btn-blue" href="${project.detailsLink}">More Info</a>`;
     }
 
     if (project.websiteLink.length > 0) {
@@ -448,7 +536,11 @@ const createProjects = () => {
       (project.websiteLink.length === 0) &
       (project.githubLink.length > 0)
     ) {
-      buttonContainer += `<a class="cstm-btn-blue" href="${project.githubLink}" target="_blank">Download From</a>`;
+      buttonContainer += `
+      <a class="cstm-btn-purple" href="${project.githubLink}" target="_blank">
+        <i class="fa-brands fa-github me-2"></i>
+        Github
+      </a>`;
     }
 
     buttonContainer += "</div>";
