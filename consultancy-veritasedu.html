@@ -72,33 +72,60 @@
             </div>
         </nav>
     </header>
-
     <main role="main">
         <section class="wide-150 section-dark-gray project-section">
-            <div class="container">
+            <div class="container flex-container">
                 <div class="title-image">
                     <img class="img-fluid" src="#" id="projectMainImage" />
                 </div>
                 <div class="top-content">
                     <div class="top-block">
                         <div class="headers" id="headers"></div>
-                        <div class="button-container">
-                            <div class="status-badge"> Status: <span class="status-online"
-                                    id="status-badge">online</span></div>
-                            <div class="status-badge" id="date-badge"></div>
-                            <a class="cstm-btn-purple" href="#" target="_blank" id="gotogithubBtn">Go to Github</a>
-                            <a class="cstm-btn-blue" href="#" target="_blank" id="gotowebsiteBtn">Go to website</a>
-                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="status-badge color-blue" id="dType"></div>
+                        <div class="status-badge">Status: <span class="status-online"
+                                id="status-badge">online</span></div>
+                        <div class="status-badge" id="date-badge"></div>
+                        <a class="cstm-btn-purple" href="#" target="_blank" id="gotogithubBtn">Go to Github</a>
+                        <a class="cstm-btn-blue" href="#" target="_blank" id="gotowebsiteBtn">Go to website</a>
+                        <a class="cstm-btn-blue" href="#project-img-gallery">Image Gallery</a>
                     </div>
                     <div class="keywords-block">
                         <ul class="keywords" id="project-keywords"></ul>
                     </div>
                 </div>
                 <div class="main-content">
+                    <h3 class="theme-title-2 color-fushia-2">Summary</h3>
                     <p class="summary" id="summary"></p>
+                    <p>
+                        Project does not have SSL Sertificate, you may see "Connection is not Secure" warning when you open website.
+                        Login required to use this web application. I contributed some to this project, 
+                        i was working with Lead developer, developing pages, creating database tables on demand.
+                    </p>
+                    <h3 class="theme-title-2 color-fushia-2">Features</h3>
+                    <ul>
+                        <li>Has only dashboard pages for Veritas Academy Consultants</li>
+                        <li>Tracking students applications about foreign schools</li>
+                        <li>Tracking Students To do list</li>
+                        <li>Tracking Students application progress</li>
+                        <li>Creating, editing, listing database datas about Veritas Academy Consultant bussiness needs</li>
+                    </ul>
+                    <h3 class="theme-title-2 color-fushia-2">Development Process</h3>
+                    <p>
+                        <span class="color-blue drop-shadow-black-md fw-bold">On the Front-End part,</span> all pages are created .cshtml, classic
+                        html, css, js usage. I contributed some of pages. Added page content with developing small scale rest api calls with ajax.
+                    </p>
+                    <p>
+                        <span class="color-blue drop-shadow-black-md fw-bold">On the Back-End part,</span> project has stock asp.net mvc 5 model, view, controller template,
+                        most of controllers and pages are generated automatically with help of entity framework.
+                        My contributions were on some of controller actions which are behaving like api endpoints, giving json responses in order to use with js ajax calls.
+                        I used a little bit Ado.net in some actions.
+                    </p>
                 </div>
                 <div class="img-galery-content" id="project-img-gallery">
-                    <h2 class="theme-title-1 color-fushia-2 mb-5">Image Gallery</h2>
+                    <h2 class="theme-title-1 color-fushia-2 mb-2">Image Gallery</h2>
+                    <p class="mb-5">Down below some of content I contributed to this project. Note : Datas is crossed out.</p>
                 </div>
             </div>
         </section>
@@ -133,7 +160,7 @@
                     </li>
                     <li>
                         <a href="https://github.com/Alperkisik" target="_blank">
-                            <i class="fa-brands fa-square-github fa-3x"></i>
+                            <i class="fa-brands fa-github fa-3x"></i>
                         </a>
                     </li>
                     <li>

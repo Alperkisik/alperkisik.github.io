@@ -8,7 +8,7 @@ const projects = [
     status: "online",
     startdate: "Q3 2023",
     enddate: "Q1 2024",
-    development: "self developed",
+    development: "developed by me",
     case: "professional",
     company: {
       name: "Veritas Academy",
@@ -33,7 +33,7 @@ const projects = [
       "JQuery",
       "MS SQL",
       "REST API",
-      "Full-Stack"
+      "Full-Stack",
     ],
     imageGallery: [
       "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
@@ -74,7 +74,7 @@ const projects = [
     status: "online",
     startdate: "Q1 2023",
     enddate: "Q3 2023",
-    development: "Contributed. Team Work",
+    development: "Contributed Project. Team Work",
     case: "professional",
     company: {
       name: "Veritas Academy",
@@ -110,7 +110,7 @@ const projects = [
       "./images/projects/veritas-academy/consultancy/applications-1.webp",
       "./images/projects/veritas-academy/consultancy/edit.webp",
       "./images/projects/veritas-academy/consultancy/edit-2.webp",
-      "./images/projects/veritas-academy/consultancy/admin-1.webp"
+      "./images/projects/veritas-academy/consultancy/admin-1.webp",
     ],
   },
   {
@@ -122,7 +122,7 @@ const projects = [
     status: "offline",
     startdate: "Q4 2019",
     enddate: "Q1 2020",
-    development: "self developed",
+    development: "developed by me",
     case: "professional",
     company: {
       name: "Diji.Tech",
@@ -184,7 +184,7 @@ const projects = [
     status: "offline",
     startdate: "Q4 2019",
     enddate: "Q1 2020",
-    development: "Contributed. Team Work",
+    development: "Contributed Project. Team Work",
     case: "professional",
     company: {
       name: "Veritas Academy",
@@ -195,7 +195,8 @@ const projects = [
     websiteLink: "",
     detailsLink: "./veritas-questions.html",
     githubLink: "",
-    imageSource: "./images/projects/veritas-academy/veritas-questions/ib-1.webp",
+    imageSource:
+      "./images/projects/veritas-academy/veritas-questions/ib-1.webp",
     keywords: [
       ".Net Core",
       "C Sharp",
@@ -212,8 +213,8 @@ const projects = [
       "./images/projects/veritas-academy/veritas-questions/ib-1.webp",
       "./images/projects/veritas-academy/veritas-questions/ib-2.webp",
       "./images/projects/veritas-academy/veritas-questions/sat-1.webp",
-      "./images/projects/veritas-academy/veritas-questions/sat-2.webp"
-    ]
+      "./images/projects/veritas-academy/veritas-questions/sat-2.webp",
+    ],
   },
   {
     id: 4,
@@ -224,7 +225,7 @@ const projects = [
     status: "online",
     startdate: "Q3 2018",
     enddate: "Q3 2018",
-    development: "self developed",
+    development: "developed by me",
     case: "case study",
     company: {
       name: "self",
@@ -258,14 +259,15 @@ const projects = [
     status: "offline",
     startdate: "Q4 2021",
     enddate: "Q4 2021",
-    development: "self developed",
+    development: "developed by me",
     case: "professional",
     company: {
       name: "Pasatempos Games",
       websiteLink: "https://www.instagram.com/pasatemposgames/",
     },
-    summary: `This is a hyper casual game prototype. Almost published by Rolic Games.
-    Created by me.`,
+    summary: `This is a hyper casual game prototype that i created by myself with unity game engine. Almost published by Rolic Games. It did not pass advertisement tests. I added 5 levels, in each level is harder than previous level.
+    The game is all about swiping left and right in order to gather party strength to defeat enemy encounters.
+    Developed by me.`,
     websiteLink: "",
     detailsLink: "./crew-party.html",
     githubLink: "",
@@ -281,14 +283,15 @@ const projects = [
     status: "offline",
     startdate: "Q4 2021",
     enddate: "Q4 2021",
-    development: "self developed",
+    development: "developed by me",
     case: "professional",
     company: {
       name: "Pasatempos Games",
       websiteLink: "https://www.instagram.com/pasatemposgames/",
     },
-    summary: `This is a hyper casual game prototype. Almost published by Rolic Games.
-    Created by me.`,
+    summary: `This is a hyper casual game prototype that i created by myself with unity game engine. Almost published by Rolic Games. It did not pass advertisement tests. I added 3 levels.
+    The game is all about gathering minions (called tition in game) around the map. Player's Character is growing to the next stage when gathering enough. At final stage, player's character battling with boss. 
+    Inspired from Attack on Titans Anime series. Developed by me.`,
     websiteLink: "",
     detailsLink: "./titions.html",
     githubLink: "",
@@ -304,7 +307,7 @@ const projects = [
     status: "online",
     startdate: "Q1 2020",
     enddate: "Q3 2020",
-    development: "Contributed. Team Work",
+    development: "Contributed Project. Team Work",
     case: "professional",
     company: {
       name: "Diji.Tech",
@@ -337,7 +340,7 @@ const projects = [
     status: "offline",
     startdate: "Q2 2012",
     enddate: "Q2 2012",
-    development: "Contributed. Team Work.",
+    development: "Contributed Project. Team Work.",
     case: "professional",
     company: {
       name: "self",
@@ -355,7 +358,7 @@ const projects = [
       ".Net",
       "MS SqlCe",
       "MS Sql lite",
-      "C Sharps",
+      "C Sharp",
       "Windows Form Application",
       "Ado.Net",
     ],
@@ -390,6 +393,38 @@ const truncateString = (str) => {
   } else {
     return str;
   }
+};
+
+const createHeader = () => {
+  let headerHtml = `
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
+      <div class="container">
+          <a class="navbar-brand" href="./"><img class="home-page-icon" src="./favico.png" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-2x color-white"></i>
+          </button>
+          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./#about-me">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./#portfolio">Portfolio</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  `;
+
+  document.getElementsByTagName("header").innerHTML = headerHtml;
 };
 
 const createProjects = () => {
@@ -557,7 +592,7 @@ const setupKeywords = (project) => {
 
 const setupMainImage = (imageSource) => {
   //document.getElementById("projectMainImage").setAttribute("src", imageSource);
-  document.querySelector('.title-image').remove();
+  document.querySelector(".title-image").remove();
 };
 
 const setupTitle = (project) => {
@@ -576,13 +611,16 @@ const setupTitle = (project) => {
 
   headers.innerHTML += titleHtml;
   headers.innerHTML += companyHtml;
-  headers.innerHTML += `<h3 class="theme-title-3"><span class="color-blue">Development Process : </span>${project.development}</h3>`;
+  //headers.innerHTML += `<h3 class="theme-title-3"><span class="color-blue">Development Process : </span>${project.development}</h3>`;
 };
 
 const setupStatusDateLinkSummary = (project) => {
   const statusBadge = document.getElementById("status-badge");
   statusBadge.classList = `status-${project.status}`;
   statusBadge.innerHTML = project.status;
+
+  const dType = document.getElementById("dType");
+  dType.innerHTML = project.development;
 
   let date = "Date : " + project.startdate;
   if (project.enddate !== date) date += ` to ${project.enddate}`;

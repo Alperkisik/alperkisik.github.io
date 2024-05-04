@@ -75,26 +75,32 @@
 
     <main role="main">
         <section class="wide-150 section-dark-gray project-section">
-            <div class="container">
+            <div class="container flex-container">
                 <div class="title-image">
                     <img class="img-fluid" src="#" id="projectMainImage" />
                 </div>
                 <div class="top-content">
                     <div class="top-block">
                         <div class="headers" id="headers"></div>
-                        <div class="button-container">
-                            <div class="status-badge">Status: <span class="status-online"
-                                    id="status-badge">online</span></div>
-                            <div class="status-badge" id="date-badge"></div>
-                            <a class="cstm-btn-purple" href="#" target="_blank" id="gotogithubBtn">Go to Github</a>
-                            <a class="cstm-btn-blue" href="#" target="_blank" id="gotowebsiteBtn">Go to website</a>
-                        </div>
+                    </div>
+                    <div class="button-container">
+                        <div class="status-badge color-blue" id="dType"></div>
+                        <div class="status-badge">Status: <span class="status-online"
+                                id="status-badge">online</span></div>
+                        <div class="status-badge" id="date-badge"></div>
+                        <a class="cstm-btn-purple" href="#" target="_blank" id="gotogithubBtn">
+                            <i class="fa-brands fa-github me-2"></i>
+                            Check it on Github
+                        </a>
+                        <a class="cstm-btn-blue" href="#" target="_blank" id="gotowebsiteBtn">Go to website</a>
+                        <a class="cstm-btn-blue" href="#project-img-gallery">Image Gallery</a>
                     </div>
                     <div class="keywords-block">
                         <ul class="keywords" id="project-keywords"></ul>
                     </div>
                 </div>
                 <div class="main-content">
+                    <h3 class="theme-title-2 color-fushia-2">Summary</h3>
                     <p class="summary" id="summary"></p>
                 </div>
                 <div class="img-galery-content" id="project-img-gallery">
@@ -134,7 +140,7 @@
                     </li>
                     <li>
                         <a href="https://github.com/Alperkisik" target="_blank">
-                            <i class="fa-brands fa-square-github fa-3x"></i>
+                            <i class="fa-brands fa-github fa-3x"></i>
                         </a>
                     </li>
                     <li>
