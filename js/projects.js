@@ -1,6 +1,6 @@
 const projects = [
   {
-    id: 0,
+    id: 1,
     show: true,
     name: "veritasedu.net",
     type: "Web Application",
@@ -66,7 +66,7 @@ const projects = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     show: true,
     name: "consultancy.veritasedu.net",
     type: "Web App",
@@ -114,7 +114,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     show: true,
     name: "belediye-sikayet.org",
     type: "Web App",
@@ -176,7 +176,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     show: true,
     name: "Veritas Questions",
     type: "Desktop App",
@@ -217,7 +217,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     show: true,
     name: "Warhammer Fantasy Card Battles",
     type: "Desktop App",
@@ -251,7 +251,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     show: true,
     name: "Crew Party",
     type: "Mobile App",
@@ -275,7 +275,7 @@ const projects = [
     keywords: ["Unity Game Engine", "C Sharp", ".Net"],
   },
   {
-    id: 5,
+    id: 7,
     show: true,
     name: "Titions",
     type: "Mobile App",
@@ -299,7 +299,7 @@ const projects = [
     keywords: ["Unity Game Engine", "C Sharp", ".Net"],
   },
   {
-    id: 6,
+    id: 8,
     show: true,
     name: "Yolcu.com",
     type: "Web App",
@@ -332,7 +332,7 @@ const projects = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     show: true,
     name: "Go Game",
     type: "Desktop App",
@@ -371,7 +371,7 @@ const projects = [
     ],
   },
   {
-    id:8,
+    id:10,
     show: false,
     name: "Simple NBA Simulator",
     type: "Desktop App",
@@ -401,7 +401,7 @@ const projects = [
   }
   ,
   {
-    id:9,
+    id:11,
     show: false,
     name: "Simple Equation Solver",
     type: "Desktop App",
@@ -430,7 +430,7 @@ const projects = [
   }
   ,
   {
-    id:10,
+    id:12,
     show: false,
     name: "Simple Population Simulator",
     type: "Console App",
@@ -461,13 +461,12 @@ const projects = [
 
 const sortDataByQuarterYear = (_projects) => {
   return _projects.sort(function (a, b) {
-    // endDate değerlerini al ve tersine çevir
+    
     var endDateA =
       a.enddate.split(" ")[1] + a.enddate.split(" ")[0].replace("Q", "");
     var endDateB =
       b.enddate.split(" ")[1] + b.enddate.split(" ")[0].replace("Q", "");
 
-    // String olarak karşılaştırma yap
     return endDateB.localeCompare(endDateA);
   });
 };
@@ -703,7 +702,6 @@ const setupTitle = (project) => {
 
   headers.innerHTML += titleHtml;
   headers.innerHTML += companyHtml;
-  //headers.innerHTML += `<h3 class="theme-title-3"><span class="color-blue">Development Process : </span>${project.development}</h3>`;
 };
 
 const setupStatusDateLinkSummary = (project) => {
