@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     show: true,
     name: "veritasedu.net",
-    type: "Web Application",
+    type: "Web App",
     typeof: "w",
     status: "online",
     startdate: "Q3 2023",

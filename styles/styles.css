@@ -851,6 +851,16 @@ footer {
     }
   }
 
+  a {
+    transition: 0.5s all;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
   .accordion-item {
     border-width: 2px;
     border-color: var(--color-purple-1);
@@ -1638,7 +1648,7 @@ span.cursor.typing {
     user-select: none;
   }
 
-  .navbar-nav .nav-link::before{
+  .navbar-nav .nav-link::before {
     width: 50%;
     left: 25%;
     transform: scale(1);
