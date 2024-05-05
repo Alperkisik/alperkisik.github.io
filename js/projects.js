@@ -754,11 +754,14 @@ const setupStatusDateLinkSummary = (project) => {
   document.getElementById("date-badge").innerHTML = date;
 
   const languagebadge = document.getElementById('Language-badge');
-  languagebadge.innerHTML = "Language : ";
+  languagebadge.innerHTML = "Language: ";
+
+  let text = "Language : ";
   project.projectLanguages.forEach((item)=>{
-    languagebadge.innerHTML += item;
+    text += item + ",";
   });
 
+  languagebadge.innerHTML = text.substring(0, text.length - 1);
 
   if (project.websiteLink.length > 0) {
     const btn = document.getElementById("gotowebsiteBtn");

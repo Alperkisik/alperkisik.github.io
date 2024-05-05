@@ -926,6 +926,8 @@ footer {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  word-wrap: break-word;
+  word-break: break-word;
 
   h1,
   h2,
@@ -1742,6 +1744,16 @@ span.cursor.typing {
 
 /* Breakpoint sm - md */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+
+  .theme-title-1 {
+    font-size: 2rem;
+  }
+
+  .theme-title-2,
+  .theme-title-3 {
+    font-size: 1.5rem;
+  }
+
   .navbar-nav .nav-link {
     color: white;
     transition: 0.5s all;
@@ -1775,6 +1787,29 @@ span.cursor.typing {
 }
 
 @media (max-width: 575px) {
+
+  .project-section {
+    font-size: 1.1rem;
+    padding-top: 100px;
+
+    .cstm-btn-blue, .cstm-btn-purple, .status-badge{
+      font-size: 1rem;
+    }
+
+    .theme-title-1 {
+      font-size: 1.75rem;
+    }
+  
+    .theme-title-2{
+      font-size: 1.5rem;
+    }
+    .theme-title-3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  
+
   .header-top {
     --bs-bg-opacity: 1;
     background-color: var(--color-gray-2);
