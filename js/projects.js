@@ -34,7 +34,9 @@ const projects = [
       "MS SQL",
       "REST API",
       "Full-Stack",
+      "DB First",
     ],
+    projectLanguages : ["tr","en"],
     imageGallery: [
       "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
       "./images/projects/veritas-academy/veritasedu/veritasedu-1.webp",
@@ -99,7 +101,9 @@ const projects = [
       "JQuery",
       "MS SQL",
       "REST API",
+      "DB First",
     ],
+    projectLanguages : ["tr","en"],
     imageGallery: [
       "./images/projects/veritas-academy/consultancy/main-1.webp",
       "./images/projects/veritas-academy/consultancy/2.webp",
@@ -128,7 +132,9 @@ const projects = [
       name: "Diji.Tech",
       websiteLink: "https://www.diji.tech/",
     },
-    summary: `This website was developed as a prototype upon customer demands, but was not published.`,
+    summary: `This website was developed as a prototype created upon customer demands as social responsibility project, but was not published. 
+    It is about interactions between citizens of Türkiye and municipalities of Türkiye. 
+    Goal was to make communication easier between the municipality and the citizens and helping municipalities to solve their problems with help of citizens.`,
     websiteLink: "",
     detailsLink: "./belediye-sikayet.html",
     githubLink: "",
@@ -143,7 +149,9 @@ const projects = [
       "JQuery",
       "MS SQL",
       "REST API",
+      "Code First",
     ],
+    projectLanguages : ["tr"],
     imageGallery: [
       "./images/projects/dijitech/belediyesikayet/anasayfa.webp",
       "./images/projects/dijitech/belediyesikayet/Desktop Ana Sayfa.webp",
@@ -204,7 +212,9 @@ const projects = [
       "Ado.Net",
       "Entity Framework",
       "MS SQL",
+      "DB First",
     ],
+    projectLanguages : ["tr","en"],
     imageGallery: [
       "./images/projects/veritas-academy/veritas-questions/1.webp",
       "./images/projects/veritas-academy/veritas-questions/2.webp",
@@ -239,6 +249,7 @@ const projects = [
       "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
     imageSource: "./images/projects/my-projects/warhammer/warhammer.webp",
     keywords: [".Net Core", "C Sharp", "Windows Form Application"],
+    projectLanguages : ["en"],
     imageGallery: [
       "./images/projects/my-projects/warhammer/warhammer.webp",
       "./images/projects/my-projects/warhammer/w-1.webp",
@@ -273,6 +284,7 @@ const projects = [
     githubLink: "https://github.com/Alperkisik/Crew-Party",
     imageSource: "./images/projects/pasatempos/crew-party-1.webp",
     keywords: ["Unity Game Engine", "C Sharp", ".Net"],
+    projectLanguages : ["en"],
   },
   {
     id: 7,
@@ -297,6 +309,7 @@ const projects = [
     githubLink: "",
     imageSource: "./images/projects/pasatempos/titions-1.webp",
     keywords: ["Unity Game Engine", "C Sharp", ".Net"],
+    projectLanguages : ["en"],
   },
   {
     id: 8,
@@ -329,7 +342,9 @@ const projects = [
       "JQuery",
       "MS SQL",
       "REST API",
+      "Code First",
     ],
+    projectLanguages : ["tr"],
   },
   {
     id: 9,
@@ -361,7 +376,9 @@ const projects = [
       "C Sharp",
       "Windows Form Application",
       "Ado.Net",
+      "DB First",
     ],
+    projectLanguages : ["tr"],
     imageGallery: [
       "./images/projects/my-projects/go/go-1.webp",
       "./images/projects/my-projects/go/go-2.webp",
@@ -371,7 +388,7 @@ const projects = [
     ],
   },
   {
-    id:10,
+    id: 10,
     show: false,
     name: "Simple NBA Simulator",
     type: "Desktop App",
@@ -391,17 +408,12 @@ const projects = [
     detailsLink: "",
     githubLink: "https://github.com/Alperkisik/Simple-NBA-Simulator",
     imageSource: "",
-    keywords: [
-      ".Net",
-      "C Sharp",
-      "Windows Form Application",
-      "Ado.Net",
-    ],
+    keywords: [".Net", "C Sharp", "Windows Form Application", "Ado.Net"],
+    projectLanguages : ["tr"],
     imageGallery: [],
-  }
-  ,
+  },
   {
-    id:11,
+    id: 11,
     show: false,
     name: "Simple Equation Solver",
     type: "Desktop App",
@@ -420,17 +432,12 @@ const projects = [
     detailsLink: "",
     githubLink: "https://github.com/Alperkisik/Equation-Solver",
     imageSource: "",
-    keywords: [
-      ".Net",
-      "C Sharp",
-      "Windows Form Application",
-      "Ado.Net",
-    ],
+    keywords: [".Net", "C Sharp", "Windows Form Application", "Ado.Net"],
+    projectLanguages : ["tr"],
     imageGallery: [],
-  }
-  ,
+  },
   {
-    id:12,
+    id: 12,
     show: false,
     name: "Simple Population Simulator",
     type: "Console App",
@@ -449,19 +456,49 @@ const projects = [
     detailsLink: "",
     githubLink: "https://github.com/Alperkisik/Simple-Population-Simulator",
     imageSource: "",
-    keywords: [
-      ".Net",
-      "C Sharp",
-      "Windows Form Application",
-      "Ado.Net",
-    ],
+    keywords: [".Net", "C Sharp", "Windows Form Application", "Ado.Net"],
+    projectLanguages : ["tr"],
     imageGallery: [],
-  }
+  },
+  {
+    id: 13,
+    show: false,
+    name: "oyunsektoru.org",
+    type: "Web App",
+    typeof: "w",
+    status: "offline",
+    startdate: "Q4 2020",
+    enddate: "Q1 2021",
+    development: "developed by me",
+    case: "professional",
+    company: {
+      name: "Diji.Tech",
+      websiteLink: "https://www.diji.tech/",
+    },
+    summary: `My first and biggest project at Dijitech. This project aims for bringing together of all
+    Turkish Gaming Industry components from developers to
+    gaming studios into one platform.`,
+    websiteLink: "",
+    detailsLink: "",
+    githubLink: "",
+    imageSource: "",
+    keywords: [
+      "Djangp",
+      "Python",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "JQuery",
+      "Rest API",
+      "Code First",
+    ],
+    projectLanguages : ["tr"],
+    imageGallery: [],
+  },
 ];
 
 const sortDataByQuarterYear = (_projects) => {
   return _projects.sort(function (a, b) {
-    
     var endDateA =
       a.enddate.split(" ")[1] + a.enddate.split(" ")[0].replace("Q", "");
     var endDateB =
@@ -516,7 +553,7 @@ const createHeader = () => {
 const createProjects = () => {
   const projectsGrid = document.getElementById("projectsGrid");
 
-  let showableProjects = projects.filter((item)=> item.show === true);
+  let showableProjects = projects.filter((item) => item.show === true);
   const sortedProjects = sortDataByQuarterYear(showableProjects);
 
   projectsGrid.innerHTML = "";
@@ -716,6 +753,13 @@ const setupStatusDateLinkSummary = (project) => {
   if (project.enddate !== date) date += ` to ${project.enddate}`;
   document.getElementById("date-badge").innerHTML = date;
 
+  const languagebadge = document.getElementById('Language-badge');
+  languagebadge.innerHTML = "Language : ";
+  project.projectLanguages.forEach((item)=>{
+    languagebadge.innerHTML += item;
+  });
+
+
   if (project.websiteLink.length > 0) {
     const btn = document.getElementById("gotowebsiteBtn");
     btn.setAttribute("href", project.websiteLink);
@@ -729,6 +773,7 @@ const setupStatusDateLinkSummary = (project) => {
   } else {
     document.getElementById("gotogithubBtn").remove();
   }
+
 
   document.getElementById("summary").innerHTML = project.summary;
 };
