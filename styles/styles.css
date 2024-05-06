@@ -1345,6 +1345,42 @@ footer {
       0 0 18px var(--color-fushia-1);
     transform: scale(1.08);
   }
+
+  .keywords {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      color: #999;
+      border-color: #222;
+      background-color: #313131;
+      box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+
+      text-shadow: 2px 2px 10px black;
+      display: inline-block;
+      padding: 6px 4px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 4px;
+      font-size: .75rem;
+      line-height: .75em;
+      font-family: MontSerrat, Tahoma, Arial, sans-serif;
+      font-weight: 700;
+      margin: 3px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &.blue li {
+      color: var(--color-blue-1);
+      border-color: var(--color-blue-2);
+      box-shadow: 2px 2px 0 var(--color-blue-3);
+    }
+  }
 }
 
 .grid-item:last-child {
@@ -1368,18 +1404,15 @@ footer {
   transform: translateY(0);
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.imageless-grid-item-content{
+  
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   box-sizing: border-box;
   transition: transform 0.5s ease;
-  transform: translateY(100%);
+
   display: flex;
   flex-direction: column;
   /*justify-content: flex-end;*/
@@ -1390,7 +1423,7 @@ footer {
   text-shadow: 2px 2px 10px black;
 
   p {
-    font-size: 1.1rem;
+    font-size: .8rem;
     margin-bottom: 0;
   }
 
@@ -1420,7 +1453,7 @@ footer {
 
     display: inline-block;
     padding: 0.35em 0.65em;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1;
     color: #fff;
@@ -1461,6 +1494,113 @@ footer {
     a {
       margin-bottom: 0;
       font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .cstm-btn-purple{
+      margin-left: auto;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  /*justify-content: flex-end;*/
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  filter: drop-shadow(2px 4px 6px black);
+  text-shadow: 2px 2px 10px black;
+
+  p {
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 2px 2px 10px black;
+    color: var(--color-fushia-2);
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-family: Acme, sans-serif;
+    font-weight: 700;
+  }
+
+  h4 {
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 2px 2px 10px black;
+    color: var(--color-blue-4);
+    font-size: 1.75rem;
+    font-family: Acme, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .status-badge {
+    filter: drop-shadow(2px 4px 6px black);
+    text-shadow: 2px 2px 10px black;
+
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+
+    /*box-shadow: 2px 2px 4px var(--color-gray-2);*/
+    text-shadow: 2px 2px 10px black;
+
+    background-color: var(--color-gray-2);
+    border-color: var(--color-gray-1);
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+
+  .status-online {
+    color: var(--color-green-1);
+    text-shadow: 0px 0px 6px;
+    filter: brightness(125%);
+    -webkit-filter: brightness(125%);
+  }
+
+  .status-offline {
+    color: var(--color-red-1);
+    text-shadow: 0px 0px 6px;
+    filter: brightness(125%);
+    -webkit-filter: brightness(125%);
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    a {
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .cstm-btn-purple{
+      margin-left: auto;
     }
   }
 }
@@ -1640,12 +1780,20 @@ span.cursor.typing {
     font-size: 1.1rem;
     position: relative;
   }
+
+  .imageless-grid-item-content{
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
 
   body {
     user-select: none;
+  }
+
+  .imageless-grid-item-content{
+    gap: 1.5rem;
   }
 
   .navbar-nav .nav-link::before {

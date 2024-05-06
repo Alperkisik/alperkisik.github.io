@@ -40,7 +40,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="./styles/styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./styles/styles.css"  />
 
 </head>
 
@@ -105,6 +105,41 @@
                 <div class="main-content">
                     <h3 class="theme-title-2 color-fushia-2">Summary</h3>
                     <p class="summary" id="summary"></p>
+                    <h3 class="theme-title-2 color-fushia-2">About the Game</h3>
+                    <p>
+                        At my first internship at Makronet Information Technologies company, company's lead developer asked me to do a simple card game.
+                        Asked game includes cards that has 2 features which are health and attack values like in heartstone card game. So each turn cards made an attack move, attacked cards health is reduced by attacker attack value etc.
+                        Asked game something like that but i find it simple and a bit boring so i decided to take this consept to the next level and i decided to do a Warhammer Fantasy card game.
+                    </p>
+                    <p>
+                        Each card has many stats based on Total War: Warhammer Game on Steam. Each time a combat occurs hit and block chances are calculated based on formulas in Total War Warhammer game.
+                        Each faction has a unique ability made up by me. Win condition is send all of your oppenents cards to the graveyard.
+                    </p>
+                    <h3 class="theme-title-2 color-fushia-2">How to Play</h3>
+                    <p>
+                        At first turn, player has to choose a card to put in game field, then ai chooses a card to put in the field.
+                        Each turn, player has to choose one of following actions;
+                        <ul>
+                            <li>Attack: The Card on the player's side make an attack move to the card on he opponent's field. 
+                                Attack event happens and players card may miss or hit according to event result.
+                                If hit is successfull, attacked card lose hp according to formula. 
+                                If hp drops to zero or below, attacked card goes to graveyard.
+                            </li>
+                            <li>Defend: This move boosts player's cards defense values then player's turn is over.</li>
+                            <li>Power: If choosen card has an ability player my use it.</li>
+                            <li>Pick: Player can pick and put to the field another card from the deck. Old card will return to the deck with current health.</li>
+                        </ul>
+                        After picking an action, an event occurs according to the action then turn pass to ai.
+                        AI choose one of the same actions then turn pass to the player.
+                        It continues until the player or artificial intelligence runs out of cards in their deck.
+                    </p>
+                    <h3 class="theme-title-2 color-fushia-2">Features</h3>
+                    <ul>
+                        <li>Playable 3 Warhammer Fantasy Universe factions</li>
+                        <li>Each factions has unique ability and unit roster</li>
+                        <li>Random generatable battle decks</li>
+                        <li>Turn based Card combat</li>
+                    </ul>
                 </div>
                 <div class="img-galery-content" id="project-img-gallery">
                     <h2 class="theme-title-1 color-fushia-2 mb-5">Image Gallery</h2>
@@ -182,7 +217,7 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap 5 JS CDN - End - -->
 
-    <script src="./js/site.js"></script>
+    <script src="./js/site.min.js"></script>
     <script src="./js/projects.js"></script>
 
 </body>
