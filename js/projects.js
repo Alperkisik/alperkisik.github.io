@@ -530,7 +530,7 @@ const createHeader = () => {
 };
 
 const summaryKeywordsHtml = (keywords) => {
-    let html = '<div><ul class="keywords">';
+    let html = '<div class="mt-1"><ul class="keywords">';
 
     keywords.forEach((item) => {
         html += `<li>${item}</li>`;
