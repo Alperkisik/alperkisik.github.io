@@ -53,6 +53,11 @@ const projects = [
             "./images/projects/veritas-academy/veritasedu/teacherportal-4.webp",
             "./images/projects/veritas-academy/veritasedu/teacherportal-5.webp",
             "./images/projects/veritas-academy/veritasedu/teacherportal-darkmode.webp",
+            "./images/projects/veritas-academy/veritasedu/public-exam-1.webp",
+            "./images/projects/veritas-academy/veritasedu/public-exam-2.webp",
+            "./images/projects/veritas-academy/veritasedu/public-exam-3.webp",
+            "./images/projects/veritas-academy/veritasedu/public-exam-4.webp",
+            "./images/projects/veritas-academy/veritasedu/public-exam-5.webp"
         ],
     },
     {
