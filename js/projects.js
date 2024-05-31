@@ -23,7 +23,7 @@ const projects = [
         detailsLink: "./veritasedu.html",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
-        keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5", "Ado.Net", "Dapper", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Full-Stack", "DB First"],
+        keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5","Asp.Net Core", "Ado.Net", "Dapper", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Full-Stack", "DB First", "Clean Architecture"],
         projectLanguages: ["tr", "en"],
         imageGallery: [
             "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
