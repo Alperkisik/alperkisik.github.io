@@ -20,7 +20,7 @@ const projects = [
         It is commonly used by veritas academy's employees, teachers and students and it has many features for them.
         Mostly developed by me.`,
         websiteLink: "https://www.veritasedu.net",
-        detailsLink: "./veritasedu",
+        detailsLink: "/veritasedu",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
         keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5","Asp.Net Core", "Ado.Net", "Dapper", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Full-Stack", "DB First", "Clean Architecture"],
@@ -81,7 +81,7 @@ const projects = [
     Login required in order to use this web application.
     Contributed project. Worked in a team.`,
         websiteLink: "http://www.consultancy.veritasedu.net",
-        detailsLink: "./consultancy-veritasedu",
+        detailsLink: "/consultancy-veritasedu",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/consultancy/main-1.webp",
         keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5", "Ado.Net", "Entity Framework", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "DB First"],
@@ -120,7 +120,7 @@ const projects = [
     It is about interactions between citizens of Türkiye and municipalities of Türkiye. 
     Goal was to make communication easier between the municipality and the citizens and helping municipalities to solve their problems with help of citizens.`,
         websiteLink: "",
-        detailsLink: "./belediye-sikayet",
+        detailsLink: "/belediye-sikayet",
         githubLink: "",
         imageSource: "./images/projects/dijitech/belediyesikayet/anasayfa.webp",
         keywords: ["Python", "Django", "Django Modelling", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Code First"],
@@ -176,7 +176,7 @@ const projects = [
         summary: `This is a desktop automation application created for building and editing Veritas Academy Digital Questionbank Archive.
     Contributed Project.`,
         websiteLink: "",
-        detailsLink: "./veritas-questions",
+        detailsLink: "/veritas-questions",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritas-questions/ib-1.webp",
         keywords: [".Net Core", "C Sharp", "Windows Form Application", "Ado.Net", "Entity Framework", "MS SQL", "DB First"],
@@ -212,7 +212,7 @@ const projects = [
         summary: `This is a turn based card game inspired by warhammer fantasy universe made by windows form application.
     I created this game just for fun. Game has playable 3 factions, each faction has its own tricks. Game currently available on my github.`,
         websiteLink: "",
-        detailsLink: "./warhammer-fantasy-card-battles.html",
+        detailsLink: "/warhammer-fantasy-card-battles.html",
         githubLink: "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
         imageSource: "./images/projects/my-projects/warhammer/warhammer.webp",
         keywords: [".Net Core", "C Sharp", "Windows Form Application"],
@@ -249,7 +249,7 @@ const projects = [
     The game is all about swiping left and right in order to gather party strength to defeat enemy encounters.
     Developed by me.`,
         websiteLink: "",
-        detailsLink: "./crew-party",
+        detailsLink: "/crew-party",
         githubLink: "https://github.com/Alperkisik/Crew-Party",
         imageSource: "./images/projects/pasatempos/crew-party-1.webp",
         keywords: ["Unity Game Engine", "C Sharp", ".Net"],
@@ -276,7 +276,7 @@ const projects = [
     The game is all about gathering minions (called tition in game) around the map. Player's Character is growing to the next stage when gathering enough. At final stage, player's character battling with boss. 
     Inspired from Attack on Titans Anime series. Developed by me.`,
         websiteLink: "",
-        detailsLink: "./titions",
+        detailsLink: "/titions",
         githubLink: "",
         imageSource: "./images/projects/pasatempos/titions-1.webp",
         keywords: ["Unity Game Engine", "C Sharp", ".Net"],
@@ -330,7 +330,7 @@ const projects = [
     I designed and developed all game logic behind. We decided user interface and database designs as a team. 
     Due to very old version of .Net and sqlce library no longer available, this application is no longer available.`,
         websiteLink: "",
-        detailsLink: "./go-game",
+        detailsLink: "/go-game",
         githubLink: "https://github.com/Alperkisik/The-Go-Game",
         imageSource: "./images/projects/my-projects/go/go-1.webp",
         keywords: [".Net", "MS SqlCe", "MS Sql lite", "C Sharp", "Windows Form Application", "Ado.Net", "DB First"],
@@ -814,7 +814,7 @@ const setupStatusDateLinkSummary = (project) => {
 document.addEventListener("DOMContentLoaded", function () {
     const currentPageUrl = window.location.href;
     const urlParts = currentPageUrl.split("/");
-
+    console.log(urlParts)
     let urlLastPart = urlParts[urlParts.length - 1];
     if (urlLastPart.includes("#")) urlLastPart = urlLastPart.split("#")[0];
 
