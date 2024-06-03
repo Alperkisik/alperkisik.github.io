@@ -81,7 +81,7 @@ const projects = [
     Login required in order to use this web application.
     Contributed project. Worked in a team.`,
         websiteLink: "http://www.consultancy.veritasedu.net",
-        detailsLink: "./consultancy-veritasedu.html",
+        detailsLink: "./consultancy-veritasedu",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/consultancy/main-1.webp",
         keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5", "Ado.Net", "Entity Framework", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "DB First"],
@@ -120,7 +120,7 @@ const projects = [
     It is about interactions between citizens of Türkiye and municipalities of Türkiye. 
     Goal was to make communication easier between the municipality and the citizens and helping municipalities to solve their problems with help of citizens.`,
         websiteLink: "",
-        detailsLink: "./belediye-sikayet.html",
+        detailsLink: "./belediye-sikayet",
         githubLink: "",
         imageSource: "./images/projects/dijitech/belediyesikayet/anasayfa.webp",
         keywords: ["Python", "Django", "Django Modelling", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Code First"],
@@ -176,7 +176,7 @@ const projects = [
         summary: `This is a desktop automation application created for building and editing Veritas Academy Digital Questionbank Archive.
     Contributed Project.`,
         websiteLink: "",
-        detailsLink: "./veritas-questions.html",
+        detailsLink: "./veritas-questions",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritas-questions/ib-1.webp",
         keywords: [".Net Core", "C Sharp", "Windows Form Application", "Ado.Net", "Entity Framework", "MS SQL", "DB First"],
@@ -249,7 +249,7 @@ const projects = [
     The game is all about swiping left and right in order to gather party strength to defeat enemy encounters.
     Developed by me.`,
         websiteLink: "",
-        detailsLink: "./crew-party.html",
+        detailsLink: "./crew-party",
         githubLink: "https://github.com/Alperkisik/Crew-Party",
         imageSource: "./images/projects/pasatempos/crew-party-1.webp",
         keywords: ["Unity Game Engine", "C Sharp", ".Net"],
@@ -276,7 +276,7 @@ const projects = [
     The game is all about gathering minions (called tition in game) around the map. Player's Character is growing to the next stage when gathering enough. At final stage, player's character battling with boss. 
     Inspired from Attack on Titans Anime series. Developed by me.`,
         websiteLink: "",
-        detailsLink: "./titions.html",
+        detailsLink: "./titions",
         githubLink: "",
         imageSource: "./images/projects/pasatempos/titions-1.webp",
         keywords: ["Unity Game Engine", "C Sharp", ".Net"],
@@ -330,7 +330,7 @@ const projects = [
     I designed and developed all game logic behind. We decided user interface and database designs as a team. 
     Due to very old version of .Net and sqlce library no longer available, this application is no longer available.`,
         websiteLink: "",
-        detailsLink: "./go-game.html",
+        detailsLink: "./go-game",
         githubLink: "https://github.com/Alperkisik/The-Go-Game",
         imageSource: "./images/projects/my-projects/go/go-1.webp",
         keywords: [".Net", "MS SqlCe", "MS Sql lite", "C Sharp", "Windows Form Application", "Ado.Net", "DB First"],
