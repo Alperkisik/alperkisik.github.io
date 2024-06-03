@@ -20,7 +20,7 @@ const projects = [
         It is commonly used by veritas academy's employees, teachers and students and it has many features for them.
         Mostly developed by me.`,
         websiteLink: "https://www.veritasedu.net",
-        detailsLink: "./veritasedu.html",
+        detailsLink: "./veritasedu",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
         keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5","Asp.Net Core", "Ado.Net", "Dapper", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Full-Stack", "DB First", "Clean Architecture"],
