@@ -826,7 +826,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const project = projects.find((item) => {
-        let detailsLink = item.detailsLink.replace("./", "");
+        //let detailsLink = item.detailsLink.replace("./", "");
+        let detailsLink = item.detailsLink.replace("/", "");
         return urlLastPart === detailsLink;
     });
 
