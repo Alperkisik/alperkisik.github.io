@@ -823,9 +823,6 @@ const createGalleryBlock = (images, galleryName) => {
         img.loading = "lazy";
         img.alt = "";
 
-        // PhotoSwipe opens the link target and needs the real pixel size, which the
-        // thumbnail reports once it has loaded. The fallback keeps a click before
-        // load from opening at the wrong ratio.
         const link = document.createElement("a");
         link.href = imageSrc;
         link.setAttribute("data-pswp-width", "1600");
@@ -851,8 +848,6 @@ const setupGallery = (project) => {
         return;
     }
 
-    // imageGallery is either a flat list of image paths, or a list of
-    // { title, images } groups, each rendered under its own heading.
     const isFlatList = project.imageGallery.every((item) => typeof item === "string");
     const groups = isFlatList
         ? [{ title: "", images: project.imageGallery }]
@@ -870,9 +865,6 @@ const setupGallery = (project) => {
         container.append(createGalleryBlock(group.images, group.title || "gallery"));
     });
 
-    // Kept as a fallback: the bootstrap modal viewer the gallery used before
-    // lightbox2. Not bound to anything; call it to switch back.
-    // container.addEventListener("click", openImageInModal);
 };
 
 const openImageInModal = (event) => {
@@ -903,7 +895,6 @@ const setupTitle = (project) => {
 
     let titleHtml = `<h1 class="theme-title-1 color-purple-2 mb-2" id="projectTitle">${project.name}</h1>`;
 
-    // Who the product belongs to: the company it was built for, or me.
     const ownerName = project.owner || (project.company && project.company.name);
     const ownerLink = project.company && project.company.websiteLink;
 
@@ -971,9 +962,6 @@ const setupStatusDateLinkSummary = (project) => {
     document.getElementById("summary").innerHTML = project.summary;
 };
 
-// Strips the leading "./" or "/" and the ".html" extension, so a detailsLink
-// matches both the extensionless URL served by GitHub Pages and the local
-// "page.html" URL used when opening the file directly.
 const normalizePageName = (value) =>
     (value || "")
         .split("#")[0]

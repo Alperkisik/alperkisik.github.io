@@ -48,7 +48,6 @@ body {
   font-family: var(--font-body);
 }
 
-/* Acme is a single-weight display face: headings only, never running text. */
 h1, h2, h3, h4, h5, h6,
 .theme-title-1, .theme-title-2, .theme-title-3,
 .h1, .h2, .h3, .navbar-brand, .font-fun {
@@ -2145,7 +2144,6 @@ span.cursor.typing {
 
 /* Media Queries - End - */
 
-/* Honour the operating system's "reduce motion" accessibility setting. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -2168,8 +2166,6 @@ span.cursor.typing {
 }
 
 
-/* Purple accent gradient, used in place of .bg-5 / .section-gradient on the pages
-   that moved to the purple accent. The original gradient classes are untouched. */
 .bg-6 {
   background: var(--gradient-purple-blue);
   background-size: 150% 100%;
@@ -2183,8 +2179,6 @@ span.cursor.typing {
   z-index: 2;
 }
 
-/* Purple accent. Appended so every original rule above stays exactly as it was;
-   these later declarations win on cascade order alone. */
 .cstm-btn-purple:hover {
   background-color: var(--color-purple-1);
   box-shadow: 0px 0px 10px var(--color-purple-2);
@@ -2271,9 +2265,6 @@ span.cursor.typing {
   background-color: var(--color-purple-3);
 }
 
-/* Project names and badge values are written as they should read
-   ("Verityprep.com", "Q4 2024 to Now", "en, tr, cnr"), so the capitalize
-   above must not rewrite them. */
 .project-section .top-block .headers,
 .status-badge {
   text-transform: none;

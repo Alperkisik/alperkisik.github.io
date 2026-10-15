@@ -46,7 +46,6 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
   if (!textArray.length) return;
 
-  // With reduced motion requested, show the first title instead of typing it out.
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     typedTextSpan.textContent = textArray[0];
     cursorSpan.classList.remove("typing");
