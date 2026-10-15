@@ -17,7 +17,7 @@
     <title>Alper Kısık | Software Developer Portfolio</title>
 
     <meta name="title" content="Alper Kısık | Software Developer Portfolio">
-    <meta name="description" content="Hi i am Alper Kısık. I am a software engineer. Check out my career journey. Check out my own works and my contributions to client projects.">
+    <meta name="description" content="Hi, I am Alper Kısık, a full-stack .NET software engineer. Explore my career journey, my own projects and my contributions to client projects.">
     <meta name="keywords" content="Alper Kısık, software developer portfolio">
     <meta name="author" content="Alper Kısık">
     <meta name="google-site-verification" content="zolr0L_lO22_CuMiFikEQDJZ_IehsXxTJYqcAWredH4" />
@@ -25,16 +25,94 @@
     <meta property="og:url" content="https://alperkisik.github.io" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Alper Kısık | Software Developer Portfolio" />
-    <meta property="og:description" content="Hi i am Alper Kısık. I am a software engineer. Check out my career journey. Check out my own works and my contributions to client projects." />
-    <meta property="og:image" content="https://alperkisik.github.io/images/overlay-image.jpg" />
+    <meta property="og:description" content="Hi, I am Alper Kısık, a full-stack .NET software engineer. Explore my career journey, my own projects and my contributions to client projects." />
+    <meta property="og:image" content="https://alperkisik.github.io/images/overlay-image.webp" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Alper Kısık | Software Developer Portfolio">
-    <meta name="twitter:description" content="Hi i am Alper Kısık. I am a software engineer. Check out my career journey. Check out my own works and my contributions to client projects.">
-    <meta name="twitter:image" content="https://alperkisik.github.io/images/overlay-image.jpg">
+    <meta name="twitter:description" content="Hi, I am Alper Kısık, a full-stack .NET software engineer. Explore my career journey, my own projects and my contributions to client projects.">
+    <meta name="twitter:image" content="https://alperkisik.github.io/images/overlay-image.webp">
 
-    <link rel="shortcut icon" type="image/x-icon" href="./favico.png">
-    <link rel="apple-touch-icon" href="./favico.png">
+    <!-- Structured data: lets search engines and AI assistants read who I am and what I work
+         with directly, instead of inferring it from the page text. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alper Kısık",
+      "givenName": "Alper",
+      "familyName": "Kısık",
+      "url": "https://alperkisik.github.io",
+      "image": "https://alperkisik.github.io/images/headshots/1.webp",
+      "jobTitle": "Full-Stack .NET Software Engineer",
+      "description": "Full-stack software engineer specialising in ASP.NET Core and MS SQL Server. Lead developer of Verityprep, an international exam preparation platform, and developer of veritasedu.net at Veritas Academy. Professional experience since July 2020 in web, desktop and game development.",
+      "email": "mailto:alperksk_07@hotmail.com",
+      "knowsLanguage": ["Turkish", "English"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ataşehir",
+        "addressRegion": "Istanbul",
+        "addressCountry": "TR"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Veritas Academy",
+        "url": "https://www.veritasedu.net"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Istanbul Aydın University",
+          "url": "https://www.aydin.edu.tr"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Istanbul University",
+          "url": "https://www.istanbul.edu.tr"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Profilo Anatolian Technical High School",
+          "url": "https://profiloatl.meb.k12.tr"
+        }
+      ],
+      "knowsAbout": [
+        "C#",
+        ".NET",
+        "ASP.NET Core",
+        "ASP.NET MVC",
+        "Minimal API",
+        "REST API",
+        "Microsoft SQL Server",
+        "Stored Procedures",
+        "SQL performance tuning",
+        "ADO.NET",
+        "Dapper",
+        "Entity Framework Core",
+        "Software architecture",
+        "Vertical Slice Architecture",
+        "Authentication and authorization",
+        "JavaScript",
+        "jQuery",
+        "HTML5",
+        "CSS",
+        "React",
+        "Python",
+        "Django",
+        "Unity",
+        "Full-stack web development",
+        "Desktop application development"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/alperkisik/",
+        "https://github.com/Alperkisik"
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="./favico.svg">
+    <link rel="icon" type="image/png" sizes="64x64" href="./favico-64.png">
+    <link rel="apple-touch-icon" href="./favico-180.png">
 
     <!--Bootstrap CDN - Start - -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -46,6 +124,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Google Api - End - -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,12 +132,6 @@
     <!-- Font Awesome - Start - -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css"
-        integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css"
-        integrity="sha512-KYEnM30Gjf5tMbgsrQJsR0FSpufP9S4EiAYi168MvTjK6E83x3r6PTvLPlXYX350/doBXmTFUEnJr/nCsDovuw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome - End - -->
 
@@ -79,8 +152,7 @@
     <header class="header-top">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
             <div class="container">
-                <a class="navbar-brand" href="./"><img class="home-page-icon" src="./favico.png"
-                        alt="Alper Kısık Portfolio Icon" /></a>
+                <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Acme, sans-serif" font-size="30" fill="#c13cf5">AK</text></svg></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars fa-2x color-white"></i>
@@ -102,28 +174,28 @@
         </nav>
     </header>
     <main>
-        <section class="wide-screen bg-5 position-relative" id="particles-js">
+        <section class="wide-screen bg-6 position-relative" id="particles-js">
             <div class="content drop-shadow-black-md">
-                <img class="profile-picture bordered mb-3" src="./images/headshots/1.jpg" alt="Alper Kısık" />
+                <img class="profile-picture bordered mb-3" src="./images/headshots/1.webp" alt="Alper Kısık" />
                 <h1 class="color-blue mb-0">
-                    Hi, I am Alper Kısık </br><span class="color-fushia-2 fst-italic">An Enthusiastic Software
+                    Hi, I am Alper Kısık </br><span class="color-purple-2">Full-Stack .NET Software
                         Engineer</span>
                 </h1>
                 <p class="h3 mb-0">
-                    I create Web, Desktop Applications and Game Prototypes
+                    I design and build end-to-end web & desktop applications
                 </p>
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('about-me')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section class="wide-150 section-dark-gray" id="about-me">
+        <section class="wide-120 section-dark-gray" id="about-me">
             <div class="container-fluid container-md">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="d-flex flex-column gap-4">
                             <div class="profile-block">
-                                <img class="profile-image" src="./images/headshots/3.jpg" alt="Alper Kısık" />
+                                <img class="profile-image" src="./images/headshots/3.webp" alt="Alper Kısık" />
                                 <div class="line"></div>
                                 <ul class="Social-media-list">
                                     <li>
@@ -169,23 +241,23 @@
                                 <div class="mb-4">
                                     <h3 class="color-blue drop-shadow-black-md h1 mb-0 fw-bold">
                                         I am Alper Kısık
-                                        <span class="typed-text color-fushia-2 fw-bold"></span>
+                                        <span class="typed-text color-purple-2 fw-bold"></span>
                                         <span class="cursor">&nbsp;</span>
                                     </h3>
                                     <div class="mt-3">
-                                        <h3 class="color-fushia-2 drop-shadow-black-md h3 fw-bold">Background</h3>
+                                        <h3 class="color-purple-2 drop-shadow-black-md h3 fw-bold">Background</h3>
                                         <p>
-                                            I started my development journey at profilo technical highschool at 2010.
-                                            Since then, I created many applications scaled small to large, and most of
-                                            them created with C Sharp .Net - MS Sql.
-                                            Some of my projects are created just for fun, i like coding.
+                                            I started my software development journey in 2010 at Profilo Anatolian Technical High School.
+                                            Since then, I have built many applications, from small tools to large-scale
+                                            systems, most of them with C#, .NET and SQL Server.
+                                            Some of them are personal projects that I built simply because I love coding.
                                             <span class="color-blue">I have been developing software applications and
                                                 solutions for <span id="totalExperience"></span> years.</span>
                                         </p>
                                         <p class="mb-0">
-                                            Started on my professional career journey at July 2020.
-                                            Since then i am working with companies, solving their business needs with
-                                            software solutions.
+                                            I started my professional career in July 2020.
+                                            Since then, I have been working with companies to solve their business needs
+                                            with software solutions.
                                         </p>
                                     </div>
                                 </div>
@@ -196,7 +268,7 @@
                                                 <i class="fa-solid fa-location-dot"></i>
                                                 <span>Location :</span>
                                                 <a href="https://maps.app.goo.gl/M5jyjRiKsZ4NcZ9h6"
-                                                    target="_blank">Istanbul Atasehir, Turkey</a>
+                                                    target="_blank">Ataşehir, Istanbul, Türkiye</a>
                                             </div>
                                         </div>
                                         <div class="col">
@@ -207,14 +279,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="bio-menu-info-content">
-                                                <i class="fa-solid fa-cake-candles"></i>
-                                                <span>Date of Birth :</span> 22.07.1994
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="bio-menu-info-content">
                                                 <i class="fa-solid fa-graduation-cap"></i>
-                                                <span>Degree :</span> Bachelor
+                                                <span>Degree :</span> Bachelor's in Software Engineering
                                             </div>
                                         </div>
                                         <div class="col">
@@ -222,13 +288,6 @@
                                                 <i class="fa-solid fa-envelope"></i>
                                                 <span>E-Mail :</span>
                                                 <a href="mailto:alperksk_07@hotmail.com" target="_blank">alperksk_07@hotmail.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="bio-menu-info-content">
-                                                <i class="fa-solid fa-phone"></i>
-                                                <span>Phone :</span>
-                                                <a href="tel:+905393810519" target="_blank">+90 539-381-0519</a>
                                             </div>
                                         </div>
                                     </div>
@@ -252,7 +311,7 @@
                                                 <div>
                                                     4 Years Database Programming at <a
                                                         href="https://profiloatl.meb.k12.tr/" target="_blank">Profilo
-                                                        Anatolian Technical Highschool</a>
+                                                        Anatolian Technical High School</a>
                                                 </div>
                                             </div>
                                             <div class="bio-menu-info-content mt-3">
@@ -264,14 +323,14 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 class="color-fushia-2 drop-shadow-black-md h3 fw-bold">As a Professional</h3>
+                                    <h3 class="color-purple-2 drop-shadow-black-md h3 fw-bold">As a Professional</h3>
                                     <p>
                                         I like overcoming challenges and developing complex software structures.
                                         I am passionate and dedicated to my work.
                                     </p>
                                     <p>
                                         The 4 things I <span class="color-blue">focus on</span> most in my professional
-                                        career;
+                                        career:
                                     </p>
                                     <ul class="d-flex flex-column gap-3 list-unstyled">
                                         <li>
@@ -279,7 +338,7 @@
                                                 <span class="color-blue">Gaining
                                                     Time.</span>
                                                 Making future
-                                                developments 'took less time' by automating repetitive tasks and
+                                                development take less time by automating repetitive tasks and
                                                 designing
                                                 software structures accordingly.
                                             </p>
@@ -287,9 +346,9 @@
                                         <li>
                                             <p class="mb-0">
                                                 <span class="color-blue">Efficiency.</span>
-                                                Making project
+                                                Making projects
                                                 run
-                                                more smooth and more user friendly by investigating what issues are and
+                                                more smoothly and more user-friendly by investigating the root causes of issues and
                                                 solving
                                                 them.
                                             </p>
@@ -297,17 +356,17 @@
                                         <li>
                                             <p class="mb-0">
                                                 <span class="color-blue">Learning.</span>
-                                                Creating solutions for business needs has many hard challenges. Lacking
-                                                of knowledge is not an option to solve them.
+                                                Building solutions for business needs comes with hard challenges, and
+                                                they cannot be solved without the right knowledge.
                                                 Learning is necessary not only to overcome these challenges but
                                                 also for inspiration.
                                             </p>
                                         </li>
                                         <li>
                                             <p class="mb-0">
-                                                <span class="color-blue">Out of box thinking.</span>
-                                                Standart software designs, architectures are good for bussiness for sure but do these always offers the best solution? 
-                                                "What if" question always makes me curious and it pushes me trying new approaches on project use cases.
+                                                <span class="color-blue">Out-of-the-box thinking.</span>
+                                                Standard software designs and architectures are certainly good for business, but do they always offer the best solution?
+                                                The "What if?" question always makes me curious and pushes me to try new approaches in my projects.
                                             </p>
                                         </li>
                                     </ul>
@@ -318,12 +377,12 @@
                                     <div class="skill-set">
                                         <p class="skill-set-title">Coding Languages</p>
                                         <ul class="keywords">
-                                            <li>C Sharp</li>
+                                            <li>C#</li>
                                             <li>Python</li>
                                             <li>HTML5</li>
                                             <li>CSS</li>
-                                            <li>Javascript</li>
-                                            <li>JQuery</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
                                             <li class="gray">Java</li>
                                             <li class="gray">C++</li>
                                         </ul>
@@ -331,13 +390,13 @@
                                 </div>
                                 <div class="skill-set-block">
                                     <div class="skill-set">
-                                        <p class="skill-set-title">.Net Frameworks</p>
+                                        <p class="skill-set-title">.NET Frameworks</p>
                                         <ul class="keywords">
-                                            <li>Asp.Net Core</li>
-                                            <li>Asp.Net MVC 5</li>
-                                            <li>Asp.Net Web Forms</li>
+                                            <li>ASP.NET Core</li>
+                                            <li>ASP.NET MVC 5</li>
+                                            <li>ASP.NET Web Forms</li>
                                             <li>.NET Windows Presentation Foundation (WPF)</li>
-                                            <li>.NET Windows Form Applications</li>
+                                            <li>.NET Windows Forms</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -345,11 +404,11 @@
                                     <div class="skill-set">
                                         <p class="skill-set-title">Database - ORM</p>
                                         <ul class="keywords">
-                                            <li>MS SQL</li>
+                                            <li>MS SQL Server</li>
                                             <li>Entity Framework Core</li>
                                             <li>Dapper</li>
-                                            <li>Ado.Net</li>
-                                            <li>Linq</li>
+                                            <li>ADO.NET</li>
+                                            <li>LINQ</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -359,13 +418,13 @@
                                         <ul class="keywords">
                                             <li>HTML5</li>
                                             <li>CSS</li>
-                                            <li>Javascript</li>
-                                            <li>JQuery</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
                                             <li>Bootstrap</li>
                                             <li class="gray">SCSS</li>
-                                            <li class="gray">Typescript</li>
+                                            <li class="gray">TypeScript</li>
                                             <li class="gray">React Native</li>
-                                            <li class="gray">React JS</li>
+                                            <li class="gray">React</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -374,14 +433,14 @@
                                         <p class="skill-set-title">Others & Tools</p>
                                         <ul class="keywords">
                                             <li>Unity Game Engine</li>
-                                            <li>Python Django</li>
-                                            <li>REST Api</li>
+                                            <li>Django</li>
+                                            <li>REST API</li>
                                             <li>VS Code</li>
                                             <li>Visual Studio</li>
                                             <li>Azure Data Studio</li>
-                                            <li>Github</li>
+                                            <li>GitHub</li>
                                             <li class="gray">Framework7</li>
-                                            <li class="gray">Web RTC</li>
+                                            <li class="gray">WebRTC</li>
                                             <li class="gray">AWS</li>
                                             <li class="gray">Android Studio</li>
                                             <li class="gray">Git</li>
@@ -402,8 +461,8 @@
                                                     <span class="color-blue">At Veritas Academy</span>
                                                 </p>
                                                 <p class="subtitle">
-                                                    February 2023 to
-                                                    <span class="color-blue">Now</span>
+                                                    February 2023 –
+                                                    <span class="color-blue">Present</span>
                                                 </p>
                                             </button>
                                         </h2>
@@ -411,44 +470,56 @@
                                             aria-labelledby="heading_1" data-bs-parent="#accordion_1">
                                             <div class="accordion-body">
                                                 <ul class="keywords">
-                                                    <li>.Net Core</li>
-                                                    <li>Asp.Net Core</li>
-                                                    <li>Asp.Net MVC 5</li>
-                                                    <li>.Net Windows Forms</li>
+                                                    <li>.NET Core</li>
+                                                    <li>ASP.NET Core</li>
+                                                    <li>ASP.NET MVC 5</li>
+                                                    <li>.NET Windows Forms</li>
                                                     <li>Web</li>
                                                     <li>Web API</li>
-                                                    <li>React JS</li>
+                                                    <li>React</li>
                                                     <li>HTML5, CSS, JS</li>
-                                                    <li>JQuery</li>
-                                                    <li>MS SQL</li>
+                                                    <li>jQuery</li>
+                                                    <li>MS SQL Server</li>
                                                 </ul>
                                                 <p class="fs-5">
                                                     <span
-                                                        class="color-fushia-2 drop-shadow-black-md fw-bold">Duration:</span>
+                                                        class="color-purple-2 drop-shadow-black-md fw-bold">Duration:</span>
                                                     <span id="lastJobSpentTime"></span>
                                                 </p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">Responsibilities;
+                                                <p class="color-purple-2 drop-shadow-black-md fw-bold">Responsibilities
                                                 </p>
                                                 <ul>
                                                     <li>
-                                                        Creating software solutions for Veritas Academy business needs
-                                                        with .Net Core,
-                                                        ASP.NET Core, ASP.Net MVC 5 frameworks
+                                                        Building software solutions for Veritas Academy's business needs
+                                                        with .NET Core,
+                                                        ASP.NET Core and ASP.NET MVC 5
                                                     </li>
-                                                    <li>Maintaining company's applications and helping employees to
-                                                        solve their problems with them</li>
-                                                    <li>Adding new contents to company's Applications according to
+                                                    <li>Maintaining the company's applications and supporting employees in
+                                                        resolving issues with them</li>
+                                                    <li>Adding new features to the company's applications based on
                                                         business needs</li>
-                                                    <li>Improving existing application's contents for better performance
+                                                    <li>Improving existing applications for better performance
                                                     </li>
-                                                    <li>Creating, improving database stored procedures and tables</li>
+                                                    <li>Designing and optimizing database tables and stored procedures</li>
+                                                    <li>
+                                                        Lead developer of <a class="color-aqua-1"
+                                                            href="https://www.verityprep.com"
+                                                            target="_blank">verityprep.com</a>, the company's exam
+                                                        preparation platform: digital exams and question banks for AP,
+                                                        SAT, IB, IMAT, IELTS and more, across five portals and three
+                                                        languages
+                                                    </li>
+                                                    <li>
+                                                        Designed its architecture and built its data access,
+                                                        authentication and error handling layers
+                                                    </li>
                                                     <li>
                                                         Created Veritas Academy's corporate website <a
                                                             class="color-aqua-1" href="https://www.veritasedu.net"
                                                             target="_blank">veritasedu.net</a>.
                                                     </li>
                                                     <li>
-                                                        Helped creating consultancy.veritasedu.net website as a team
+                                                        Helped build the consultancy.veritasedu.net web application as a team
                                                         member
                                                     </li>
                                                 </ul>
@@ -460,38 +531,38 @@
                                 <div class="accordion accordion-v1" id="accordion_2">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_2">
-                                            <button class="accordion-button collapsed" type="button"
+                                            <button class="accordion-button" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_2"
                                                 aria-expanded="true" aria-controls="collapse_2">
                                                 <p class="title">
                                                     Junior Unity Game Developer
                                                     <span class="color-blue">At Pasatempos Games</span>
                                                 </p>
-                                                <p class="subtitle">September 2021 to December 2021</p>
+                                                <p class="subtitle">September 2021 – December 2021</p>
                                             </button>
                                         </h2>
-                                        <div id="collapse_2" class="accordion-collapse collapse"
+                                        <div id="collapse_2" class="accordion-collapse collapse show"
                                             aria-labelledby="heading_2" data-bs-parent="#accordion_2">
                                             <div class="accordion-body">
                                                 <ul class="keywords">
-                                                    <li>.Net Core</li>
+                                                    <li>.NET Core</li>
                                                     <li>Unity Game Engine</li>
-                                                    <li>MS SQL</li>
+                                                    <li>MS SQL Server</li>
                                                 </ul>
                                                 <p class="fs-5">
-                                                    <span class="color-fushia-2 drop-shadow-black-md fw-bold">Duration
+                                                    <span class="color-purple-2 drop-shadow-black-md fw-bold">Duration
                                                         :</span>
                                                     4 Months
                                                 </p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">Responsibilities;
+                                                <p class="color-purple-2 drop-shadow-black-md fw-bold">Responsibilities
                                                 </p>
                                                 <ul>
-                                                    <li>Creating hypercasual game prototypes using Unity Game Engine
+                                                    <li>Creating hyper-casual game prototypes with the Unity game engine
                                                     </li>
-                                                    <li>Publishing game prototypes with partnership Trifles Games</li>
-                                                    <li>Improving prototypes according to feedbacks and game design
-                                                        demands</li>
-                                                    <li>Creating game logics, scenes and back-end systems</li>
+                                                    <li>Publishing game prototypes in partnership with Trifles Games</li>
+                                                    <li>Improving prototypes based on feedback and game design
+                                                        requirements</li>
+                                                    <li>Building game logic, scenes and back-end systems</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -501,53 +572,53 @@
                                 <div class="accordion accordion-v1" id="accordion_3">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_3">
-                                            <button class="accordion-button collapsed" type="button"
+                                            <button class="accordion-button" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_3"
                                                 aria-expanded="true" aria-controls="collapse_3">
                                                 <p class="title">
                                                     Junior Full-Stack Software Developer
                                                     <span class="color-blue">At DIJI.TECH</span>
                                                 </p>
-                                                <p class="subtitle">November 2020 to June 2021</p>
+                                                <p class="subtitle">November 2020 – June 2021</p>
                                             </button>
                                         </h2>
-                                        <div id="collapse_3" class="accordion-collapse collapse"
+                                        <div id="collapse_3" class="accordion-collapse collapse show"
                                             aria-labelledby="heading_3" data-bs-parent="#accordion_3">
                                             <div class="accordion-body">
                                                 <ul class="keywords">
                                                     <li>Python</li>
                                                     <li>Django</li>
                                                     <li>Web API</li>
-                                                    <li>Framework 7</li>
+                                                    <li>Framework7</li>
                                                     <li>Web</li>
                                                     <li>Mobile</li>
                                                     <li>HTML5, CSS, JS</li>
-                                                    <li>JQuery</li>
-                                                    <li>MS SQL</li>
+                                                    <li>jQuery</li>
+                                                    <li>MS SQL Server</li>
                                                 </ul>
                                                 <p class="fs-5">
-                                                    <span class="color-fushia-2 drop-shadow-black-md fw-bold">Duration
+                                                    <span class="color-purple-2 drop-shadow-black-md fw-bold">Duration
                                                         :</span>
                                                     8 Months
                                                 </p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">Responsibilities;
+                                                <p class="color-purple-2 drop-shadow-black-md fw-bold">Responsibilities
                                                 </p>
                                                 <ul>
-                                                    <li>Designs and creates software solutions to solve pain points for
+                                                    <li>Designing and building software solutions to address pain points for
                                                         various clients
                                                     </li>
-                                                    <li>Execution of design processes using the necessary frontend
+                                                    <li>Implementing UI designs with the appropriate front-end
                                                         frameworks</li>
-                                                    <li>Preparation of backend processes with the help of Python Django
+                                                    <li>Developing back-end processes with Python and Django
                                                     </li>
-                                                    <li>Creating Restful Api systems for front-end</li>
-                                                    <li>Modifies code to fix errors</li>
-                                                    <li>Created oyunsektoru.org, belediyesikayet.org, unfortunately
-                                                        these websites were shutdown</li>
-                                                    <li>Helping maintaining and improving <a class="color-aqua-1"
+                                                    <li>Building RESTful APIs for front-end applications</li>
+                                                    <li>Debugging and fixing issues in existing code</li>
+                                                    <li>Built oyunsektoru.org and belediyesikayet.org (no longer
+                                                        online)</li>
+                                                    <li>Helped maintain and improve <a class="color-aqua-1"
                                                             href="https://www.yolcu.com" target="_blank">yolcu.com</a>
                                                     </li>
-                                                    <li>Worked on mobile applications of oyunsektoru.org,
+                                                    <li>Worked on the mobile applications of oyunsektoru.org,
                                                         belediyesikayet.org, yolcu.com</li>
                                                 </ul>
                                             </div>
@@ -558,50 +629,48 @@
                                 <div class="accordion accordion-v1" id="accordion_3_1">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_3_1">
-                                            <button class="accordion-button collapsed" type="button"
+                                            <button class="accordion-button" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_3_1"
                                                 aria-expanded="true" aria-controls="collapse_3_1">
                                                 <p class="title">
                                                     Junior .Net Back-End Developer
                                                     <span class="color-blue">At Appbab IT</span>
                                                 </p>
-                                                <p class="subtitle">July 2020 to September 2020</p>
+                                                <p class="subtitle">July 2020 – September 2020</p>
                                             </button>
                                         </h2>
-                                        <div id="collapse_3_1" class="accordion-collapse collapse"
+                                        <div id="collapse_3_1" class="accordion-collapse collapse show"
                                             aria-labelledby="heading_3" data-bs-parent="#accordion_3_1">
                                             <div class="accordion-body">
                                                 <ul class="keywords">
-                                                    <li>.Net Core</li>
-                                                    <li>N Layered software Architecture</li>
-                                                    <li>Asp.Net</li>
-                                                    <li>C Sharp</li>
-                                                    <li>Start up</li>
+                                                    <li>.NET Core</li>
+                                                    <li>N-Tier Architecture</li>
+                                                    <li>ASP.NET</li>
+                                                    <li>C#</li>
+                                                    <li>Startup</li>
                                                 </ul>
                                                 <p class="fs-5">
-                                                    <span class="color-fushia-2 drop-shadow-black-md fw-bold">Duration
+                                                    <span class="color-purple-2 drop-shadow-black-md fw-bold">Duration
                                                         :</span>
                                                     2 Months
                                                 </p>
                                                 <p class="fs-5">
-                                                    <span class="color-fushia-2 drop-shadow-black-md fw-bold">Company
+                                                    <span class="color-purple-2 drop-shadow-black-md fw-bold">Company
                                                         Type :</span>
                                                     Startup
                                                 </p>
-                                                <p class="color-fushia-2 drop-shadow-black-md fw-bold">Responsibilities;
+                                                <p class="color-purple-2 drop-shadow-black-md fw-bold">Responsibilities
                                                 </p>
                                                 <ul>
                                                     <li>
-                                                        Learning and developing back-end N Tier Software Architecture in
-                                                        .Net Core Frameworks
+                                                        Developing back-end services with N-tier software architecture on
+                                                        .NET Core
                                                     </li>
                                                 </ul>
                                                 <p>
-                                                    Appbab was a startup company with 3 person.
-                                                    My journey was a short one at here because of the lack of financial
-                                                    resources
-                                                    but i learned basics of n tier software architecture design consepts
-                                                    here.
+                                                    Appbab was an early-stage, three-person startup.
+                                                    During this short-term role, I gained hands-on experience with the
+                                                    fundamentals of N-tier software architecture.
                                                 </p>
                                             </div>
                                         </div>
@@ -611,7 +680,7 @@
                                 <div class="accordion accordion-v1" id="accordion_4">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading_4">
-                                            <button class="accordion-button collapsed" type="button"
+                                            <button class="accordion-button" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_4"
                                                 aria-expanded="true" aria-controls="collapse_4">
                                                 <p class="subtitle">
@@ -619,19 +688,19 @@
                                                 </p>
                                             </button>
                                         </h2>
-                                        <div id="collapse_4" class="accordion-collapse collapse"
+                                        <div id="collapse_4" class="accordion-collapse collapse show"
                                             aria-labelledby="heading_4" data-bs-parent="#accordion_4">
                                             <div class="accordion-body">
                                                 <ul class="keywords">
-                                                    <li>Asp.Net Core</li>
-                                                    <li>.Net Core</li>
-                                                    <li>.Net Windows Forms</li>
+                                                    <li>ASP.NET Core</li>
+                                                    <li>.NET Core</li>
+                                                    <li>.NET Windows Forms</li>
                                                     <li>HTML5, CSS, JS</li>
-                                                    <li>JQuery</li>
-                                                    <li>MS SQL</li>
+                                                    <li>jQuery</li>
+                                                    <li>MS SQL Server</li>
                                                 </ul>
                                                 <p class="fs-5">
-                                                    <span class="color-fushia-2 drop-shadow-black-md fw-bold">Total
+                                                    <span class="color-purple-2 drop-shadow-black-md fw-bold">Total
                                                         Duration :</span>
                                                     9 Months
                                                 </p>
@@ -642,8 +711,8 @@
                                                                 href="https://www.makronet.com" target="_blank">Makronet
                                                                 Information
                                                                 Technologies</a>
-                                                            <p class="mb-0 color-star">Microsoft Gold Partnership</p>
-                                                            <p>July to August - 2019</p>
+                                                            <p class="mb-0 color-star">Microsoft Gold Partner</p>
+                                                            <p>July – August 2019</p>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -652,14 +721,14 @@
                                                                 href="https://www.makronet.com" target="_blank">Makronet
                                                                 Information
                                                                 Technologies</a>
-                                                            <p class="mb-0 color-star">Microsoft Gold Partnership</p>
-                                                            <p>June to August - 2018</p>
+                                                            <p class="mb-0 color-star">Microsoft Gold Partner</p>
+                                                            <p>June – August 2018</p>
                                                         </div>
                                                     <li>
                                                         <div>
                                                             <a class="color-aqua-1 fw-bold" href="https://usishi.com"
                                                                 target="_blank">Usishi</a>
-                                                            <p>June to September - 2012</p>
+                                                            <p>June – September 2012</p>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -676,10 +745,10 @@
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section class="wide-150 section-gradient" id="services">
+        <section class="wide-120 section-gradient-purple" id="services">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="color-fushia-3 drop-shadow-black-md fs-3rem h1">Services</h2>
+                    <h2 class="color-purple-2 drop-shadow-black-md fs-3rem h1">Services</h2>
                 </div>
                 <div
                     class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 gap-md-0 g-md-5 text-center justify-content-center">
@@ -689,8 +758,8 @@
                             <h3>Web Application Development</h3>
                             <div>
                                 <p>
-                                    Developing Scalable, Maintainable, Responsive Web Applications. Front-End, Back-End,
-                                    Full-Stack
+                                    Developing scalable, maintainable and responsive web applications across front-end, back-end
+                                    and full-stack
                                 </p>
                             </div>
                         </div>
@@ -700,7 +769,7 @@
                             <i class="fa-solid fa-code fa-3x"></i>
                             <h3>API Integrations</h3>
                             <p>
-                                Developing and Maintaining API Services. Integrating Third Party APIs
+                                Developing and maintaining API services, and integrating third-party APIs
                             </p>
                         </div>
                     </div>
@@ -709,8 +778,8 @@
                             <i class="fa fa-desktop fa-3x"></i>
                             <h3>Desktop Application Development</h3>
                             <p>
-                                Developing and Maintaining Efficient, Helpful Desktop Applications for Meeting business
-                                Needs
+                                Developing and maintaining efficient desktop applications that meet business
+                                needs
                             </p>
                         </div>
                     </div>
@@ -719,7 +788,7 @@
                             <i class="fa fa-gamepad fa-3x"></i>
                             <h3>Game Development - Design</h3>
                             <p>
-                                Developing Hyper Casual or Casual Games. Desinging Game Logics, Scenarios, Levels
+                                Developing hyper-casual and casual games. Designing game logic, scenarios and levels
                             </p>
                         </div>
                     </div>
@@ -728,46 +797,48 @@
                             <i class="fa fa-database fa-3x"></i>
                             <h3>SQL Database Development - Design</h3>
                             <p>
-                                Developing Releational SQL Databases, Transactions such as Stored Procedures, Funtions
-                                etc. Designing Tables, Releations, Diagrams
+                                Developing relational SQL databases and database objects such as stored procedures and functions.
+                                Designing tables, relationships and diagrams
                             </p>
                         </div>
                     </div>
                 </div>
+                <!-- logo carousel disabled
                 <div class="owl-carousel owl-theme owl-drag owl-centered" id="logoCarousel">
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/front-end-stack.png" alt="HTML, CSS, JS" />
+                        <img class="tech-logo" src="./images/logo/front-end-stack.webp" alt="HTML, CSS, JS" />
                     </div>
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/asp-net-core.png" alt="ASP.NET Core" />
+                        <img class="tech-logo" src="./images/logo/asp-net-core.webp" alt="ASP.NET Core" />
                     </div>
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/csharp.png" alt="C Sharp" />
+                        <img class="tech-logo" src="./images/logo/csharp.webp" alt="C#" />
                     </div>
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/net-core.png" alt=".NET Core" />
+                        <img class="tech-logo" src="./images/logo/net-core.webp" alt=".NET Core" />
                     </div>
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/sql-server.png" alt="SQL Server" />
+                        <img class="tech-logo" src="./images/logo/sql-server.webp" alt="SQL Server" />
                     </div>
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/unity.png" alt="Unity Game Engine" />
+                        <img class="tech-logo" src="./images/logo/unity.webp" alt="Unity Game Engine" />
                     </div>
                     <div class="item">
-                        <img class="tech-logo" src="./images/logo/python-logo-vector.png" alt="Python" />
+                        <img class="tech-logo" src="./images/logo/python-logo-vector.webp" alt="Python" />
                     </div>
                 </div>
+                -->
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('portfolio')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </div>
         </section>
-        <section class="wide-150 section-dark" id="portfolio">
+        <section class="wide-120 section-dark" id="portfolio">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="color-fushia-3 drop-shadow-black-md fs-3rem">Portfolio</h2>
+                    <h2 class="color-purple-2 drop-shadow-black-md fs-3rem">Portfolio</h2>
                     <h3 class="color-blue h2 drop-shadow-black-md">Check out my own works and contributions to client,
-                        company projects i worked with</h3>
+                        company projects I worked on</h3>
                 </div>
                 <div class="sorting-container">
                     <h2>Filter By : </h2>
@@ -791,7 +862,7 @@
     <footer class="footer bg-gradient" id="footer">
         <div class="container">
             <div class="text-center">
-                <h3 class="color-fushia-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
+                <h3 class="color-purple-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
                 <ul class="Social-media-list mb-4">
                     <li>
                         <a href="https://www.linkedin.com/in/alperkisik/" target="_blank">

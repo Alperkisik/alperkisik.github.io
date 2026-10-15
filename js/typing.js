@@ -3,7 +3,7 @@ const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
   "Software Engineer",
-  ".Net Developer",
+  ".NET Developer",
   "Full-Stack Developer",
 ];
 const typingDelay = 100;
@@ -44,7 +44,14 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
+  if (!textArray.length) return;
 
+  // With reduced motion requested, show the first title instead of typing it out.
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    typedTextSpan.textContent = textArray[0];
+    cursorSpan.classList.remove("typing");
+    return;
+  }
+
+  setTimeout(type, newTextDelay + 250);
 });

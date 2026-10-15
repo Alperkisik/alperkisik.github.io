@@ -1,4 +1,7 @@
-particlesJS("particles-js", {
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!prefersReducedMotion)
+  particlesJS("particles-js", {
   particles: {
     number: {
       value: 100,

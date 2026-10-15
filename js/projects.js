@@ -1,5 +1,101 @@
 const projects = [
     {
+        id: 15,
+        show: true,
+        name: "Verityprep.com",
+        type: "Web App",
+        typeof: "w",
+        status: "online",
+        startdate: "Q4 2024",
+        enddate: "Now",
+        development: "lead developer",
+        case: "professional",
+        owner: "Veritas Academy",
+        company: {
+            name: "Veritas Academy",
+            websiteLink: "https://www.veritasedu.net",
+        },
+        summaryShorten: true,
+        summaryKeywords: ["ASP.NET Core", "Full-Stack", "Custom Architecture", "C#", "Lead Developer"],
+        summary: `Verityprep is Veritas Academy's exam preparation platform for students applying to universities abroad.
+        It covers digital exams, digital question banks, homework and student tracking for AP, SAT, IB, IMAT, ACT, IELTS and more, across five portals and three languages.
+        I have been its lead developer since 2024.`,
+        websiteLink: "https://www.verityprep.com",
+        detailsLink: "/verityprep",
+        githubLink: "",
+        imageSource: "./images/projects/veritas-academy/verityprep/verityprep-showcase.webp",
+        keywords: [".NET 8", "C#", "ASP.NET Core", "Minimal API", "MVC Areas", "ADO.NET", "MS SQL", "Stored Procedures", "Custom ORM", "Custom Authentication", "FluentValidation", "Serilog", "Azure", "REST API", "Full-Stack", "DB First", "Vertical Slice Architecture"],
+        projectLanguages: ["en", "tr", "cnr"],
+        imageGallery: [
+            {
+                title: "Public Site",
+                images: [
+                    "./images/projects/veritas-academy/verityprep/verityprep-showcase.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-1.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-2.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-3.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-4.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-5.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-6.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-7.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-8.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-9.webp",
+                    "./images/projects/veritas-academy/verityprep/main/main-10.webp",
+                    "./images/projects/veritas-academy/verityprep/login-page.webp",
+                ],
+            },
+            {
+                title: "Student Portal",
+                images: [
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-1.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-2.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-3.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-4.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-5.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-6.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-7.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-8.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-9.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-10.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-11.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-12.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-13.webp",
+                    "./images/projects/veritas-academy/verityprep/student_portal/student-portal-14.webp",
+                ],
+            },
+            {
+                title: "Teacher Portal",
+                images: [
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-1.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-2.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-3.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-4.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-5.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-6.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-7.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-8.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-9.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-10.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-11.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-12.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-13.webp",
+                    "./images/projects/veritas-academy/verityprep/teacher_portal/teacher-portal-14.webp",
+                ],
+            },
+            {
+                title: "Parent Portal",
+                images: [
+                    "./images/projects/veritas-academy/verityprep/parent_portal/parent-portal-1.webp",
+                    "./images/projects/veritas-academy/verityprep/parent_portal/parent-portal-2.webp",
+                    "./images/projects/veritas-academy/verityprep/parent_portal/parent-portal-3.webp",
+                    "./images/projects/veritas-academy/verityprep/parent_portal/parent-portal-4.webp",
+                    "./images/projects/veritas-academy/verityprep/parent_portal/parent-portal-5.webp",
+                    "./images/projects/veritas-academy/verityprep/parent_portal/parent-portal-6.webp",
+                ],
+            },
+        ],
+    },
+    {
         id: 1,
         show: true,
         name: "veritasedu.net",
@@ -8,22 +104,23 @@ const projects = [
         status: "online",
         startdate: "Q3 2023",
         enddate: "Q1 2024",
-        development: "developed by me",
+        development: "lead developer",
         case: "professional",
+        owner: "Veritas Academy",
         company: {
             name: "Veritas Academy",
             websiteLink: "https://www.veritasedu.net",
         },
         summaryShorten: true,
-        summaryKeywords: ["Asp.Net MVC", "Full-Stack", "RestAPI", "C#", "Developed by Me"],
+        summaryKeywords: ["ASP.NET MVC", "Full-Stack Development", "REST API", "Lead Developer"],
         summary: `This is the corporate website of Veritas Academy.
-        It is commonly used by veritas academy's employees, teachers and students and it has many features for them.
+        It is used daily by Veritas Academy's employees, teachers and students, and offers dedicated features for each of them.
         Mostly developed by me.`,
         websiteLink: "https://www.veritasedu.net",
         detailsLink: "/veritasedu",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
-        keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5","Asp.Net Core", "Ado.Net", "Dapper", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Full-Stack", "DB First", "Clean Architecture"],
+        keywords: [".NET Core", "C#", "ASP.NET MVC 5","ASP.NET Core", "ADO.NET", "Dapper", "HTML5", "JS", "CSS", "jQuery", "MS SQL", "REST API", "Full-Stack", "DB First", "Clean Architecture"],
         projectLanguages: ["tr", "en"],
         imageGallery: [
             "./images/projects/veritas-academy/veritasedu/anasayfa-1.webp",
@@ -69,22 +166,23 @@ const projects = [
         status: "online",
         startdate: "Q1 2023",
         enddate: "Q3 2023",
-        development: "Contributed Project. Team Work",
+        development: "contributor",
         case: "professional",
+        owner: "Veritas Academy",
         company: {
             name: "Veritas Academy",
             websiteLink: "https://www.veritasedu.net",
         },
         summaryShorten: true,
-        summaryKeywords: ["Asp.Net MVC", "Full-Stack", "RestAPI", "C#", "Contributed"],
+        summaryKeywords: ["ASP.NET MVC", "Full-Stack", "REST API", "C#", "Contributor"],
         summary: `This website was created to meet the needs of Veritas Academy's consultants and streamline their workflow.
-    Login required in order to use this web application.
-    Contributed project. Worked in a team.`,
+        A login is required to use this web application.
+        I contributed to this project as a member of the development team.`,
         websiteLink: "http://www.consultancy.veritasedu.net",
         detailsLink: "/consultancy-veritasedu",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/consultancy/main-1.webp",
-        keywords: [".Net Core", "C Sharp", "Asp.Net MVC 5", "Ado.Net", "Entity Framework", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "DB First"],
+        keywords: [".NET Core", "C#", "ASP.NET MVC 5", "ADO.NET", "Entity Framework", "HTML5", "JS", "CSS", "jQuery", "MS SQL", "REST API", "DB First"],
         projectLanguages: ["tr", "en"],
         imageGallery: [
             "./images/projects/veritas-academy/consultancy/main-1.webp",
@@ -108,22 +206,23 @@ const projects = [
         status: "offline",
         startdate: "Q4 2019",
         enddate: "Q1 2020",
-        development: "developed by me",
+        development: "lead developer",
         case: "professional",
+        owner: "Diji.Tech",
         company: {
             name: "Diji.Tech",
             websiteLink: "https://www.diji.tech/",
         },
         summaryShorten: true,
-        summaryKeywords: ["Django", "Full-Stack", "RestAPI", "Python", "Developed by Me"],
-        summary: `This website was developed as a prototype created upon customer demands as social responsibility project, but was not published. 
-    It is about interactions between citizens of Türkiye and municipalities of Türkiye. 
-    Goal was to make communication easier between the municipality and the citizens and helping municipalities to solve their problems with help of citizens.`,
+        summaryKeywords: ["Django", "Full-Stack", "REST API", "Python", "Lead Developer"],
+        summary: `This website was developed as a prototype for a client's social responsibility project. 
+        It is about interactions between citizens of Türkiye and municipalities of Türkiye. 
+        The goal was to make communication between municipalities and citizens easier, and to help municipalities solve local problems with input from citizens.`,
         websiteLink: "",
         detailsLink: "/belediye-sikayet",
         githubLink: "",
         imageSource: "./images/projects/dijitech/belediyesikayet/anasayfa.webp",
-        keywords: ["Python", "Django", "Django Modelling", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Code First"],
+        keywords: ["Python", "Django", "Django Modelling", "HTML5", "JS", "CSS", "jQuery", "MS SQL", "REST API", "Code First"],
         projectLanguages: ["tr"],
         imageGallery: [
             "./images/projects/dijitech/belediyesikayet/anasayfa.webp",
@@ -165,21 +264,22 @@ const projects = [
         status: "online",
         startdate: "Q4 2019",
         enddate: "Q1 2020",
-        development: "Contributed Project. Team Work",
+        development: "contributor",
         case: "professional",
+        owner: "Veritas Academy",
         company: {
             name: "Veritas Academy",
             websiteLink: "https://www.veritasedu.net",
         },
         summaryShorten: false,
-        summaryKeywords: ["Windows Forms", "C#", "Contributed"],
-        summary: `This is a desktop automation application created for building and editing Veritas Academy Digital Questionbank Archive.
-    Contributed Project.`,
+        summaryKeywords: ["Windows Forms", "C#", "Contributor"],
+        summary: `This is a desktop automation application for building and editing Veritas Academy's digital question bank archive.
+        I contributed to this project.`,
         websiteLink: "",
         detailsLink: "/veritas-questions",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/veritas-questions/ib-1.webp",
-        keywords: [".Net Core", "C Sharp", "Windows Form Application", "Ado.Net", "Entity Framework", "MS SQL", "DB First"],
+        keywords: [".NET Core", "C#", "Windows Forms", "ADO.NET", "Entity Framework", "MS SQL", "DB First"],
         projectLanguages: ["tr", "en"],
         imageGallery: [
             "./images/projects/veritas-academy/veritas-questions/1.webp",
@@ -201,21 +301,22 @@ const projects = [
         status: "online",
         startdate: "Q3 2018",
         enddate: "Q3 2018",
-        development: "developed by me",
+        development: "sole developer",
         case: "case study",
+        owner: "me",
         company: {
             name: "self",
             websiteLink: "",
         },
         summaryShorten: true,
-        summaryKeywords: ["Windows Forms", "C#", "Game", "Developed by Me"],
-        summary: `This is a turn based card game inspired by warhammer fantasy universe made by windows form application.
-    I created this game just for fun. Game has playable 3 factions, each faction has its own tricks. Game currently available on my github.`,
+        summaryKeywords: ["Windows Forms", "C#", "Game", "Solo Developer"],
+        summary: `This is a turn-based card game inspired by the Warhammer Fantasy universe, built as a Windows Forms application.
+        I created this game as a personal project. It has 3 playable factions, each with its own unique mechanics. The game is available on my GitHub.`,
         websiteLink: "",
         detailsLink: "/warhammer-fantasy-card-battles.html",
         githubLink: "https://github.com/Alperkisik/Warhammer-Fantasy-Battles-Card-Game",
         imageSource: "./images/projects/my-projects/warhammer/warhammer.webp",
-        keywords: [".Net Core", "C Sharp", "Windows Form Application"],
+        keywords: [".NET Core", "C#", "Windows Forms"],
         projectLanguages: ["en"],
         imageGallery: [
             "./images/projects/my-projects/warhammer/warhammer.webp",
@@ -237,22 +338,23 @@ const projects = [
         status: "offline",
         startdate: "Q4 2021",
         enddate: "Q4 2021",
-        development: "developed by me",
+        development: "sole developer",
         case: "professional",
+        owner: "Pasatempos Games",
         company: {
             name: "Pasatempos Games",
             websiteLink: "https://www.instagram.com/pasatemposgames/",
         },
         summaryShorten: true,
-        summaryKeywords: ["Unity Game Engine", "C#", "Game", "Developed by Me"],
-        summary: `This is a hyper casual game prototype that i created by myself with unity game engine. Almost published by Rolic Games. It did not pass advertisement tests. I added 5 levels, in each level is harder than previous level.
-    The game is all about swiping left and right in order to gather party strength to defeat enemy encounters.
-    Developed by me.`,
+        summaryKeywords: ["Unity Game Engine", "C#", "Game", "Solo Developer"],
+        summary: `This is a hyper-casual game prototype that I built on my own with the Unity game engine. It went through Rolic Games' publishing and marketability tests. It has 5 levels, each harder than the previous one.
+        The game is all about swiping left and right in order to gather party strength to defeat enemy encounters.
+        Developed by me.`,
         websiteLink: "",
         detailsLink: "/crew-party",
         githubLink: "https://github.com/Alperkisik/Crew-Party",
         imageSource: "./images/projects/pasatempos/crew-party-1.webp",
-        keywords: ["Unity Game Engine", "C Sharp", ".Net"],
+        keywords: ["Unity Game Engine", "C#", ".NET"],
         projectLanguages: ["en"],
     },
     {
@@ -264,22 +366,23 @@ const projects = [
         status: "offline",
         startdate: "Q4 2021",
         enddate: "Q4 2021",
-        development: "developed by me",
+        development: "sole developer",
         case: "professional",
+        owner: "Pasatempos Games",
         company: {
             name: "Pasatempos Games",
             websiteLink: "https://www.instagram.com/pasatemposgames/",
         },
         summaryShorten: true,
-        summaryKeywords: ["Unity Game Engine", "C#", "Game", "Developed by Me"],
-        summary: `This is a hyper casual game prototype that i created by myself with unity game engine. Almost published by Rolic Games. It did not pass advertisement tests. I added 3 levels.
-    The game is all about gathering minions (called tition in game) around the map. Player's Character is growing to the next stage when gathering enough. At final stage, player's character battling with boss. 
-    Inspired from Attack on Titans Anime series. Developed by me.`,
+        summaryKeywords: ["Unity Game Engine", "C#", "Game", "Solo Developer"],
+        summary: `This is a hyper-casual game prototype that I built on my own with the Unity game engine. It went through Rolic Games' publishing and marketability tests. It has 3 levels.
+        The game is about gathering minions (called "titions" in the game) around the map. The player's character grows to the next stage after gathering enough of them, and battles a boss at the final stage. 
+        Inspired by the Attack on Titan anime series. Developed by me.`,
         websiteLink: "",
         detailsLink: "/titions",
         githubLink: "",
         imageSource: "./images/projects/pasatempos/titions-1.webp",
-        keywords: ["Unity Game Engine", "C Sharp", ".Net"],
+        keywords: ["Unity Game Engine", "C#", ".NET"],
         projectLanguages: ["en"],
     },
     {
@@ -291,21 +394,22 @@ const projects = [
         status: "online",
         startdate: "Q2 2021",
         enddate: "Q3 2020",
-        development: "Contributed Project. Team Work",
+        development: "contributor",
         case: "professional",
+        owner: "Diji.Tech",
         company: {
             name: "Diji.Tech",
             websiteLink: "https://www.diji.tech/",
         },
         summaryShorten: false,
-        summaryKeywords: ["Django", "Front-End", "RestAPI", "Python", "Contributed"],
-        summary: `This is a web application created by diji.tech developers.
-    It is about buying online bus,plane tickets for travel. I am just contributed on front-end part.`,
+        summaryKeywords: ["Django", "Front-End", "REST API", "Python", "Contributor"],
+        summary: `This is a web application built by the DIJI.TECH development team.
+        It lets users buy bus and plane tickets online. I contributed to the front-end.`,
         websiteLink: "https://www.yolcu.com",
         detailsLink: "",
         githubLink: "",
         imageSource: "./images/projects/dijitech/yolcu/y-1.webp",
-        keywords: ["Python", "Django", "Django Modelling", "HTML5", "JS", "CSS", "JQuery", "MS SQL", "REST API", "Code First"],
+        keywords: ["Python", "Django", "Django Modelling", "HTML5", "JS", "CSS", "jQuery", "MS SQL", "REST API", "Code First"],
         projectLanguages: ["tr"],
     },
     {
@@ -317,23 +421,24 @@ const projects = [
         status: "offline",
         startdate: "Q2 2012",
         enddate: "Q2 2012",
-        development: "Contributed Project. Team Work.",
+        development: "lead developer",
         case: "case study",
+        owner: "me",
         company: {
             name: "self",
             websiteLink: "",
         },
         summaryShorten: true,
-        summaryKeywords: ["Windows Forms", "C#", "Developed by Me"],
-        summary: `This is a Windows Form Application game based on Go Game from far East Culture.
-    Developed as a high school graduation project. I lead a team with 2 other students.
-    I designed and developed all game logic behind. We decided user interface and database designs as a team. 
-    Due to very old version of .Net and sqlce library no longer available, this application is no longer available.`,
+        summaryKeywords: ["Windows Forms", "C#", "Lead Developer"],
+        summary: `This is a Windows Forms implementation of Go, the classic East Asian board game.
+        Developed as a high school graduation project, where I led a team of 3 students.
+        I designed and developed all of the game logic, and we designed the user interface and database together as a team. 
+        It was built on a legacy version of .NET and SQL Server CE, so it no longer runs on modern systems.`,
         websiteLink: "",
         detailsLink: "/go-game",
         githubLink: "https://github.com/Alperkisik/The-Go-Game",
         imageSource: "./images/projects/my-projects/go/go-1.webp",
-        keywords: [".Net", "MS SqlCe", "MS Sql lite", "C Sharp", "Windows Form Application", "Ado.Net", "DB First"],
+        keywords: [".NET", "SQL Server CE", "SQLite", "C#", "Windows Forms", "ADO.NET", "DB First"],
         projectLanguages: ["tr"],
         imageGallery: [
             "./images/projects/my-projects/go/go-1.webp",
@@ -352,28 +457,29 @@ const projects = [
         status: "online",
         startdate: "Q1 2012",
         enddate: "Q1 2012",
-        development: "developed by me.",
+        development: "sole developer",
         case: "case study",
+        owner: "me",
         company: {
             name: "self",
             websiteLink: "",
         },
         summaryShorten: false,
-        summaryKeywords: ["Windows Forms", "C#", "Developed by Me"],
-        summary: `This is a Windows Form Application game based on NBA Basketball league. Each team has stats and every match simulated by 4 period every offensive and defensive states of the teams.
-    Teams has offensive and defensive stats, there is a change range to making score for offensive team and blocking score change range for defending team on each offensive. At the end, high scored team wins.`,
+        summaryKeywords: ["Windows Forms", "C#", "Solo Developer"],
+        summary: `This is a Windows Forms simulation game based on the NBA. Every match is simulated over 4 quarters using each team's offensive and defensive stats.
+        On each possession, the offense has a scoring chance range and the defense has a blocking chance range. The team with the higher score at the end wins.`,
         websiteLink: "",
         detailsLink: "",
         githubLink: "https://github.com/Alperkisik/Simple-NBA-Simulator",
-        imageSource: "./images/projects/my-projects/nba/nba-1.jpg",
-        keywords: [".Net", "C Sharp", "Windows Form Application", "Ado.Net"],
+        imageSource: "./images/projects/my-projects/nba/nba-1.webp",
+        keywords: [".NET", "C#", "Windows Forms", "ADO.NET"],
         projectLanguages: ["tr"],
         imageGallery: [
-            "./images/projects/my-projects/nba/nba-1.jpg",
-            "./images/projects/my-projects/nba/nba-2.jpg",
-            "./images/projects/my-projects/nba/nba-3.jpg",
-            "./images/projects/my-projects/nba/nba-4.jpg",
-            "./images/projects/my-projects/nba/nba-5.jpg",
+            "./images/projects/my-projects/nba/nba-1.webp",
+            "./images/projects/my-projects/nba/nba-2.webp",
+            "./images/projects/my-projects/nba/nba-3.webp",
+            "./images/projects/my-projects/nba/nba-4.webp",
+            "./images/projects/my-projects/nba/nba-5.webp",
         ],
     },
     {
@@ -385,20 +491,21 @@ const projects = [
         status: "online",
         startdate: "Q3 2018",
         enddate: "Q3 2018",
-        development: "developed by me.",
+        development: "sole developer",
         case: "case study",
+        owner: "me",
         company: {
             name: "self",
             websiteLink: "",
         },
         summaryShorten: false,
-        summaryKeywords: ["Windows Forms", "C#", "Developed by Me"],
-        summary: `This is a Windows Form Application which has an equation solving logic which is solving 1st degree equation with 1 unknown.`,
+        summaryKeywords: ["Windows Forms", "C#", "Solo Developer"],
+        summary: `This is a Windows Forms application that solves first-degree equations with one unknown.`,
         websiteLink: "",
         detailsLink: "",
         githubLink: "https://github.com/Alperkisik/Equation-Solver",
-        imageSource: "./images/projects/my-projects/equation/equation-1.jpg",
-        keywords: [".Net", "C Sharp", "Windows Form Application", "Ado.Net"],
+        imageSource: "./images/projects/my-projects/equation/equation-1.webp",
+        keywords: [".NET", "C#", "Windows Forms", "ADO.NET"],
         projectLanguages: ["tr"],
         imageGallery: [],
     },
@@ -411,20 +518,21 @@ const projects = [
         status: "online",
         startdate: "Q3 2018",
         enddate: "Q3 2018",
-        development: "developed by me.",
+        development: "sole developer",
         case: "case study",
+        owner: "me",
         company: {
             name: "self",
             websiteLink: "",
         },
         summaryShorten: false,
-        summaryKeywords: ["Windows Console", "C#", "Developed by Me"],
-        summary: `This is a Console Application which is calculation population growth each day according to random event encounters.`,
+        summaryKeywords: ["Windows Console", "C#", "Solo Developer"],
+        summary: `This is a console application that simulates daily population growth based on random events.`,
         websiteLink: "",
         detailsLink: "",
         githubLink: "https://github.com/Alperkisik/Simple-Population-Simulator",
-        imageSource: "./images/projects/my-projects/populationSim/1.jpg",
-        keywords: [".Net", "C Sharp", "Windows Form Application", "Ado.Net"],
+        imageSource: "./images/projects/my-projects/populationSim/1.webp",
+        keywords: [".NET", "C#", "Windows Forms", "ADO.NET"],
         projectLanguages: ["tr"],
         imageGallery: [],
     },
@@ -437,21 +545,22 @@ const projects = [
         status: "offline",
         startdate: "Q4 2020",
         enddate: "Q1 2021",
-        development: "developed by me",
+        development: "sole developer",
         case: "professional",
+        owner: "Diji.Tech",
         company: {
             name: "Diji.Tech",
             websiteLink: "https://www.diji.tech/",
         },
         summaryShorten: false,
-        summaryKeywords: ["Django", "Full-Stack", "RestAPI", "Python", "Developed by Me"],
-        summary: `This was a forum website, aims for bringing together of all Turkish Gaming Industry components from developers to gaming studios into one platform. 
-        It was a site where developers could ask questions and find solutions through the forum like stackoverflow. Unfortunately project was shutdown.`,
+        summaryKeywords: ["Django", "Full-Stack", "REST API", "Python", "Solo Developer"],
+        summary: `This was a forum website that aimed to bring the whole Turkish gaming industry, from individual developers to game studios, together on one platform. 
+        Similar to Stack Overflow, developers could ask questions and find solutions through the forum. The project is no longer online.`,
         websiteLink: "",
         detailsLink: "",
         githubLink: "",
         imageSource: "",
-        keywords: ["Djangp", "Python", "HTML", "CSS", "Javascript", "JQuery", "Rest API", "Code First"],
+        keywords: ["Django", "Python", "HTML", "CSS", "JavaScript", "jQuery", "REST API", "Code First"],
         projectLanguages: ["tr"],
         imageGallery: [],
     },
@@ -464,23 +573,24 @@ const projects = [
         status: "offline",
         startdate: "Q4 2021",
         enddate: "Q4 2021",
-        development: "developed by me",
+        development: "sole developer",
         case: "case study",
+        owner: "me",
         company: {
             name: "",
             websiteLink: "",
         },
         summaryShorten: false,
-        summaryKeywords: ["Unity Game Engine", "C#", "Developed by Me"],
-        summary: `This is a famous 2048 mobile game clone prototype. Game is all about reaching 2048 number as in the original game. Check video clip on <a href="https://www.youtube.com/shorts/A1PtQMnGdsA" target="_blank">youtube</a>.`,
+        summaryKeywords: ["Unity Game Engine", "C#", "Solo Developer"],
+        summary: `This is a prototype clone of the popular mobile game 2048. As in the original, the goal is to reach the number 2048. Watch the video clip on <a href="https://www.youtube.com/shorts/A1PtQMnGdsA" target="_blank">YouTube</a>.`,
         websiteLink: "",
         detailsLink: "",
         githubLink: "https://github.com/Alperkisik/Clone-2048",
-        imageSource: "./images/projects/my-projects/unity/2048.jpg",
+        imageSource: "./images/projects/my-projects/unity/2048.webp",
         keywords: ["Unity Game Engine", "C#"],
         projectLanguages: ["en"],
         imageGallery: [],
-    },
+    }
 ];
 
 const sortDataByQuarterYear = (_projects) => {
@@ -506,7 +616,7 @@ const createHeader = () => {
     let headerHtml = `
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
       <div class="container">
-          <a class="navbar-brand" href="./"><img class="home-page-icon" src="./favico.png" /></a>
+          <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Acme, sans-serif" font-size="30" fill="#c13cf5">AK</text></svg></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa-solid fa-bars fa-2x color-white"></i>
@@ -589,7 +699,7 @@ const createProjects = () => {
             buttonContainer += `
               <a class="cstm-btn-purple" href="${project.githubLink}" target="_blank">
                 <i class="fa-brands fa-github me-2"></i>
-                Github
+                GitHub
               </a>`;
         }
 
@@ -602,7 +712,7 @@ const createProjects = () => {
 
         let projectHtml = `
           <div class="grid-item" name="project" p-typeof="${project.typeof}">
-              <img src="${project.imageSource}" alt="${project.name} project">
+              <img src="${project.imageSource}" alt="${project.name} project" loading="lazy">
               <div class="overlay">
                   <div>
                       <h3>${project.name}</h3>
@@ -703,31 +813,74 @@ const setupClickEvent = () => {
     });
 };
 
-const setupGallery = (project) => {
-    if (project.imageGallery === null || project.imageGallery === undefined) {
-        document.getElementById("project-img-gallery").remove();
-        return;
-    }
-
+const createGalleryBlock = (images, galleryName) => {
     const imageGallery = document.createElement("div");
     imageGallery.classList = "gallery";
 
-    project.imageGallery.forEach((imageSrc) => {
+    images.forEach((imageSrc) => {
         const img = document.createElement("img");
         img.src = imageSrc;
+        img.loading = "lazy";
+        img.alt = "";
 
-        imageGallery.append(img);
+        // PhotoSwipe opens the link target and needs the real pixel size, which the
+        // thumbnail reports once it has loaded. The fallback keeps a click before
+        // load from opening at the wrong ratio.
+        const link = document.createElement("a");
+        link.href = imageSrc;
+        link.setAttribute("data-pswp-width", "1600");
+        link.setAttribute("data-pswp-height", "900");
+        link.append(img);
+
+        img.addEventListener("load", () => {
+            link.setAttribute("data-pswp-width", img.naturalWidth);
+            link.setAttribute("data-pswp-height", img.naturalHeight);
+        }, { once: true });
+
+        imageGallery.append(link);
     });
 
-    document.getElementById("project-img-gallery").append(imageGallery);
+    return imageGallery;
+};
 
-    imageGallery.addEventListener("click", function (event) {
-        if (event.target.tagName === "IMG") {
-            $("#imageModal").modal("toggle");
+const setupGallery = (project) => {
+    const container = document.getElementById("project-img-gallery");
 
-            document.getElementById("modalImage").src = event.target.getAttribute("src");
+    if (project.imageGallery === null || project.imageGallery === undefined) {
+        container.remove();
+        return;
+    }
+
+    // imageGallery is either a flat list of image paths, or a list of
+    // { title, images } groups, each rendered under its own heading.
+    const isFlatList = project.imageGallery.every((item) => typeof item === "string");
+    const groups = isFlatList
+        ? [{ title: "", images: project.imageGallery }]
+        : project.imageGallery;
+
+    groups.forEach((group) => {
+        if (group.title) {
+            const heading = document.createElement("h3");
+            heading.classList = "theme-title-3 color-blue mt-4 mb-3";
+            heading.innerHTML = group.title;
+
+            container.append(heading);
         }
+
+        container.append(createGalleryBlock(group.images, group.title || "gallery"));
     });
+
+    // Kept as a fallback: the bootstrap modal viewer the gallery used before
+    // lightbox2. Not bound to anything; call it to switch back.
+    // container.addEventListener("click", openImageInModal);
+};
+
+const openImageInModal = (event) => {
+    if (event.target.tagName === "IMG") {
+        $("#imageModal").modal("toggle");
+
+        document.getElementById("modalImage").src = event.target.getAttribute("src");
+    }
 };
 
 const setupKeywords = (project) => {
@@ -748,18 +901,30 @@ const setupMainImage = (imageSource) => {
 const setupTitle = (project) => {
     const headers = document.getElementById("headers");
 
-    let titleHtml = `<h1 class="theme-title-1 color-fushia-2 mb-2" id="projectTitle">${project.name}</h1>`;
+    let titleHtml = `<h1 class="theme-title-1 color-purple-2 mb-2" id="projectTitle">${project.name}</h1>`;
 
-    let companyHtml = `
+    // Who the product belongs to: the company it was built for, or me.
+    const ownerName = project.owner || (project.company && project.company.name);
+    const ownerLink = project.company && project.company.websiteLink;
+
+    let ownerHtml = `
         <h2 class="theme-title-2" id="projectType">
-            <span class="color-blue">Company : </span>
-            <a href="${project.company.websiteLink}" target="_blank" >${project.company.name}</a>
+            <span class="color-blue">Owner : </span>
+            ${ownerName}
         </h2>`;
 
-    if (project.company.name === "self") companyHtml = `<h2 class="theme-title-2 color-blue" id="projectType">Case Study</h2>`;
+    if (ownerLink)
+        ownerHtml = `
+        <h2 class="theme-title-2" id="projectType">
+            <span class="color-blue">Owner : </span>
+            <a href="${ownerLink}" target="_blank" >${ownerName}</a>
+        </h2>`;
+
+    if (ownerName === "me" || ownerName === "self")
+        ownerHtml = `<h2 class="theme-title-2 color-blue" id="projectType">Personal Project</h2>`;
 
     headers.innerHTML += titleHtml;
-    headers.innerHTML += companyHtml;
+    headers.innerHTML += ownerHtml;
 };
 
 const setupStatusDateLinkSummary = (project) => {
@@ -787,12 +952,7 @@ const setupStatusDateLinkSummary = (project) => {
     const languagebadge = document.getElementById("Language-badge");
     languagebadge.innerHTML = "Language: ";
 
-    let text = "Language : ";
-    project.projectLanguages.forEach((item) => {
-        text += item + ",";
-    });
-
-    languagebadge.innerHTML = text.substring(0, text.length - 1);
+    languagebadge.innerHTML = "Language : " + project.projectLanguages.join(", ");
 
     if (project.websiteLink.length > 0) {
         const btn = document.getElementById("gotowebsiteBtn");
@@ -811,25 +971,37 @@ const setupStatusDateLinkSummary = (project) => {
     document.getElementById("summary").innerHTML = project.summary;
 };
 
+// Strips the leading "./" or "/" and the ".html" extension, so a detailsLink
+// matches both the extensionless URL served by GitHub Pages and the local
+// "page.html" URL used when opening the file directly.
+const normalizePageName = (value) =>
+    (value || "")
+        .split("#")[0]
+        .split("?")[0]
+        .replace(/^\.?\//, "")
+        .replace(/\.html$/i, "")
+        .toLowerCase();
+
 document.addEventListener("DOMContentLoaded", function () {
     const currentPageUrl = window.location.href;
     const urlParts = currentPageUrl.split("/");
-    console.log(urlParts)
-    let urlLastPart = urlParts[urlParts.length - 1];
-    if (urlLastPart.includes("#")) urlLastPart = urlLastPart.split("#")[0];
+    const urlLastPart = normalizePageName(urlParts[urlParts.length - 1]);
 
-    if (urlLastPart.length === 0 || urlLastPart.includes("index.html")) {
+    if (urlLastPart.length === 0 || urlLastPart === "index") {
         setupClickEvent();
         createProjects();
 
         return;
     }
 
-    const project = projects.find((item) => {
-        //let detailsLink = item.detailsLink.replace("./", "");
-        let detailsLink = item.detailsLink.replace("/", "");
-        return urlLastPart === detailsLink;
-    });
+    const project = projects.find(
+        (item) => normalizePageName(item.detailsLink) === urlLastPart
+    );
+
+    if (project === undefined) {
+        console.warn(`No project found for page "${urlLastPart}".`);
+        return;
+    }
 
     setupMainImage(project.imageSource);
     setupTitle(project);

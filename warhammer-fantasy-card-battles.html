@@ -17,13 +17,14 @@
     <title>Warhammer Fantasy Card Battles</title>
 
     <meta name="title" content="Alper Kısık Portfolio | Project Warhammer Fantasy Card Battles">
-    <meta name="description" content="Alper Kısık Software Engineer Portfolio Website">
+    <meta name="description" content="Alper Kısık | Software Engineer Portfolio">
     <meta name="keywords" content="Alper Kısık, software developer portfolio">
     <meta name="author" content="Alper Kısık">
     <meta name="google-site-verification" content="zolr0L_lO22_CuMiFikEQDJZ_IehsXxTJYqcAWredH4" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="./favico.png">
-    <link rel="apple-touch-icon" href="./favico.png">
+    <link rel="icon" type="image/svg+xml" href="./favico.svg">
+    <link rel="icon" type="image/png" sizes="64x64" href="./favico-64.png">
+    <link rel="apple-touch-icon" href="./favico-180.png">
 
     <!--Bootstrap CDN - Start - -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,22 +36,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Google Api - End - -->
 
     <!-- Font Awesome - Start - -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css"
-        integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css"
-        integrity="sha512-KYEnM30Gjf5tMbgsrQJsR0FSpufP9S4EiAYi168MvTjK6E83x3r6PTvLPlXYX350/doBXmTFUEnJr/nCsDovuw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome - End - -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css"
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/styles.min.css"  />
 
 </head>
@@ -59,7 +57,7 @@
     <header class="header-top">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
             <div class="container">
-                <a class="navbar-brand" href="./"><img class="home-page-icon" src="./favico.png" /></a>
+                <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Acme, sans-serif" font-size="30" fill="#c13cf5">AK</text></svg></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars fa-2x color-white"></i>
@@ -85,7 +83,7 @@
     </header>
 
     <main role="main">
-        <section class="wide-150 section-dark-gray project-section">
+        <section class="wide-120 section-dark-gray project-section">
             <div class="container flex-container">
                 <div class="title-image">
                     <img class="img-fluid" src="#" id="projectMainImage" />
@@ -96,7 +94,7 @@
                         <div class="button-container">
                             <a class="cstm-btn-purple" href="#" target="_blank" id="gotogithubBtn">
                                 <i class="fa-brands fa-github me-2"></i>
-                                Check it on Github
+                                Check it on GitHub
                             </a>
                             <a class="cstm-btn-blue" href="#" target="_blank" id="gotowebsiteBtn">Go to website</a>
                             <a class="cstm-btn-blue" href="#project-img-gallery">Image Gallery</a>
@@ -114,46 +112,46 @@
                     </div>
                 </div>
                 <div class="main-content">
-                    <h3 class="theme-title-2 color-fushia-2">Summary</h3>
+                    <h3 class="theme-title-2 color-purple-2">Summary</h3>
                     <p class="summary" id="summary"></p>
-                    <h3 class="theme-title-2 color-fushia-2">About the Game</h3>
+                    <h3 class="theme-title-2 color-purple-2">About the Game</h3>
                     <p>
-                        At my first internship at Makronet Information Technologies company, company's lead developer asked me to do a simple card game.
-                        Asked game includes cards that has 2 features which are health and attack values like in heartstone card game. So each turn cards made an attack move, attacked cards health is reduced by attacker attack value etc.
-                        Asked game something like that but i find it simple and a bit boring so i decided to take this consept to the next level and i decided to do a Warhammer Fantasy card game.
+                        During my first internship at Makronet Information Technologies, the company's lead developer asked me to build a simple card game.
+                        In the requested game, each card had two attributes, health and attack, like in Hearthstone. Each turn, a card attacks and the attacked card's health is reduced by the attacker's attack value.
+                        I found that concept a bit too simple, so I decided to take it to the next level and build a Warhammer Fantasy card game.
                     </p>
                     <p>
-                        Each card has many stats based on Total War: Warhammer Game on Steam. Each time a combat occurs hit and block chances are calculated based on formulas in Total War Warhammer game.
-                        Each faction has a unique ability made up by me. Win condition is send all of your oppenents cards to the graveyard.
+                        Each card has a detailed set of stats based on the game Total War: Warhammer. In every combat, hit and block chances are calculated with formulas based on Total War: Warhammer.
+                        Each faction has a unique ability that I designed. To win, you must send all of your opponent's cards to the graveyard.
                     </p>
-                    <h3 class="theme-title-2 color-fushia-2">How to Play</h3>
+                    <h3 class="theme-title-2 color-purple-2">How to Play</h3>
                     <p>
-                        At first turn, player has to choose a card to put in game field, then ai chooses a card to put in the field.
-                        Each turn, player has to choose one of following actions;
+                        On the first turn, the player chooses a card to place on the field, then the AI does the same.
+                        Each turn, the player chooses one of the following actions:
                         <ul>
-                            <li>Attack: The Card on the player's side make an attack move to the card on he opponent's field. 
-                                Attack event happens and players card may miss or hit according to event result.
-                                If hit is successfull, attacked card lose hp according to formula. 
-                                If hp drops to zero or below, attacked card goes to graveyard.
+                            <li>Attack: The player's card attacks the card on the opponent's side of the field.
+                                Depending on the result, the attack may hit or miss.
+                                If the attack hits, the attacked card loses HP according to the formula.
+                                If its HP drops to zero or below, the card goes to the graveyard.
                             </li>
-                            <li>Defend: This move boosts player's cards defense values then player's turn is over.</li>
-                            <li>Power: If choosen card has an ability player my use it.</li>
-                            <li>Pick: Player can pick and put to the field another card from the deck. Old card will return to the deck with current health.</li>
+                            <li>Defend: Boosts the defense values of the player's card and ends the player's turn.</li>
+                            <li>Power: If the chosen card has an ability, the player may use it.</li>
+                            <li>Pick: The player puts another card from the deck on the field. The previous card returns to the deck with its current health.</li>
                         </ul>
-                        After picking an action, an event occurs according to the action then turn pass to ai.
-                        AI choose one of the same actions then turn pass to the player.
-                        It continues until the player or artificial intelligence runs out of cards in their deck.
+                        After the player picks an action, the matching event occurs and the turn passes to the AI.
+                        The AI chooses one of the same actions, then the turn passes back to the player.
+                        This continues until either the player or the AI runs out of cards.
                     </p>
-                    <h3 class="theme-title-2 color-fushia-2">Features</h3>
+                    <h3 class="theme-title-2 color-purple-2">Features</h3>
                     <ul>
-                        <li>Playable 3 Warhammer Fantasy Universe factions</li>
-                        <li>Each factions has unique ability and unit roster</li>
-                        <li>Random generatable battle decks</li>
-                        <li>Turn based Card combat</li>
+                        <li>3 playable Warhammer Fantasy factions</li>
+                        <li>Each faction has a unique ability and unit roster</li>
+                        <li>Randomly generated battle decks</li>
+                        <li>Turn-based card combat</li>
                     </ul>
                 </div>
                 <div class="img-galery-content" id="project-img-gallery">
-                    <h2 class="theme-title-1 color-fushia-2 mb-5">Image Gallery</h2>
+                    <h2 class="theme-title-1 color-purple-2 mb-5">Image Gallery</h2>
                 </div>
             </div>
         </section>
@@ -167,7 +165,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content bg-dark">
                 <div class="modal-body p-2 align-self-center">
-                    <button type="button" class="btn color-fushia-3 end-0 m-2 position-absolute top-0" data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="btn color-purple-2 end-0 m-2 position-absolute top-0" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fa-3x fa-times fas"></i>
                     </button>
                     <img src="#" class="img-fluid" id="modalImage" alt="Resim">
@@ -179,7 +177,7 @@
     <footer class="footer bg-dark color-dark" id="footer">
         <div class="container">
             <div class="text-center">
-                <h3 class="color-fushia-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
+                <h3 class="color-purple-2 h1 mb-4 drop-shadow-black-md">Get in Touch</h3>
                 <ul class="Social-media-list mb-4">
                     <li>
                         <a href="https://www.linkedin.com/in/alperkisik/" target="_blank">
@@ -231,6 +229,21 @@
     <script src="./js/site.min.js"></script>
     <script src="./js/projects.js"></script>
 
+    <script type="module">
+        import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js";
+
+        // projects.js builds the gallery on DOMContentLoaded, so bind after it.
+        document.addEventListener("DOMContentLoaded", () => {
+            const lightbox = new PhotoSwipeLightbox({
+                gallery: "#project-img-gallery .gallery",
+                children: "a",
+                pswpModule: () => import("https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.esm.min.js"),
+                bgOpacity: 0.95,
+                padding: { top: 20, bottom: 20, left: 10, right: 10 },
+            });
+            lightbox.init();
+        });
+    </script>
 </body>
 
 </html>
