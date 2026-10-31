@@ -148,7 +148,7 @@
 
 <body>
     <header class="header-top">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white p-0">
             <div class="container">
                 <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Acme, sans-serif" font-size="30" fill="#c13cf5">AK</text></svg></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
@@ -164,6 +164,9 @@
                             <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#work-experience">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                     </ul>
@@ -173,15 +176,27 @@
     </header>
     <main>
         <section class="wide-screen bg-6 position-relative" id="particles-js">
-            <div class="content drop-shadow-black-md">
-                <img class="profile-picture bordered mb-3" src="./images/headshots/1.webp" alt="Alper Kısık" />
-                <h1 class="color-blue mb-0">
-                    Hi, I am Alper Kısık </br><span class="color-purple-2">Full-Stack .NET Software
-                        Engineer</span>
-                </h1>
-                <p class="h3 mb-0">
-                    I design and build end-to-end web & desktop applications
-                </p>
+            <div class="content">
+                <div class="drop-shadow-black-md">
+                    <h1>
+                        Hi, I am Alper Kısık </br>Full-Stack .NET Software Engineer
+                    </h1>
+                    <p class="h3 mb-0">
+                        I design and build end-to-end web & desktop applications
+                    </p>    
+                </div>
+                
+                <div class="hero-actions">
+                    <button type="button" class="cstm-btn-blue" onclick="openAboutTab('nav-skills-tab')">
+                        <i class="fa-solid fa-code color-white me-2"></i>My Skills
+                    </button>
+                    <button type="button" class="cstm-btn-blue" onclick="openAboutTab('nav-experience-tab')">
+                        <i class="fa-solid fa-briefcase color-white me-2"></i>My Work Experience
+                    </button>
+                    <button type="button" class="cstm-btn-blue" onclick="scrollToSection('portfolio')">
+                        <i class="fa-solid fa-folder-open color-white me-2"></i>My Portfolio
+                    </button>
+                </div>
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('about-me')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
@@ -214,7 +229,7 @@
                                 </ul>
                                 <a class="cstm-btn-purple" href="./documents/alper-kısık-resume.pdf" download="alper-kısık-resume.pdf">
                                     <i class="fa-solid fa-download color-white me-2"></i>
-                                    Download Resume
+                                    Download Resume <i class="fa-solid fa-file-lines color-white ms-2"></i>
                                 </a>
                             </div>
                         </div>
@@ -230,7 +245,7 @@
                                     aria-selected="false">Skills</button>
                                 <button class="nav-link" id="nav-experience-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-experience" type="button" role="tab"
-                                    aria-controls="nav-experience" aria-selected="false">Experience</button>
+                                    aria-controls="nav-experience" aria-selected="false">Work Experience</button>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
@@ -312,62 +327,8 @@
                                                         Anatolian Technical High School</a>
                                                 </div>
                                             </div>
-                                            <div class="bio-menu-info-content mt-3">
-                                                <i class="fa-solid fa-gamepad"></i>
-                                                <span>Interested In :</span>
-                                                Competitive Gaming, Board Games, Playing Guitar
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <h3 class="color-purple-2 drop-shadow-black-md h3 fw-bold">As a Professional</h3>
-                                    <p>
-                                        I like overcoming challenges and developing complex software structures.
-                                        I am passionate and dedicated to my work.
-                                    </p>
-                                    <p>
-                                        The 4 things I <span class="color-blue">focus on</span> most in my professional
-                                        career:
-                                    </p>
-                                    <ul class="d-flex flex-column gap-3 list-unstyled">
-                                        <li>
-                                            <p class="mb-0">
-                                                <span class="color-blue">Gaining
-                                                    Time.</span>
-                                                Making future
-                                                development take less time by automating repetitive tasks and
-                                                designing
-                                                software structures accordingly.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p class="mb-0">
-                                                <span class="color-blue">Efficiency.</span>
-                                                Making projects
-                                                run
-                                                more smoothly and more user-friendly by investigating the root causes of issues and
-                                                solving
-                                                them.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p class="mb-0">
-                                                <span class="color-blue">Learning.</span>
-                                                Building solutions for business needs comes with hard challenges, and
-                                                they cannot be solved without the right knowledge.
-                                                Learning is necessary not only to overcome these challenges but
-                                                also for inspiration.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p class="mb-0">
-                                                <span class="color-blue">Out-of-the-box thinking.</span>
-                                                Standard software designs and architectures are certainly good for business, but do they always offer the best solution?
-                                                The "What if?" question always makes me curious and pushes me to try new approaches in my projects.
-                                            </p>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
@@ -746,7 +707,7 @@
         <section class="wide-120 section-gradient-purple" id="services">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="color-purple-2 drop-shadow-black-md fs-3rem h1">Services</h2>
+                    <h2 class="drop-shadow-black-md fs-3rem h1">Services</h2>
                 </div>
                 <div
                     class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 gap-md-0 g-md-5 text-center justify-content-center">
@@ -801,31 +762,6 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                <div class="owl-carousel owl-theme owl-drag owl-centered" id="logoCarousel">
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/front-end-stack.webp" alt="HTML, CSS, JS" />
-                    </div>
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/asp-net-core.webp" alt="ASP.NET Core" />
-                    </div>
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/csharp.webp" alt="C#" />
-                    </div>
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/net-core.webp" alt=".NET Core" />
-                    </div>
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/sql-server.webp" alt="SQL Server" />
-                    </div>
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/unity.webp" alt="Unity Game Engine" />
-                    </div>
-                    <div class="item">
-                        <img class="tech-logo" src="./images/logo/python-logo-vector.webp" alt="Python" />
-                    </div>
-                </div>
-                -->
             </div>
             <div class="arrow-bottom bounce" onclick="pageContentNavigationClick('portfolio')">
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
@@ -839,7 +775,7 @@
                         company projects I worked on</h3>
                 </div>
                 <div class="sorting-container">
-                    <h2>Filter By : </h2>
+                    <p class="h2"><i class="fa-solid fa-filter"></i> Filter By :</p>
                     <ul class="sorting-list">
                         <li class="active" data-p="all">All</li>
                         <li data-p="w">Web</li>
@@ -884,6 +820,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-3" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="#work-experience">Work Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-3" href="#portfolio">Portfolio</a>

@@ -215,3 +215,17 @@ $(document).ready(function () {
   });
   
 });
+
+// Header "Work Experience" link: open the Work Experience tab in About Me
+const WORK_EXPERIENCE_HASH = "#work-experience";
+
+document.querySelectorAll('a[href$="' + WORK_EXPERIENCE_HASH + '"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    openAboutTab("nav-experience-tab");
+  });
+});
+
+if (window.location.hash === WORK_EXPERIENCE_HASH) {
+  window.addEventListener("load", () => openAboutTab("nav-experience-tab"));
+}

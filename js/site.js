@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
   if (window.innerWidth >= 500) {
     header.classList.toggle("bg-transparent", window.scrollY <= 120);
     header.classList.toggle("bg-darkgray-2", window.scrollY > 120);
-    header.classList.toggle("py-2", window.scrollY > 120);
+    // header.classList.toggle("py-2", window.scrollY > 120);
   }
 });
 
@@ -41,3 +41,15 @@ const pageContentNavigationClick = (targetId) => {
   });
 };
 
+
+const scrollToSection = (targetId) => {
+  document.getElementById(targetId).scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
+
+const openAboutTab = (tabButtonId) => {
+  new bootstrap.Tab(document.getElementById(tabButtonId)).show();
+  scrollToSection("about-me");
+};
