@@ -202,9 +202,8 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <a class="cstm-btn-purple" href="./documents/alper-kısık-resume.pdf" download="alper-kısık-resume.pdf">
-                                    <i class="fa-solid fa-download color-white me-2"></i>
-                                    Download Resume <i class="fa-solid fa-file-lines color-white ms-2"></i>
+                                <a class="cstm-btn-blue" href="./documents/alper-kısık-resume.pdf" download="alper-kısık-resume.pdf">
+                                    <i class="fa-solid fa-download color-white me-2"></i>Download Resume<i class="fa-solid fa-file-lines color-white ms-2"></i>
                                 </a>
                             </div>
                         </div>
@@ -307,49 +306,51 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
-                                <div class="skill-set-block">
-                                    <div class="skill-set">
-                                        <p class="skill-set-title">Coding Languages</p>
-                                        <ul class="keywords">
-                                            <li>C#</li>
-                                            <li>Python</li>
-                                            <li>HTML5</li>
-                                            <li>CSS</li>
-                                            <li>JavaScript</li>
-                                            <li>jQuery</li>
-                                            <li class="gray">Java</li>
-                                            <li class="gray">C++</li>
-                                        </ul>
-                                    </div>
+                                <div class="skills-legend">
+                                    <span><span class="skill-chip">C#</span> Used in my projects</span>
+                                    <span><span class="skill-chip gray">Java</span> Familiar with</span>
                                 </div>
-                                <div class="skill-set-block">
-                                    <div class="skill-set">
-                                        <p class="skill-set-title">.NET Frameworks</p>
-                                        <ul class="keywords">
+                                <div class="skills-grid">
+                                    <div class="skill-group skill-group-wide">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-server"></i></span>
+                                            <h3>Back End</h3>
+                                        </div>
+                                        <ul class="skill-chips">
+                                            <li>C#</li>
                                             <li>ASP.NET Core</li>
+                                            <li>.NET</li>
+                                            <li>Minimal API</li>
+                                            <li>REST API</li>
+                                            <li>Vertical Slice Architecture</li>
+                                            <li>Clean Architecture</li>
+                                            <li>FluentValidation</li>
+                                            <li>Serilog</li>
                                             <li>ASP.NET MVC 5</li>
                                             <li>ASP.NET Web Forms</li>
-                                            <li>.NET Windows Presentation Foundation (WPF)</li>
-                                            <li>.NET Windows Forms</li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="skill-set-block">
-                                    <div class="skill-set">
-                                        <p class="skill-set-title">Database - ORM</p>
-                                        <ul class="keywords">
+                                    <div class="skill-group skill-group-wide">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-database"></i></span>
+                                            <h3>Database</h3>
+                                        </div>
+                                        <ul class="skill-chips">
                                             <li>MS SQL Server</li>
+                                            <li>Stored Procedures</li>
                                             <li>Entity Framework Core</li>
                                             <li>Dapper</li>
                                             <li>ADO.NET</li>
                                             <li>LINQ</li>
+                                            <li>Custom ORM</li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="skill-set-block">
-                                    <div class="skill-set">
-                                        <p class="skill-set-title">Front-End</p>
-                                        <ul class="keywords">
+                                    <div class="skill-group">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-window-maximize"></i></span>
+                                            <h3>Front End</h3>
+                                        </div>
+                                        <ul class="skill-chips">
                                             <li>HTML5</li>
                                             <li>CSS</li>
                                             <li>JavaScript</li>
@@ -357,27 +358,65 @@
                                             <li>Bootstrap</li>
                                             <li class="gray">SCSS</li>
                                             <li class="gray">TypeScript</li>
-                                            <li class="gray">React Native</li>
                                             <li class="gray">React</li>
+                                            <li class="gray">React Native</li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="skill-set-block">
-                                    <div class="skill-set">
-                                        <p class="skill-set-title">Others & Tools</p>
-                                        <ul class="keywords">
-                                            <li>Unity Game Engine</li>
-                                            <li>Django</li>
-                                            <li>REST API</li>
-                                            <li>VS Code</li>
-                                            <li>Visual Studio</li>
-                                            <li>Azure Data Studio</li>
+                                    <div class="skill-group">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-code-branch"></i></span>
+                                            <h3>Version Control &amp; Cloud</h3>
+                                        </div>
+                                        <ul class="skill-chips">
                                             <li>GitHub</li>
+                                            <li class="gray">Git</li>
+                                            <li class="gray">AWS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-gamepad"></i></span>
+                                            <h3>Game Development</h3>
+                                        </div>
+                                        <ul class="skill-chips">
+                                            <li>Unity Game Engine</li>
+                                            <li>C#</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-desktop"></i></span>
+                                            <h3>Desktop</h3>
+                                        </div>
+                                        <ul class="skill-chips">
+                                            <li>WPF</li>
+                                            <li>Windows Forms</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-code"></i></span>
+                                            <h3>Other Languages &amp; Frameworks</h3>
+                                        </div>
+                                        <ul class="skill-chips">
+                                            <li>Python</li>
+                                            <li>Django</li>
+                                            <li class="gray">Java</li>
+                                            <li class="gray">C++</li>
                                             <li class="gray">Framework7</li>
                                             <li class="gray">WebRTC</li>
-                                            <li class="gray">AWS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skill-group">
+                                        <div class="skill-group-header">
+                                            <span class="skill-group-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                            <h3>Tools</h3>
+                                        </div>
+                                        <ul class="skill-chips">
+                                            <li>Visual Studio</li>
+                                            <li>VS Code</li>
+                                            <li>Azure Data Studio</li>
                                             <li class="gray">Android Studio</li>
-                                            <li class="gray">Git</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -567,7 +606,7 @@
                                                 data-bs-toggle="collapse" data-bs-target="#collapse_3_1"
                                                 aria-expanded="true" aria-controls="collapse_3_1">
                                                 <p class="title">
-                                                    Junior .Net Back-End Developer
+                                                    Junior .NET Back-End Developer
                                                     <span class="color-blue">At Appbab IT</span>
                                                 </p>
                                                 <p class="subtitle">July 2020 – September 2020</p>
@@ -679,62 +718,62 @@
                 <i class="fa-solid fa-arrow-down fa-3x color-white"></i>
             </button>
         </section>
-        <section class="wide-120 section-gradient-purple" id="services">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fs-3rem h1">Services</h2>
+        <section class="section-dark-gray services-section" id="services">
+            <div class="services-top">
+                <div class="container">
+                    <h2 class="fs-3rem h1 text-center mb-0">Services</h2>
                 </div>
-                <div
-                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 gap-md-0 g-md-5 text-center justify-content-center">
-                    <div class="col">
-                        <div class="card-layout-1 ">
-                            <i class="fa-solid fa-laptop-code fa-3x"></i>
-                            <h3>Web Application Development</h3>
+            </div>
+            <div class="container">
+                <div class="services-main">
+                    <div class="services-intro">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>End-to-End Web Applications</h3>
+                        <p>I handle every stage of building a web application, and the projects in my portfolio show it. After launch, I keep developing the application as the business needs change.</p>
+                    </div>
+                    <ul class="services-parts">
+                        <li>
+                            <span class="services-part-icon"><i class="fa-solid fa-database"></i></span>
                             <div>
-                                <p>
-                                    Developing scalable, maintainable and responsive web applications across front-end, back-end
-                                    and full-stack
-                                </p>
+                                <h4>Database</h4>
+                                <p>I design SQL Server databases, write stored procedures and manage the data.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-layout-1">
-                            <i class="fa-solid fa-code fa-3x"></i>
-                            <h3>API Integrations</h3>
-                            <p>
-                                Developing and maintaining API services, and integrating third-party APIs
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-layout-1">
-                            <i class="fa fa-desktop fa-3x"></i>
-                            <h3>Desktop Application Development</h3>
-                            <p>
-                                Developing and maintaining efficient desktop applications that meet business
-                                needs
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-layout-1">
-                            <i class="fa fa-gamepad fa-3x"></i>
-                            <h3>Game Development - Design</h3>
-                            <p>
-                                Developing hyper-casual and casual games. Designing game logic, scenarios and levels
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-layout-1">
-                            <i class="fa fa-database fa-3x"></i>
-                            <h3>SQL Database Development - Design</h3>
-                            <p>
-                                Developing relational SQL databases and database objects such as stored procedures and functions.
-                                Designing tables, relationships and diagrams
-                            </p>
-                        </div>
+                        </li>
+                        <li>
+                            <span class="services-part-icon"><i class="fa-solid fa-server"></i></span>
+                            <div>
+                                <h4>Back End &amp; APIs</h4>
+                                <p>I build ASP.NET Core back ends and REST APIs, including authentication and integrations.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="services-part-icon"><i class="fa-solid fa-window-maximize"></i></span>
+                            <div>
+                                <h4>Front End</h4>
+                                <p>I build responsive pages and admin panels that work on every screen.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="services-part-icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                            <div>
+                                <h4>Deployment &amp; Hosting</h4>
+                                <p>I publish the site through a web hosting provider, or on your own server if you have one, and set up the domain and SSL.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="services-part-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+                            <div>
+                                <h4>SEO &amp; Performance</h4>
+                                <p>I take care of technical SEO and page speed, so the site gets found.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services-game">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <div>
+                        <h3>Game Development &amp; Design</h3>
+                        <p>I have built hyper-casual games in Unity, from the game idea and level design to a playable prototype ready for publisher tests.</p>
                     </div>
                 </div>
             </div>
@@ -749,7 +788,7 @@
                     <h3 class="color-blue h2">Platforms I've built for companies, and projects I've built on my own</h3>
                 </div>
                 <div class="sorting-container">
-                    <p class="h2"><i class="fa-solid fa-filter"></i> Filter By :</p>
+                    <p class="h5 mb-0"><i class="fa-solid fa-filter"></i> Filter By :</p>
                     <ul class="sorting-list">
                         <li class="active" data-p="all">All</li>
                         <li data-p="company">Company Projects</li>

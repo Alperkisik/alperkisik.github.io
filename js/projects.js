@@ -26,7 +26,7 @@ const projects = [
         detailsLink: "/verityprep",
         githubLink: "",
         imageSource: "./images/projects/veritas-academy/verityprep/verityprep-showcase.webp",
-        keywords: [".NET 8", "C#", "ASP.NET Core", "Minimal API", "MVC Areas", "ADO.NET", "MS SQL", "Stored Procedures", "Custom ORM", "Custom Authentication", "FluentValidation", "Serilog", "Azure", "REST API", "Full-Stack", "DB First", "Vertical Slice Architecture"],
+        keywords: [".NET", "C#", "ASP.NET Core", "Minimal API", "MVC Areas", "ADO.NET", "MS SQL", "Stored Procedures", "Custom ORM", "Custom Authentication", "FluentValidation", "Serilog", "Azure", "REST API", "Full-Stack", "DB First", "Vertical Slice Architecture"],
         projectLanguages: ["en", "tr", "cnr"],
         imageGallery: [
             {

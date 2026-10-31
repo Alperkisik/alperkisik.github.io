@@ -88,16 +88,23 @@ document.addEventListener("DOMContentLoaded", function () {
   
 });
 
-// Header "Work Experience" link: open the Work Experience tab in About Me
-const WORK_EXPERIENCE_HASH = "#work-experience";
+// Menu links that open a tab in the About Me section
+const ABOUT_TAB_LINKS = {
+  "#about-me": "nav-about-tab",
+  "#work-experience": "nav-experience-tab",
+};
 
-document.querySelectorAll('a[href$="' + WORK_EXPERIENCE_HASH + '"]').forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    openAboutTab("nav-experience-tab");
+Object.entries(ABOUT_TAB_LINKS).forEach(([hash, tabButtonId]) => {
+  document.querySelectorAll('a[href$="' + hash + '"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      openAboutTab(tabButtonId);
+    });
   });
 });
 
-if (window.location.hash === WORK_EXPERIENCE_HASH) {
-  window.addEventListener("load", () => openAboutTab("nav-experience-tab"));
+const tabFromHash = ABOUT_TAB_LINKS[window.location.hash];
+
+if (tabFromHash) {
+  window.addEventListener("load", () => openAboutTab(tabFromHash));
 }
