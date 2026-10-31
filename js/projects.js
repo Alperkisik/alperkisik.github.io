@@ -16,7 +16,9 @@ const projects = [
             websiteLink: "https://www.veritasedu.net",
         },
         summaryShorten: true,
-        summaryKeywords: ["ASP.NET Core", "Full-Stack", "Custom Architecture", "C#", "Lead Developer"],
+        summaryKeywords: ["ASP.NET Core", "Full-Stack", "REST API", "Custom Architecture", "C#", "Lead Developer"],
+        featured: true,
+        coreFeatures: [],
         summary: `Verityprep is Veritas Academy's exam preparation platform for students applying to universities abroad.
         It covers digital exams, digital question banks, homework and student tracking for AP, SAT, IB, IMAT, ACT, IELTS and more, across five portals and three languages.
         I have been its lead developer since 2024.`,
@@ -113,6 +115,8 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["ASP.NET MVC", "Full-Stack Development", "REST API", "Lead Developer"],
+        featured: true,
+        coreFeatures: [],
         summary: `This is the corporate website of Veritas Academy.
         It is used daily by Veritas Academy's employees, teachers and students, and offers dedicated features for each of them.
         Mostly developed by me.`,
@@ -175,6 +179,8 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["ASP.NET MVC", "Full-Stack", "REST API", "C#", "Contributor"],
+        featured: true,
+        coreFeatures: [],
         summary: `This website was created to meet the needs of Veritas Academy's consultants and streamline their workflow.
         A login is required to use this web application.
         I contributed to this project as a member of the development team.`,
@@ -215,6 +221,7 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["Django", "Full-Stack", "REST API", "Python", "Lead Developer"],
+        coreFeatures: ["Citizen reports to municipalities", "Municipality responses"],
         summary: `This website was developed as a prototype for a client's social responsibility project. 
         It is about interactions between citizens of Türkiye and municipalities of Türkiye. 
         The goal was to make communication between municipalities and citizens easier, and to help municipalities solve local problems with input from citizens.`,
@@ -262,8 +269,8 @@ const projects = [
         type: "Desktop App",
         typeof: "d",
         status: "online",
-        startdate: "Q4 2019",
-        enddate: "Q1 2020",
+        startdate: "Q4 2022",
+        enddate: "Q1 2023",
         development: "contributor",
         case: "professional",
         owner: "Veritas Academy",
@@ -273,6 +280,7 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Windows Forms", "C#", "Contributor"],
+        coreFeatures: ["Question bank editing", "Archive automation"],
         summary: `This is a desktop automation application for building and editing Veritas Academy's digital question bank archive.
         I contributed to this project.`,
         websiteLink: "",
@@ -310,6 +318,7 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["Windows Forms", "C#", "Game", "Solo Developer"],
+        coreFeatures: ["Turn-based card battles", "3 factions with unique mechanics"],
         summary: `This is a turn-based card game inspired by the Warhammer Fantasy universe, built as a Windows Forms application.
         I created this game as a personal project. It has 3 playable factions, each with its own unique mechanics. The game is available on my GitHub.`,
         websiteLink: "",
@@ -347,6 +356,7 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["Unity Game Engine", "C#", "Game", "Solo Developer"],
+        coreFeatures: ["Swipe-based gameplay", "5 levels", "Publisher-tested"],
         summary: `This is a hyper-casual game prototype that I built on my own with the Unity game engine. It went through Rolic Games' publishing and marketability tests. It has 5 levels, each harder than the previous one.
         The game is all about swiping left and right in order to gather party strength to defeat enemy encounters.
         Developed by me.`,
@@ -375,6 +385,7 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["Unity Game Engine", "C#", "Game", "Solo Developer"],
+        coreFeatures: ["Collect-and-grow gameplay", "Boss battle", "Publisher-tested"],
         summary: `This is a hyper-casual game prototype that I built on my own with the Unity game engine. It went through Rolic Games' publishing and marketability tests. It has 3 levels.
         The game is about gathering minions (called "titions" in the game) around the map. The player's character grows to the next stage after gathering enough of them, and battles a boss at the final stage. 
         Inspired by the Attack on Titan anime series. Developed by me.`,
@@ -403,6 +414,7 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Django", "Front-End", "REST API", "Python", "Contributor"],
+        coreFeatures: ["Online bus and plane tickets"],
         summary: `This is a web application built by the DIJI.TECH development team.
         It lets users buy bus and plane tickets online. I contributed to the front-end.`,
         websiteLink: "https://www.yolcu.com",
@@ -430,6 +442,7 @@ const projects = [
         },
         summaryShorten: true,
         summaryKeywords: ["Windows Forms", "C#", "Lead Developer"],
+        coreFeatures: ["Complete Go game logic", "Led a team of 3"],
         summary: `This is a Windows Forms implementation of Go, the classic East Asian board game.
         Developed as a high school graduation project, where I led a team of 3 students.
         I designed and developed all of the game logic, and we designed the user interface and database together as a team. 
@@ -466,6 +479,7 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Windows Forms", "C#", "Solo Developer"],
+        coreFeatures: ["4-quarter match simulation", "Stat-based scoring"],
         summary: `This is a Windows Forms simulation game based on the NBA. Every match is simulated over 4 quarters using each team's offensive and defensive stats.
         On each possession, the offense has a scoring chance range and the defense has a blocking chance range. The team with the higher score at the end wins.`,
         websiteLink: "",
@@ -500,6 +514,7 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Windows Forms", "C#", "Solo Developer"],
+        coreFeatures: ["Solves first-degree equations"],
         summary: `This is a Windows Forms application that solves first-degree equations with one unknown.`,
         websiteLink: "",
         detailsLink: "",
@@ -527,6 +542,7 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Windows Console", "C#", "Solo Developer"],
+        coreFeatures: ["Daily population growth", "Random events"],
         summary: `This is a console application that simulates daily population growth based on random events.`,
         websiteLink: "",
         detailsLink: "",
@@ -554,6 +570,7 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Django", "Full-Stack", "REST API", "Python", "Solo Developer"],
+        coreFeatures: ["Q&A forum", "Game industry community"],
         summary: `This was a forum website that aimed to bring the whole Turkish gaming industry, from individual developers to game studios, together on one platform. 
         Similar to Stack Overflow, developers could ask questions and find solutions through the forum. The project is no longer online.`,
         websiteLink: "",
@@ -582,6 +599,8 @@ const projects = [
         },
         summaryShorten: false,
         summaryKeywords: ["Unity Game Engine", "C#", "Solo Developer"],
+        coreFeatures: ["2048 gameplay", "Unity prototype"],
+        videoLink: "https://www.youtube.com/shorts/A1PtQMnGdsA",
         summary: `This is a prototype clone of the popular mobile game 2048. As in the original, the goal is to reach the number 2048. Watch the video clip on <a href="https://www.youtube.com/shorts/A1PtQMnGdsA" target="_blank">YouTube</a>.`,
         websiteLink: "",
         detailsLink: "",
@@ -594,22 +613,12 @@ const projects = [
 ];
 
 const sortDataByQuarterYear = (_projects) => {
-    return _projects.sort(function (a, b) {
+    return [..._projects].sort(function (a, b) {
         var endDateA = a.enddate.split(" ")[1] + a.enddate.split(" ")[0].replace("Q", "");
         var endDateB = b.enddate.split(" ")[1] + b.enddate.split(" ")[0].replace("Q", "");
 
         return endDateB.localeCompare(endDateA);
     });
-};
-
-const truncateString = (str) => {
-    var maxLength = 160;
-    if (str.length > maxLength) {
-        var truncatedStr = str.slice(0, maxLength) + ".....";
-        return truncatedStr;
-    } else {
-        return str;
-    }
 };
 
 const createHeader = () => {
@@ -644,151 +653,130 @@ const createHeader = () => {
     document.getElementsByTagName("header").innerHTML = headerHtml;
 };
 
-const summaryKeywordsHtml = (keywords) => {
-    let html = '<div class="mt-1"><ul class="keywords">';
-
-    keywords.forEach((item) => {
-        html += `<li>${item}</li>`;
-    });
-
-    html += "</ul></div>";
-
-    return html;
+const portfolioFilters = {
+    all: () => true,
+    company: (project) => project.owner !== "me",
+    personal: (project) => project.owner === "me",
 };
 
-const statusBadgesHtml = (project) => {
-    let date = project.startdate;
-    if (project.enddate !== date) date += ` to ${project.enddate}`;
+const escapeHtml = (value) =>
+    String(value ?? "").replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[char]));
 
-    let html = `<div class="d-flex flex-row flex-wrap gap-2">`;
+const projectDateText = (project) => {
+    const end = project.enddate === "Now" ? "Present" : project.enddate;
+    return project.startdate === end ? end : `${project.startdate} – ${end}`;
+};
+
+const projectYear = (project) => {
+    const match = /\d{4}/.exec(project.enddate === "Now" ? project.startdate : project.enddate);
+    return match ? match[0] : "";
+};
+
+const projectMetaHtml = (project) => {
+    let html = `<div class="project-meta"><span>${escapeHtml(project.type)}</span><span>${escapeHtml(projectDateText(project))}</span>`;
 
     if (project.typeof === "w")
+        html += `<span class="project-status-${project.status === "online" ? "online" : "offline"}">● ${escapeHtml(project.status)}</span>`;
+
+    return html + "</div>";
+};
+
+const projectChipsHtml = (keywords) =>
+    `<ul class="project-chips">${keywords.map((keyword) => `<li>${escapeHtml(keyword)}</li>`).join("")}</ul>`;
+
+const projectButtonsHtml = (project) => {
+    let html = "";
+
+    if (project.detailsLink.length > 0)
+        html += `<a class="cstm-btn-blue" href="${project.detailsLink}"><i class="fa-solid fa-circle-info color-white me-2"></i>More Info</a>`;
+
+    if (project.websiteLink.length > 0)
+        html += `<a class="cstm-btn-blue" href="${project.websiteLink}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square color-white me-2"></i>Go to website</a>`;
+
+    if (project.githubLink.length > 0)
+        html += `<a class="cstm-btn-purple" href="${project.githubLink}" target="_blank" rel="noopener"><i class="fa-brands fa-github me-2"></i>GitHub</a>`;
+
+    return html.length > 0 ? `<div class="project-buttons">${html}</div>` : "";
+};
+
+const projectLinksHtml = (project) => {
+    const links = [];
+
+    if (project.detailsLink.length > 0)
+        links.push(`<a href="${project.detailsLink}"><i class="fa-solid fa-circle-info"></i>Details</a>`);
+
+    if (project.websiteLink.length > 0)
+        links.push(`<a href="${project.websiteLink}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Website</a>`);
+
+    if (project.githubLink.length > 0)
+        links.push(`<a href="${project.githubLink}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>`);
+
+    if (project.videoLink)
+        links.push(`<a href="${project.videoLink}" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>Video</a>`);
+
+    if (links.length === 0) return `<span class="project-no-link">No public link</span>`;
+
+    return `<div class="project-links">${links.join("")}</div>`;
+};
+
+const featuredProjectHtml = (project) => {
+    const owner = project.owner === "me" ? "Personal project" : project.owner;
+
+    return `
+      <article class="featured-project">
+        <div class="featured-project-image">
+          <img src="${project.imageSource}" alt="${escapeHtml(project.name)} screenshot" loading="lazy">
+        </div>
+        <div class="featured-project-body">
+          <span class="featured-project-eyebrow">Featured · ${escapeHtml(owner)}</span>
+          <h3>${escapeHtml(project.name)}</h3>
+          ${projectMetaHtml(project)}
+          <p>${project.summary}</p>
+          ${projectChipsHtml(project.summaryKeywords)}
+          ${projectButtonsHtml(project)}
+        </div>
+      </article>`;
+};
+
+const otherProjectRowHtml = (project) => `
+      <tr>
+        <td class="col-year">${projectYear(project)}</td>
+        <td class="col-project"><b>${escapeHtml(project.name)}</b><span>${escapeHtml(project.type)}</span></td>
+        <td class="col-owner">${escapeHtml(project.owner === "me" ? "Personal" : project.owner)}</td>
+        <td class="col-features">${escapeHtml((project.coreFeatures || []).join(" · "))}</td>
+        <td class="col-links">${projectLinksHtml(project)}</td>
+      </tr>`;
+
+const createProjects = (filter = "all") => {
+    const container = document.getElementById("projectsGrid");
+    const visibleProjects = sortDataByQuarterYear(projects.filter(portfolioFilters[filter]));
+    const featuredProjects = visibleProjects.filter((project) => project.featured === true);
+    const otherProjects = visibleProjects.filter((project) => project.featured !== true);
+
+    let html = "";
+
+    if (featuredProjects.length > 0)
+        html += `<div class="featured-projects">${featuredProjects.map(featuredProjectHtml).join("")}</div>`;
+
+    if (otherProjects.length > 0)
         html += `
-        <div class="status-badge">
-            Status: <span class="status-${project.status}">${project.status}</span>
-        </div>
-        `;
+      <div class="other-projects">
+        <h3>Other Projects</h3>
+        <table class="projects-table">
+          <thead>
+            <tr>
+              <th class="col-year">Year</th>
+              <th class="col-project">Project</th>
+              <th class="col-owner">Made at</th>
+              <th class="col-features">Core Features</th>
+              <th class="col-links">Links</th>
+            </tr>
+          </thead>
+          <tbody>${otherProjects.map(otherProjectRowHtml).join("")}</tbody>
+        </table>
+      </div>`;
 
-    html += `
-    <div class="status-badge">
-        ${date}
-    </div>
-    `;
-
-    html += "</div>";
-
-    return html;
-};
-
-const createProjects = () => {
-    const projectsGrid = document.getElementById("projectsGrid");
-
-    //let showableProjects = projects.filter((item) => item.show === true);
-    const sortedProjects = sortDataByQuarterYear(projects);
-
-    projectsGrid.innerHTML = "";
-    sortedProjects.forEach((project) => {
-        let buttonContainer = `<div class="button-container">`;
-        if (project.detailsLink.length > 0) {
-            buttonContainer += `<a class="cstm-btn-blue" href="${project.detailsLink}">More Info</a>`;
-        }
-
-        if (project.websiteLink.length > 0) {
-            buttonContainer += `<a class="cstm-btn-blue" href="${project.websiteLink}" target="_blank">Go to website</a>`;
-        } else if ((project.websiteLink.length === 0) & (project.githubLink.length > 0)) {
-            buttonContainer += `
-              <a class="cstm-btn-purple" href="${project.githubLink}" target="_blank">
-                <i class="fa-brands fa-github me-2"></i>
-                GitHub
-              </a>`;
-        }
-
-        buttonContainer += "</div>";
-
-        if ((project.detailsLink.length === 0) & (project.websiteLink.length === 0) & (project.githubLink.length === 0)) buttonContainer = "";
-
-        let summaryString = project.summary;
-        if (project.summaryShorten === true) summaryString = truncateString(project.summary);
-
-        let projectHtml = `
-          <div class="grid-item" name="project" p-typeof="${project.typeof}">
-              <img src="${project.imageSource}" alt="${project.name} project" loading="lazy">
-              <div class="overlay">
-                  <div>
-                      <h3>${project.name}</h3>
-                      <h4>${project.type}</h4>
-                      ${summaryKeywordsHtml(project.summaryKeywords)}
-                  </div>
-                  ${statusBadgesHtml(project)}
-                  <p>
-                      ${summaryString}
-                  </p>
-                  ${buttonContainer}
-              </div>
-          </div>
-          `;
-
-        if (project.imageSource.length === 0) {
-            projectHtml = `
-      <div class="grid-item" name="project" p-typeof="${project.typeof}">
-        <div class="imageless-grid-item-content">
-          <div>
-              <h3>${project.name}</h3>
-              <h4>${project.type}</h4>
-              ${summaryKeywordsHtml(project.summaryKeywords)}
-          </div>
-          ${statusBadgesHtml(project)}
-          <p>
-              ${summaryString}
-          </p>
-          ${buttonContainer}
-        </div>
-      </div>
-      `;
-        }
-
-        projectsGrid.innerHTML += projectHtml;
-    });
-};
-
-const filterBy = (filter) => {
-    var elements = document.querySelectorAll('div[name="project"]');
-
-    elements.forEach((element) => {
-        setTimeout(() => {
-            element.classList.remove("d-none");
-            element.style.opacity = "1";
-            element.style.height = "auto";
-            element.style.maxWidth = "100%";
-        }, 500);
-
-        if (element.getAttribute("p-typeof") !== filter) {
-            element.style.opacity = "0";
-            setTimeout(() => {
-                element.style.height = "0";
-                element.style.maxWidth = "0";
-                element.classList.add("d-none");
-            }, 500);
-        }
-    });
-};
-
-const showAll = () => {
-    var elements = document.querySelectorAll('div[name="project"]');
-    elements.forEach((element) => {
-        if (element.classList.contains("d-none")) {
-            element.classList.remove("d-none");
-            element.style.opacity = "0";
-            element.style.height = "0";
-            element.style.maxWidth = "0";
-
-            setTimeout(() => {
-                element.style.opacity = "1";
-                element.style.height = "auto";
-                element.style.maxWidth = "100%";
-            }, 500);
-        }
-    });
+    container.innerHTML = html;
 };
 
 const setupClickEvent = () => {
@@ -805,10 +793,7 @@ const setupClickEvent = () => {
             });
 
             this.classList.add("active");
-
-            let filter = this.getAttribute("data-p");
-            if (filter === "all") showAll();
-            else filterBy(filter);
+            createProjects(this.getAttribute("data-p"));
         });
     });
 };

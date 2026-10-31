@@ -1,2 +1,5 @@
 # Markdown files (notes, recommendations, CLAUDE.md)
 *.md
+
+# Local backups
+*-backup.html
