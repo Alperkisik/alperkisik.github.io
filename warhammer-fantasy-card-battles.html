@@ -63,7 +63,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css"
         referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/styles.css"  />
+    <link rel="stylesheet" href="./styles/styles.css?v={{ site.time | date: '%s' }}"  />
 
 </head>
 
@@ -176,8 +176,8 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap 5 JS CDN - End - -->
 
-    <script src="./js/site.js"></script>
-    <script src="./js/projects.js"></script>
+    <script src="./js/site.js?v={{ site.time | date: '%s' }}"></script>
+    <script src="./js/projects.js?v={{ site.time | date: '%s' }}"></script>
 
     <script type="module">
         import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js";

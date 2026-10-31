@@ -136,7 +136,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome - End - -->
 
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css?v={{ site.time | date: '%s' }}" />
 </head>
 
 <body>
@@ -820,10 +820,10 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap 5 JS CDN - End - -->
 
-    <script src="./js/site.js"></script>
-    <script src="./js/typing.js"></script>
-    <script src="./js/projects.js"></script>
-    <script src="./js/homepage.js"></script>
+    <script src="./js/site.js?v={{ site.time | date: '%s' }}"></script>
+    <script src="./js/typing.js?v={{ site.time | date: '%s' }}"></script>
+    <script src="./js/projects.js?v={{ site.time | date: '%s' }}"></script>
+    <script src="./js/homepage.js?v={{ site.time | date: '%s' }}"></script>
 
 </body>
 
