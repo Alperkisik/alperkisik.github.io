@@ -3,3 +3,7 @@
 
 # Local backups
 *-backup.html
+
+# Jekyll build output
+_site/
+.jekyll-cache/

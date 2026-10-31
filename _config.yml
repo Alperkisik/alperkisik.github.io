@@ -1,0 +1,6 @@
+# Jekyll settings for GitHub Pages.
+# Pages are plain HTML; Jekyll is only used for the shared header and footer in _includes/.
+exclude:
+  - CLAUDE.md
+  - PORTFOLIO-ONERILER.md
+  - index-backup.html

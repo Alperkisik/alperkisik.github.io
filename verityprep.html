@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,39 +62,7 @@
 </head>
 
 <body>
-    <header class="header-top">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white p-0">
-            <div class="container">
-                <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Acme, sans-serif" font-size="30" fill="#c13cf5">AK</text></svg></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars fa-2x color-white"></i>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./#about-me">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./#work-experience">Work Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    {% include header.html %}
     <main role="main">
         <section class="wide-120 section-dark-gray project-section">
             <div class="container flex-container">
@@ -304,77 +274,7 @@
         </div>
     </div>
 
-    <footer class="footer bg-dark color-dark bg-gradient" id="footer">
-        <div class="container">
-            <div class="contact-footer">
-                <div class="contact-intro">
-                    <h3 class="contact-title h1 drop-shadow-black-md mb-0">Contact Me</h3>
-                    <p class="contact-lead">Email me, or reach me on LinkedIn, GitHub or Discord.</p>
-                    <div class="contact-actions">
-                        <a class="cstm-btn-blue" href="mailto:alperksk_07@hotmail.com">
-                            <i class="fa-solid fa-envelope color-white me-2"></i>Send an Email
-                        </a>
-                        <a class="cstm-btn-purple" href="./documents/alper-kısık-resume.pdf" download="alper-kısık-resume.pdf">
-                            <i class="fa-solid fa-download color-white me-2"></i>Download Resume
-                        </a>
-                    </div>
-                </div>
-                <ul class="contact-list">
-                    <li>
-                        <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
-                        <div class="contact-text">
-                            <small>Email</small>
-                            <a href="mailto:alperksk_07@hotmail.com">alperksk_07@hotmail.com</a>
-                        </div>
-                        <button type="button" class="contact-copy" data-copy="alperksk_07@hotmail.com" aria-label="Copy email address">
-                            <i class="fa-regular fa-copy"></i><span>Copy</span>
-                        </button>
-                    </li>
-                    <li>
-                        <span class="contact-icon"><i class="fa-brands fa-linkedin"></i></span>
-                        <div class="contact-text">
-                            <small>LinkedIn</small>
-                            <a href="https://www.linkedin.com/in/alperkisik/" target="_blank" rel="noopener">in/alperkisik</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
-                        <div class="contact-text">
-                            <small>GitHub</small>
-                            <a href="https://github.com/Alperkisik" target="_blank" rel="noopener">github.com/Alperkisik</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="contact-icon"><i class="fa-brands fa-discord"></i></span>
-                        <div class="contact-text">
-                            <small>Discord</small>
-                            <a href="https://discordapp.com/users/970226378530226187/" target="_blank" rel="noopener">Send a message</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./#work-experience">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-                <p>©Copyright <span class="current-year">2026</span>. All rights are reserved</p>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <!-- JQuery JS CDN - Start - -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

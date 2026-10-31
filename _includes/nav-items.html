@@ -1,0 +1,32 @@
+{% comment %}
+  Shared menu links for the header and the footer.
+  On the home page the links point to sections on the same page; on every other page they point back to the home page.
+  Pass contact=true to add the Contact link (header only).
+{% endcomment %}
+{%- if page.url == "/" -%}
+  {%- assign base = "" -%}
+{%- else -%}
+  {%- assign base = "./" -%}
+{%- endif -%}
+{%- unless page.url == "/" %}
+<li class="nav-item">
+    <a class="nav-link" href="./">Home</a>
+</li>
+{%- endunless %}
+<li class="nav-item">
+    <a class="nav-link" href="{{ base }}#about-me">About Me</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ base }}#services">Services</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ base }}#work-experience">Work Experience</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ base }}#portfolio">Portfolio</a>
+</li>
+{%- if include.contact %}
+<li class="nav-item">
+    <a class="nav-link" href="#footer">Contact</a>
+</li>
+{%- endif %}
