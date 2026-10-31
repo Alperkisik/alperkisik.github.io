@@ -1002,7 +1002,7 @@ footer {
     color: var(--color-text);
     background-color: transparent;
     border-color: transparent;
-    border-bottom: 3px solid var(--color-purple-2);
+    border-bottom: 2px solid var(--color-purple-2);
   }
 
   .nav-tabs {
@@ -1610,7 +1610,7 @@ footer {
     li.active {
       color: var(--color-blue-1);
       filter: drop-shadow(2px 4px 6px black);
-      transform: scale(1.2);
+      transform: scale(1.1);
       text-decoration: underline;
     }
   }
