@@ -625,7 +625,7 @@ const createHeader = () => {
     let headerHtml = `
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-transparent color-white">
       <div class="container">
-          <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Acme, sans-serif" font-size="30" fill="#c13cf5">AK</text></svg></a>
+          <a class="navbar-brand" href="./"><svg class="home-page-icon" viewBox="0 0 64 64" role="img" aria-label="Alper Kısık"><rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#c13cf5" stroke-width="4"/><text x="32" y="43" text-anchor="middle" font-family="Sora, sans-serif" font-weight="600" font-size="30" fill="#c13cf5">AK</text></svg></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa-solid fa-bars fa-2x color-white"></i>

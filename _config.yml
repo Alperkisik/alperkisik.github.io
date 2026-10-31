@@ -1,6 +1,8 @@
 # Jekyll settings for GitHub Pages.
-# Pages are plain HTML; Jekyll is only used for the shared header and footer in _includes/.
+# Pages are plain HTML; Jekyll builds the shared header and footer in _includes/
+# and compiles styles/styles.scss into a compressed styles/styles.css.
+sass:
+  style: compressed
+
 exclude:
-  - CLAUDE.md
-  - PORTFOLIO-ONERILER.md
   - index-backup.html

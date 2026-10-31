@@ -41,10 +41,7 @@
 
     <!-- Google Api - Start - -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
     <!-- Google Api - End - -->
 
     <!-- Font Awesome - Start - -->
@@ -57,7 +54,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css"
         referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/styles.min.css"  />
+    <link rel="stylesheet" href="./styles/styles.css"  />
 
 </head>
 
@@ -145,7 +142,7 @@
                     </ul>
                     <h3 class="theme-title-2 color-purple-2">Development Process</h3>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">On the Architecture part,</span>
+                        <span class="color-blue fw-bold">On the Architecture part,</span>
                         I designed my own variant of vertical slice architecture for ASP.NET Core. Classic
                         vertical slice puts a whole feature in one file; I did the opposite. One class per file,
                         all files under one feature folder, and the folder is the slice. Every slice has three
@@ -156,7 +153,7 @@
                         assembly scanning at startup, so a new feature needs no registration file.
                     </p>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">On the Back-End part,</span>
+                        <span class="color-blue fw-bold">On the Back-End part,</span>
                         the application is a single .NET 8 project organised into nine Areas, one per portal.
                         Existing ORMs were making the portal slow, so I wrote my own stored-procedure-first ORM
                         over raw ADO.NET, in the spirit of Dapper. In it a repository method name is the stored
@@ -170,7 +167,7 @@
                         a message on the page.
                     </p>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">On the Authentication part,</span>
+                        <span class="color-blue fw-bold">On the Authentication part,</span>
                         we were using ASP.NET Core's own login system and many users were having trouble reaching
                         the student and teacher portals. I replaced it with my own: a self-contained encrypted
                         authentication ticket, close to JWT in spirit, carrying the user's identity, role, branch
@@ -179,7 +176,7 @@
                         data-driven permissions down to a single course or a single exam.
                     </p>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">On the Front-End part,</span>
+                        <span class="color-blue fw-bold">On the Front-End part,</span>
                         all pages are Razor views with Bootstrap, vanilla ES modules and jQuery, with KaTeX for
                         mathematics. The JavaScript mirrors the backend slicing: the exam application has its own
                         core, components, services, state and phases folders, without a framework. The exam
@@ -191,7 +188,7 @@
                         exam cannot be asked to tolerate a rough screen.
                     </p>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">On the Database part,</span>
+                        <span class="color-blue fw-bold">On the Database part,</span>
                         business logic lives in roughly 400 stored procedures on MS SQL Server, with the scripts
                         checked into the slice that owns them. The platform runs on SQL Server Express with four
                         cores, so performance had to come from the data layer. I profiled the live workload,
@@ -203,7 +200,7 @@
                         designs that had outgrown their original shape.
                     </p>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">On the Internationalisation part,</span>
+                        <span class="color-blue fw-bold">On the Internationalisation part,</span>
                         the public site is published in three languages: Turkish, English and Montenegrin. I
                         built this without resource files. Each language has its own controller, its own route
                         table and its own views, and the language lives in the URL slug itself. Every page knows
@@ -213,7 +210,7 @@
                         the visitor's browser language preference.
                     </p>
                     <p>
-                        <span class="color-blue drop-shadow-black-md fw-bold">Elsewhere in the project,</span>
+                        <span class="color-blue fw-bold">Elsewhere in the project,</span>
                         the same approach produced an email system with its own queue and logging, direct clients
                         for four AI providers rather than their SDKs, nine background workers with hand-written
                         scheduling, endpoint discovery that publishes the live route table, a sitemap and meta
@@ -288,7 +285,7 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap 5 JS CDN - End - -->
 
-    <script src="./js/site.min.js"></script>
+    <script src="./js/site.js"></script>
     <script src="./js/projects.js"></script>
 
     <script type="module">
